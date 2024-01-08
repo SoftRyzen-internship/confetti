@@ -5,13 +5,12 @@ import { useSwiper } from 'swiper/react';
 import PrevIcon from '~/icons/SliderControls/arrow-left.svg';
 import NextIcon from '~/icons/SliderControls/arrow-right.svg';
 
-import {
-  prevBtnArialabel,
-  nextBtnArialabel,
-} from '@/data/sliderControlsData.json';
+import sliderControlsData from '@/data/sliderControlsData.json';
 
 export const SliderControls = () => {
   const swiper = useSwiper();
+
+  const { prevBtnArialabel, nextBtnArialabel } = sliderControlsData;
 
   return (
     <div className="hidden gap-x-6 md:flex">
