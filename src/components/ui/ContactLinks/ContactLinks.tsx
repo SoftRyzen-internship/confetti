@@ -14,7 +14,7 @@ export const ContactLinks: React.FC<Props> = ({ className = '', location }) => {
       <li>
         <a
           href={`tel:${contactLinks.tel}`}
-          className="group inline-flex items-center justify-center gap-2 transition-colors duration-300 ease-in-out hover:text-color-accent-primary focus:text-color-accent-primary"
+          className="common-transition group inline-flex items-center justify-center gap-2 hover:text-color-accent-primary focus:text-color-accent-primary"
         >
           <Tel className="h-6 w-6" /> {formatPhoneNumber(contactLinks.tel)}
         </a>
@@ -23,7 +23,7 @@ export const ContactLinks: React.FC<Props> = ({ className = '', location }) => {
         <li>
           <a
             href={`mailto:${contactLinks.mail}`}
-            className="group inline-flex items-center justify-center gap-2 transition-colors duration-300 ease-in-out hover:text-color-accent-primary focus:text-color-accent-primary"
+            className="common-transition group inline-flex items-center justify-center gap-2 hover:text-color-accent-primary focus:text-color-accent-primary"
           >
             <Mail className="h-6 w-6" />
             {contactLinks.mail}
