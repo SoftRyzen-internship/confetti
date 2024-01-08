@@ -1,7 +1,8 @@
-import CardKreatywny from '@/components/ui/CardKreatywny/CardKreatywny';
-import cards from '@/data/kreatywny-cards.json';
+import { CardKreatywny } from '@/components/ui/CardKreatywny/CardKreatywny';
+import about from '@/data/section-about.json';
 
 const CardsKreatywny = () => {
+  const { cards } = about;
   return (
     <ul className="md:flex md:flex-col md:gap-6 xl:flex-row xl:flex-wrap">
       {cards.map(card => (
@@ -10,5 +11,4 @@ const CardsKreatywny = () => {
     </ul>
   );
 };
-
-export default CardsKreatywny;
+export { CardsKreatywny };

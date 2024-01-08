@@ -3,13 +3,11 @@ import { CardKreatywnyProps } from './types';
 const CardKreatywny: React.FC<CardKreatywnyProps> = ({ card }) => {
   const { id, title, description } = card;
   const titleColorClass =
-    id === 1
+    id === 1 || id === 4
       ? 'text-color-accent-primary'
-      : id === 4
-        ? 'text-color-accent-primary'
-        : 'text-color-accent-extra';
+      : 'text-color-accent-extra';
   return (
-    <li className="mx-auto flex h-[298px] w-[320px] flex-col justify-between rounded-3xl bg-white p-[23px] md:h-[319px] md:w-[596px] md:p-12">
+    <li className="mx-auto flex h-[253px] w-[320px] flex-col justify-between rounded-3xl bg-white p-[23px] md:h-[319px] md:w-[596px] md:p-12">
       <h3
         className={`font-gilroy text-[24px] font-extrabold leading-[1.2] tracking-[-0.24px] md:text-[40px] md:tracking-[-0.4px] ${titleColorClass}`}
       >
@@ -21,5 +19,4 @@ const CardKreatywny: React.FC<CardKreatywnyProps> = ({ card }) => {
     </li>
   );
 };
-
-export default CardKreatywny;
+export { CardKreatywny };

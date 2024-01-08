@@ -1,4 +1,4 @@
-import CardsKreatywny from '@/components/base/CardsKreatywny/CardsKreatywny';
+import { CardsKreatywny } from '@/components/base';
 
 export default function Home() {
   return (
