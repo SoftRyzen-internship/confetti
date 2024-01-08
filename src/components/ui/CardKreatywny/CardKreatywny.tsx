@@ -1,6 +1,6 @@
 import { CardKreatywnyProps } from './types';
 
-const CardKreatywny: React.FC<CardKreatywnyProps> = ({ card }) => {
+export const CardKreatywny: React.FC<CardKreatywnyProps> = ({ card }) => {
   const { id, title, description } = card;
   const titleColorClass =
     id === 1 || id === 4
@@ -13,10 +13,10 @@ const CardKreatywny: React.FC<CardKreatywnyProps> = ({ card }) => {
       >
         {title}
       </h3>
+
       <p className="font-manrope text-[16px] font-medium leading-[1.45] tracking-[-0.16px] text-color-text-extra md:text-[20px] md:tracking-[-0.2px]">
         {description}
       </p>
     </li>
   );
 };
-export { CardKreatywny };
