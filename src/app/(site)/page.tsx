@@ -1,4 +1,4 @@
-import { SliderControls } from '@/components/ui/SliderControls';
+import { SliderControls } from '@/components/ui';
 
 export default function Home() {
   return (
