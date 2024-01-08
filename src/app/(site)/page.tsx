@@ -1,5 +1,5 @@
 import { CardsKreatywny } from '@/components/base';
-import { Logo } from '@/components/ui';
+import { Logo, Title } from '@/components/ui';
 
 export default async function Home() {
   return (
@@ -9,6 +9,9 @@ export default async function Home() {
       </div>
       <div className="container bg-color-bg-primary">
         <CardsKreatywny />
+      </div>
+      <div className="container">
+        <Title text="Hello" accentColor />
       </div>
     </>
   );
