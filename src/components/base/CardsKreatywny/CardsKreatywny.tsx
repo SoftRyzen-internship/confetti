@@ -1,4 +1,4 @@
-import { CardKreatywny } from '@/components/ui/CardKreatywny/CardKreatywny';
+import { CardKreatywny } from '@/components/ui';
 import about from '@/data/section-about.json';
 
 const CardsKreatywny = () => {
