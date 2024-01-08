@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* === ANIMATIONS === */
+
+.common-transition {
+  @apply transition duration-300 ease-in-out;
+}

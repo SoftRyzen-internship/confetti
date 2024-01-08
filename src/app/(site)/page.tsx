@@ -7,6 +7,7 @@ export default async function Home() {
       <div className="container">
         <Logo location="footer" />
       </div>
+
       <div className="container bg-color-bg-primary">
         <CardsKreatywny />
       </div>
