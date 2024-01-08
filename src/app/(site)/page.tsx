@@ -1,5 +1,5 @@
 import { CardsKreatywny } from '@/components/base';
-import { Logo, Title } from '@/components/ui';
+import { Logo, SectionTitle } from '@/components/ui';
 
 export default async function Home() {
   return (
@@ -10,8 +10,11 @@ export default async function Home() {
       <div className="container bg-color-bg-primary">
         <CardsKreatywny />
       </div>
+
       <div className="container">
-        <Title text="Hello" accentColor />
+        <SectionTitle ariaLabelledbyId="section" accentColor center>
+          Hello!
+        </SectionTitle>
       </div>
     </>
   );

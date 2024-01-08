@@ -48,6 +48,7 @@ const config: Config = {
           primary: '#FFEFF0',
           extra: '#FEF5EC',
         },
+        'color-title-dark': '#222222',
       },
       // FONTS
       fontFamily: {
