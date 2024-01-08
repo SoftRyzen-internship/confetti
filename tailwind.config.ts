@@ -48,6 +48,9 @@ const config: Config = {
           primary: '#FFEFF0',
           extra: '#FEF5EC',
         },
+        'color-ctrl-btn': '#FFFFFF',
+        'color-ctrl-btn-accent': '#FFEFF0',
+        'color-ctrl-btn-border': '#D2D2D2',
       },
       // FONTS
       fontFamily: {
