@@ -3,5 +3,11 @@
     "logo": {
       "label": "Logo serwisu i link do strony głównej"
     }
+  },
+  "components": {
+    "sliderControls": {
+      "prevBtnArialabel": "Poprzedni slajd",
+      "nextBtnArialabel": "Następny slajd"
+    }
   }
 }
