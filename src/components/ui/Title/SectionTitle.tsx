@@ -1,8 +1,6 @@
-import { FC } from 'react';
-
 import { SectionTitleProps } from './type';
 
-export const SectionTitle: FC<SectionTitleProps> = ({
+export const SectionTitle: React.FC<SectionTitleProps> = ({
   children,
   ariaLabelledbyId,
   accentColor,
@@ -11,7 +9,7 @@ export const SectionTitle: FC<SectionTitleProps> = ({
 }) => {
   const fontColor = accentColor
     ? 'text-color-accent-primary'
-    : 'text-color-title-dark';
+    : 'text-color-primary';
   const isCenteredText = center ? 'text-center' : 'text-left';
 
   return (

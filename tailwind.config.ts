@@ -36,6 +36,7 @@ const config: Config = {
       // COLORS
       colors: {
         'color-main': '#000000',
+        'color-primary': '#222222',
         'color-text': {
           primary: '#474747',
           extra: '#565148',
@@ -48,7 +49,6 @@ const config: Config = {
           primary: '#FFEFF0',
           extra: '#FEF5EC',
         },
-        'color-title-dark': '#222222',
       },
       // FONTS
       fontFamily: {
