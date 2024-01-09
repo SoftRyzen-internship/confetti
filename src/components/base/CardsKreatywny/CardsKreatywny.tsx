@@ -7,7 +7,9 @@ export const CardsKreatywny: React.FC = () => {
   return (
     <ul className="md:flex md:flex-col md:gap-6 xl:flex-row xl:flex-wrap">
       {cards.map(card => (
-        <CardKreatywny key={card.id} card={card} />
+        <li key={card.id}>
+          <CardKreatywny card={card} />
+        </li>
       ))}
     </ul>
   );
