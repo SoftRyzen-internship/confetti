@@ -1,4 +1,5 @@
 import { CardsKreatywny } from '@/components/base';
+import { ReviewsCards } from '@/components/base/ReviewsCards/ReviewsCards';
 import { ContactLinks, Logo } from '@/components/ui';
 
 export default async function Home() {
@@ -12,9 +13,10 @@ export default async function Home() {
         />
       </div>
 
-      <div className="container bg-color-bg-primary">
+      <div className="container bg-green-200">
         <CardsKreatywny />
         <ContactLinks location={'contacts'} className={'xl:items-start'} />
+        <ReviewsCards />
       </div>
     </>
   );
