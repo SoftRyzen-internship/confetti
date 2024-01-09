@@ -126,24 +126,21 @@ is a list of more common components and their API.
 | `location`  | `undefined` | Choose the position you'd need: `header`or `contacts` |
 | `className` | `undefined` | add any custom styles                                 |
 
-
-- #### SectionTitle
-
-| Prop               | Default     | Description                                                                |
-| ------------------ | ----------- | -------------------------------------------------------------------------- |
-| `children`         | `undefined` | required, ReactNode embedded components or text                            |
-| `ariaLabelledbyId` | `undefined` | required, string for accessibility, follow the section and section heading |
-| `accentColor`      | `true`      | applies the "accent" text color option                                     |
-| `center`           | `true`      | centers text                                                               |
-| `className`        | `undefined` | add string custom styles                                                   |
-
-
 - ### Slider Controls
 
 | Prop      | Default     | Description                            |
 | --------- | ----------- | -------------------------------------- |
 | `section` | `undefined` | required, only 'services' or 'reviews' |
 
+- #### Slider
+
+| Prop             | Default     | Description                                                 |
+| ---------------- | ----------- | ----------------------------------------------------------- |
+| `data`           | `undefined` | required, any array of data for mapping                     |
+| `className`      | `''`        | add any custom styles of .swiper element                    |
+| `slideClassName` | `''`        | add any custom styles of .swiper-slide element              |
+| `component`      | `undefined` | required, the element that will be placed inside the slide' |
+| `section`        | `undefined` | required, 'about' 'services' 'gallery' 'reviews';           |
 
 ### Technology stack
 

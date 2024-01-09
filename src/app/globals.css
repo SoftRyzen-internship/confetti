@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Slider */
+.swiper-pagination {
+  position: static !important;
+  margin-top: 24px;
+  line-height: 0;
+
+  @apply md:mt-0 md:hidden;
+}
+
+.swiper-pagination-bullet {
+  background: #222 !important;
+  opacity: 0.25 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #222 !important;
+  opacity: 1 !important;
+}
