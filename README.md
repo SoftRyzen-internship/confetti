@@ -126,7 +126,7 @@ is a list of more common components and their API.
 | `location`  | `undefined` | Choose the position you'd need: `header`or `contacts` |
 | `className` | `undefined` | add any custom styles                                 |
 
-- ### Button
+- ### Slider Controls
 
 | Prop      | Default     | Description                            |
 | --------- | ----------- | -------------------------------------- |
