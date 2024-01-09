@@ -11,6 +11,12 @@
         "reviews": "Opinie",
         "contacts": "Kontakty"
       },
+      "categoryPaths": {
+        "aboutUs": "about",
+        "gallery": "gallery",
+        "reviews": "reviews",
+        "contacts": "contacts"
+      },
       "servicesTitle": "Usługi",
       "services": {
         "babyShower": "Baby shower",
@@ -19,12 +25,22 @@
         "heliumBalloons": "Balony z helem",
         "valentine": "Walentynki",
         "companyParty": "Impreza firmowa",
-        "WeddingReception": "Wesele"
+        "weddingReception": "Wesele"
+      },
+      "servicePaths": {
+        "babyShower": "/baby-shower",
+        "baptism": "/baptism",
+        "birthday": "/birthday",
+        "heliumBalloons": "/helium-balloons",
+        "valentine": "/valentine",
+        "companyParty": "/company-party",
+        "weddingReception": "/wedding-reception"
       }
     },
     "toggleNavMenuBtn": {
       "close": "zamknięty",
-      "open": "menu"
+      "open": "menu",
+      "ariaLabel": "menu button"
     }
   }
 }

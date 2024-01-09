@@ -1,12 +1,15 @@
 import NextLink from 'next/link';
 import { Link } from 'react-scroll';
 
+import { linkSettings } from '@/utils/helpers';
+
 import data from '@/data/common.json';
 
 import { Props } from './types';
 
 const {
   categories: { main, aboutUs, gallery, reviews, contacts },
+  categoryPaths,
 } = data.layout.navMenu;
 
 export const CategoriesNav = ({ closeMenu }: Props) => {
@@ -18,36 +21,32 @@ export const CategoriesNav = ({ closeMenu }: Props) => {
       <Link
         onClick={closeMenu}
         className="categoryNavLink"
-        to="about"
-        smooth={true}
-        duration={300}
+        to={categoryPaths.aboutUs}
+        {...linkSettings}
       >
         {aboutUs}
       </Link>
       <Link
         onClick={closeMenu}
         className="categoryNavLink"
-        to="gallery"
-        smooth={true}
-        duration={300}
+        to={categoryPaths.gallery}
+        {...linkSettings}
       >
         {gallery}
       </Link>
       <Link
         onClick={closeMenu}
         className="categoryNavLink"
-        to="reviews"
-        smooth={true}
-        duration={300}
+        to={categoryPaths.reviews}
+        {...linkSettings}
       >
         {reviews}
       </Link>
       <Link
         onClick={closeMenu}
         className="categoryNavLink"
-        to="contacts"
-        smooth={true}
-        duration={300}
+        to={categoryPaths.contacts}
+        {...linkSettings}
       >
         {contacts}
       </Link>

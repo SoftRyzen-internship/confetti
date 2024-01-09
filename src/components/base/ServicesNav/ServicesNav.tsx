@@ -13,8 +13,9 @@ const {
     heliumBalloons,
     valentine,
     companyParty,
-    WeddingReception,
+    weddingReception,
   },
+  servicePaths,
 } = data.layout.navMenu;
 
 export const ServicesNav = ({ closeMenu }: Props) => {
@@ -25,26 +26,54 @@ export const ServicesNav = ({ closeMenu }: Props) => {
       </p>
 
       <div className="mt-4 flex flex-col items-center gap-3 md:mt-6 md:items-start md:gap-4">
-        <NextLink className="serviceNavLink" onClick={closeMenu} href="">
+        <NextLink
+          className="serviceNavLink"
+          onClick={closeMenu}
+          href={servicePaths.babyShower}
+        >
           {babyShower}
         </NextLink>
-        <NextLink className="serviceNavLink" onClick={closeMenu} href="">
+        <NextLink
+          className="serviceNavLink"
+          onClick={closeMenu}
+          href={servicePaths.baptism}
+        >
           {baptism}
         </NextLink>
-        <NextLink className="serviceNavLink" onClick={closeMenu} href="">
+        <NextLink
+          className="serviceNavLink"
+          onClick={closeMenu}
+          href={servicePaths.birthday}
+        >
           {birthday}
         </NextLink>
-        <NextLink className="serviceNavLink" onClick={closeMenu} href="">
+        <NextLink
+          className="serviceNavLink"
+          onClick={closeMenu}
+          href={servicePaths.heliumBalloons}
+        >
           {heliumBalloons}
         </NextLink>
-        <NextLink className="serviceNavLink" onClick={closeMenu} href="">
+        <NextLink
+          className="serviceNavLink"
+          onClick={closeMenu}
+          href={servicePaths.valentine}
+        >
           {valentine}
         </NextLink>
-        <NextLink className="serviceNavLink" onClick={closeMenu} href="">
+        <NextLink
+          className="serviceNavLink"
+          onClick={closeMenu}
+          href={servicePaths.companyParty}
+        >
           {companyParty}
         </NextLink>
-        <NextLink className="serviceNavLink" onClick={closeMenu} href="">
-          {WeddingReception}
+        <NextLink
+          className="serviceNavLink"
+          onClick={closeMenu}
+          href={servicePaths.weddingReception}
+        >
+          {weddingReception}
         </NextLink>
       </div>
     </div>

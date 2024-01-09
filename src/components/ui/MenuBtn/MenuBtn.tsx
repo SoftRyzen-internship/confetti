@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import { NavMenu } from '@/components/base/NavMenu';
+import { NavMenu } from '@/components/base';
 
 import data from '@/data/common.json';
 
@@ -10,7 +10,7 @@ import Cross from '~/icons/cross.svg';
 import Menu from '~/icons/menu.svg';
 
 const {
-  toggleNavMenuBtn: { close, open },
+  toggleNavMenuBtn: { close, open, ariaLabel },
 } = data.layout;
 
 export const MenuBtn = () => {
@@ -19,15 +19,16 @@ export const MenuBtn = () => {
   return (
     <>
       <button
+        aria-label={ariaLabel}
         onClick={() => setIsMenuOpen(prev => !prev)}
         // В ДАЛЬНЕЙШЕМ, СВОЙСТВА Z-INDEX И POSITION, БУДУТ УДАЛЕНЫ И УСТАНОВЛЕНЫ ДЛЯ NAVBAR
-        className="menuBtn hover:text-orange-800"
+        className="relative z-50 flex items-center gap-1 font-gilroy font-semibold uppercase leading-[5.6] tracking-[0.13em] text-color-text-extra transition-all hover:text-color-accent-primary focus:text-color-accent-primary md:text-[20px] xl:text-[22px]"
         type="button"
       >
         {isMenuOpen ? (
-          <Cross className="menuBtnIcon" />
+          <Cross className="hidden fill-[#222222] transition-all md:block md:h-7 md:w-7 xl:h-8 xl:w-8" />
         ) : (
-          <Menu className="menuBtnIcon" />
+          <Menu className="h-6 w-6 fill-[#222222] transition-all md:h-7 md:w-7 xl:h-8 xl:w-8" />
         )}
 
         {isMenuOpen ? close : open}
