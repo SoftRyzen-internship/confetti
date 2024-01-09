@@ -1,4 +1,5 @@
 import { CardsKreatywny } from '@/components/base';
+import { GalleryView } from '@/components/base/GalleryView';
 import { SliderTest } from '@/components/base/SliderTest';
 import { ContactLinks, Logo, SliderControls } from '@/components/ui';
 
@@ -21,6 +22,8 @@ export default async function Home() {
 
       <div className="container my-[50px]">
         <SliderTest />
+
+        <GalleryView />
       </div>
     </>
   );
