@@ -1,6 +1,5 @@
 import { CardsKreatywny } from '@/components/base';
-import { SliderTest } from '@/components/base/SliderTest';
-import { ContactLinks, Logo } from '@/components/ui';
+import { ContactLinks, Logo, SliderControls } from '@/components/ui';
 
 export default async function Home() {
   return (
@@ -17,10 +16,7 @@ export default async function Home() {
         <CardsKreatywny />
         <ContactLinks location={'contacts'} className={'xl:items-start'} />
       </div>
-
-      <div className="container my-[50px]">
-        <SliderTest />
-      </div>
+      <SliderControls section="services" />
     </>
   );
 }
