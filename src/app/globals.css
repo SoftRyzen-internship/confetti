@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.categoryNavLink {
+  @apply text-2xl/normal font-medium -tracking-[0.01em] md:text-4xl/normal;
+}
+
+.serviceNavLink {
+  @apply font-medium -tracking-[0.01em] md:text-2xl/normal;
+}
+
+.menuBtn {
+  @apply relative z-50 flex items-center gap-1 font-gilroy font-semibold uppercase leading-[5.6] tracking-[0.13em] text-color-text-extra transition-all hover:text-color-accent-primary;
+}
+
+.menuBtn:hover .menuBtnIcon {
+  @apply fill-color-accent-primary;
+}
+
+.menuBtnIcon {
+  @apply h-6 w-6 fill-[#222222] transition-all md:h-7 md:w-7;
+}

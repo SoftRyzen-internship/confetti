@@ -1,9 +1,13 @@
 import { CardsKreatywny } from '@/components/base';
 import { ContactLinks, Logo } from '@/components/ui';
+import { MenuBtn } from '@/components/ui';
 
 export default async function Home() {
   return (
     <>
+      <div className="container">
+        <MenuBtn />
+      </div>
       <div className="container">
         <Logo location="footer" />
         <ContactLinks

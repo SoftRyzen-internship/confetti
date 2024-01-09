@@ -2,6 +2,29 @@
   "layout": {
     "logo": {
       "label": "Logo serwisu i link do strony głównej"
+    },
+    "navMenu": {
+      "categories": {
+        "main": "Główna",
+        "aboutUs": "O nas",
+        "gallery": "Galeria",
+        "reviews": "Opinie",
+        "contacts": "Kontakty"
+      },
+      "servicesTitle": "Usługi",
+      "services": {
+        "babyShower": "Baby shower",
+        "baptism": "Chrzciny",
+        "birthday": "Urodziny",
+        "heliumBalloons": "Balony z helem",
+        "valentine": "Walentynki",
+        "companyParty": "Impreza firmowa",
+        "WeddingReception": "Wesele"
+      }
+    },
+    "toggleNavMenuBtn": {
+      "close": "zamknięty",
+      "open": "menu"
     }
   }
 }
