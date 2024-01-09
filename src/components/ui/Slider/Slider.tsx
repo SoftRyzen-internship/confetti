@@ -9,13 +9,13 @@ import 'swiper/css/navigation';
 
 import { SliderProps } from './type';
 
-export const Slider = ({
+export const Slider: React.FC<SliderProps> = ({
   className = '',
   slideClassName = '',
   data,
   component: Component,
   section,
-}: SliderProps) => {
+}) => {
   const spaceBetweenXl = section === 'reviews' ? 26 : 24;
 
   return (

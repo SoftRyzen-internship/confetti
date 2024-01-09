@@ -10,7 +10,7 @@ const Card = ({ card }: any) => {
   );
 };
 
-export const SliderTest = () => {
+export const SliderTest: React.FC = () => {
   return (
     <div>
       <div>
