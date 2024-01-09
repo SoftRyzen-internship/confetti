@@ -36,7 +36,9 @@ const config: Config = {
       // COLORS
       colors: {
         'color-main': '#000000',
+        'color-primary': '#222222',
         'color-secondary': '#FFFFFF',
+
         'color-text': {
           primary: '#474747',
           extra: '#565148',
