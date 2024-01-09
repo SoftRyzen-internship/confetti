@@ -126,6 +126,16 @@ is a list of more common components and their API.
 | `location`  | `undefined` | Choose the position you'd need: `header`or `contacts` |
 | `className` | `undefined` | add any custom styles                                 |
 
+- #### SectionTitle
+
+| Prop               | Default     | Description                                                                |
+| ------------------ | ----------- | -------------------------------------------------------------------------- |
+| `children`         | `undefined` | required, ReactNode embedded components or text                            |
+| `ariaLabelledbyId` | `undefined` | required, string for accessibility, follow the section and section heading |
+| `accentColor`      | `true`      | applies the "accent" text color option                                     |
+| `center`           | `true`      | centers text                                                               |
+| `className`        | `undefined` | add string custom styles                                                   |
+
 ### Technology stack
 
 - **Main technologies**:
