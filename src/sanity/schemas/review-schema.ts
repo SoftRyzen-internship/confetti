@@ -1,9 +1,12 @@
 const review = {
   name: 'review',
-  title: 'Reviews',
+  title: 'Reviews (min 3)',
   type: 'document',
   validation: (Rule: any) => [
     Rule.required().error('This collection is required'),
+    Rule.custom((review: any) =>
+      review.length < 3 ? 'You need at least 3 reviews' : true,
+    ),
   ],
   fields: [
     {

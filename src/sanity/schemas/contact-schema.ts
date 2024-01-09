@@ -9,9 +9,7 @@ const contact = {
       type: 'string',
       validation: (Rule: any) => [
         Rule.required().error('This field is required'),
-        Rule.regex(/\+\d+$/).error(
-          'This field should contain only + and numbers',
-        ),
+        Rule.regex(/\+\d+$/).error('This field should contain only numbers'),
       ],
     },
     {
