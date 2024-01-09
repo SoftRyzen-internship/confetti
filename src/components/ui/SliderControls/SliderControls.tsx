@@ -35,9 +35,3 @@ export const SliderControls: React.FC<SliderControlsProps> = ({ section }) => {
     </div>
   );
 };
-
-// - ### Button
-
-// | Prop        | Default     | Description                                   |
-// | ----------- | ----------- | --------------------------------------------- |
-// | `section`   | `undefined` | required, only 'services' or 'reviews'        |
