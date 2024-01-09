@@ -1,6 +1,6 @@
 'use client';
 
-import { Slider } from '@/components/ui';
+import { Slider, SliderControls } from '@/components/ui';
 
 const Card = ({ card }: any) => {
   return (
@@ -13,6 +13,10 @@ const Card = ({ card }: any) => {
 export const SliderTest = () => {
   return (
     <div>
+      <div>
+        <SliderControls section="reviews" />
+      </div>
+
       <Slider
         component={Card}
         data={[{ id: '1' }, { id: '2' }, { id: '3' }, { id: '4' }]}

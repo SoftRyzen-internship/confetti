@@ -132,6 +132,16 @@ is a list of more common components and their API.
 | --------- | ----------- | -------------------------------------- |
 | `section` | `undefined` | required, only 'services' or 'reviews' |
 
+- ###№ Slider
+
+| Prop             | Default     | Description                                                 |
+| ---------------- | ----------- | ----------------------------------------------------------- |
+| `data`           | `undefined` | required, any array of data for mapping                     |
+| `className`      | `''`        | add any custom styles of .swiper element                    |
+| `slideClassName` | `''`        | add any custom styles of .swiper-slide element              |
+| `component`      | `undefined` | required, the element that will be placed inside the slide' |
+| `section`        | `undefined` | required, 'about' 'services' 'gallery' 'reviews';           |
+
 ### Technology stack
 
 - **Main technologies**:
