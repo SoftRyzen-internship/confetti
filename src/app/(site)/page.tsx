@@ -1,12 +1,17 @@
 import { CardsKreatywny } from '@/components/base';
-import { Logo, SectionTitle } from '@/components/ui';
+import { ContactLinks, Logo, SectionTitle } from '@/components/ui';
 
 export default async function Home() {
   return (
     <>
       <div className="container">
         <Logo location="footer" />
+        <ContactLinks
+          location={'header'}
+          className={'text-xl tracking-[-0.2px] smOnly:hidden'}
+        />
       </div>
+
       <div className="container bg-color-bg-primary">
         <CardsKreatywny />
       </div>

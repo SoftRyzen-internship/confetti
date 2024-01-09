@@ -108,10 +108,23 @@ is a list of more common components and their API.
 
 - #### ExampleComponent
 
-| Prop        | Default     | Description                                     |
-| ----------- | ----------- | ----------------------------------------------- |
-| `text`      | `undefined` | `required, inner text content`                  |
-| `className` | `''`        | `add custom or additional css class you'd need` |
+| Prop        | Default     | Description                                   |
+| ----------- | ----------- | --------------------------------------------- |
+| `text`      | `undefined` | required, inner text content                  |
+| `className` | `''`        | add custom or additional css class you'd need |
+
+- #### Logo
+
+| Prop       | Default     | Description                                                                       |
+| ---------- | ----------- | --------------------------------------------------------------------------------- |
+| `location` | `undefined` | required, choose the position you'd need to define image size: `header`, `footer` |
+
+- #### ContactLinks
+
+| Prop        | Default     | Description                                           |
+| ----------- | ----------- | ----------------------------------------------------- |
+| `location`  | `undefined` | Choose the position you'd need: `header`or `contacts` |
+| `className` | `undefined` | add any custom styles                                 |
 
 ### Technology stack
 
