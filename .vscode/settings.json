@@ -1,0 +1,8 @@
+{
+  "tailwindCSS.emmetCompletions": true,
+  "css.styleSheets": [],
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.scss": "tailwindcss"
+  }
+}

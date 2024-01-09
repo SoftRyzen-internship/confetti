@@ -1,5 +1,6 @@
 import { CardsKreatywny } from '@/components/base';
-import { ContactLinks, Logo } from '@/components/ui';
+import { SliderTest } from '@/components/base/SliderTest';
+import { ContactLinks, Logo, SliderControls } from '@/components/ui';
 import { MenuBtn } from '@/components/ui';
 
 export default async function Home() {
@@ -19,6 +20,11 @@ export default async function Home() {
       <div className="container bg-color-bg-primary">
         <CardsKreatywny />
         <ContactLinks location={'contacts'} className={'xl:items-start'} />
+      </div>
+      <SliderControls section="services" />
+
+      <div className="container my-[50px]">
+        <SliderTest />
       </div>
     </>
   );

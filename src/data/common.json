@@ -42,5 +42,13 @@
       "open": "menu",
       "ariaLabel": "menu button"
     }
+  },
+  "components": {
+    "sliderControls": {
+      "prevBtnArialabel": "Poprzedni slajd",
+      "nextBtnArialabel": "Następny slajd",
+      "prevBtnArialabelIcon": "Strzałka w lewo",
+      "nextBtnArialabelIcon": "Prawa strzałka"
+    }
   }
 }
