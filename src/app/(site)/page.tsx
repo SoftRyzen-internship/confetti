@@ -11,6 +11,7 @@ export default async function Home() {
           className={'text-xl tracking-[-0.2px] smOnly:hidden'}
         />
       </div>
+
       <div className="container bg-color-bg-primary">
         <CardsKreatywny />
         <ContactLinks location={'contacts'} className={'xl:items-start'} />
