@@ -1,8 +1,10 @@
-import { formatPhoneNumber } from '@/utils/helpers/formatPhoneNumber';
+import { formatPhoneNumber } from '@/utils/helpers';
 
 import data from '@/data/contactLinks.json';
+
 import Tel from '~/icons/call.svg';
 import Mail from '~/icons/sms.svg';
+
 import { ContactLinksData, Props } from './types';
 
 export const ContactLinks: React.FC<Props> = ({ className = '', location }) => {
@@ -19,6 +21,7 @@ export const ContactLinks: React.FC<Props> = ({ className = '', location }) => {
           <Tel className="h-6 w-6" /> {formatPhoneNumber(contactLinks.tel)}
         </a>
       </li>
+
       {location === 'contacts' && (
         <li>
           <a
