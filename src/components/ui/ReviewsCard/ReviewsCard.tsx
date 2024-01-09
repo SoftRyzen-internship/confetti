@@ -15,7 +15,7 @@ export const ReviewsCard: React.FC<PropsReviews> = ({
       </h4>
       <div className="flex gap-2">
         <User className="h-6 w-6" />
-        <p className="traccking-[-0.16px] font-manrope text-base font-medium text-color-text-extra">
+        <p className="font-manrope text-base font-medium tracking-[-0.16px] text-color-text-extra">
           {review.name}
         </p>
       </div>
