@@ -1,5 +1,6 @@
 import { CardsKreatywny } from '@/components/base';
-import { ContactLinks, Logo, SectionTitle } from '@/components/ui';
+import { ContactLinks, Logo, SliderControls, SectionTitle } from '@/components/ui';
+
 
 export default async function Home() {
   return (
@@ -21,6 +22,7 @@ export default async function Home() {
           Hello!
         </SectionTitle>
       </div>
+      <SliderControls section="services" />
     </>
   );
 }
