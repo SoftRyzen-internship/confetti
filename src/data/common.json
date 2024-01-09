@@ -7,7 +7,9 @@
   "components": {
     "sliderControls": {
       "prevBtnArialabel": "Poprzedni slajd",
-      "nextBtnArialabel": "Następny slajd"
+      "nextBtnArialabel": "Następny slajd",
+      "prevBtnArialabelIcon": "Strzałka w lewo",
+      "nextBtnArialabelIcon": "Prawa strzałka"
     }
   }
 }

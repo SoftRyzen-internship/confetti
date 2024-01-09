@@ -12,7 +12,7 @@ export default async function Home() {
       <div className="container bg-color-bg-primary">
         <CardsKreatywny />
       </div>
-      <SliderControls />
+      <SliderControls section="services" />
     </>
   );
 }
