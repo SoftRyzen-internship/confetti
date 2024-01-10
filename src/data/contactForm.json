@@ -6,6 +6,7 @@
     "isRequaredField": true,
     "errorMessage": "Nieprawidłowe Іmię",
     "validationOptions": {
+      "minLength": 2,
       "maxLength": 70
     }
   },

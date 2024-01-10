@@ -28,8 +28,10 @@ export const ContactFormInput: React.FC<ContactFormInputProps> = ({
 
       <input
         aria-required={isRequaredField ? true : false}
+        // aria-invalid={errors[name] ? 'true' : 'false'}
+        // aria-describedby={errors[name] ? 'errorMessage' : undefined}
         className="rounded-[8px] border border-solid border-color-ctrl-btn-border px-6 py-5 font-manrope
-           text-[18px] font-medium leading-[1.389] tracking-[-0.18px] text-color-primary outline-none placeholder:text-color-form-placeholder md:text-[20px] md:leading-[1.35] md:tracking-[-0.2px]"
+           text-[18px] font-medium leading-[1.389] tracking-[-0.18px] text-color-primary placeholder:text-color-form-placeholder md:text-[20px] md:leading-[1.35] md:tracking-[-0.2px]"
         placeholder={placeholder}
         // {...register(name, {
         //   ...validationOptions,
@@ -40,7 +42,11 @@ export const ContactFormInput: React.FC<ContactFormInputProps> = ({
 
       {/* {isError ? ( */}
       {!name ? (
-        <span className="absolute right-6 top-full mt-2 text-right font-manrope text-sm font-medium leading-[1.2] tracking-[-0.14px] text-color-form-error">
+        <span
+          role="alert"
+          id="errorMessage"
+          className="absolute right-6 top-full mt-2 text-right font-manrope text-sm font-medium leading-[1.2] tracking-[-0.14px] text-color-form-error"
+        >
           {errorMessage}
         </span>
       ) : null}

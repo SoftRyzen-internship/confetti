@@ -15,6 +15,7 @@ type ContactFormInputConfig = {
   validationOptions: {
     pattern?: string;
     maxLength?: number;
+    minLength?: number;
   };
 };
 
