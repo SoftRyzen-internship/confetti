@@ -1,7 +1,6 @@
 import { CardsKreatywny } from '@/components/base';
 import { SliderTest } from '@/components/base/SliderTest';
-import { ReviewsCards } from '@/components/base/ReviewsCards/ReviewsCards';
-import { Gallery } from '@/sections';
+import { Gallery, Review } from '@/sections';
 import {
   ContactLinks,
   Logo,
@@ -63,11 +62,7 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className=" bg-color-bg-primary">
-        <div className="container">
-          <ReviewsCards />
-        </div>
-      </div>
+      <Review />
     </>
   );
 }

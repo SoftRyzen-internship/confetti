@@ -1,6 +1,6 @@
 export type PropsReviews = {
   className?: string;
-  review: ReviewType;
+  card: ReviewType;
 };
 export type ReviewType = {
   _id: string;
