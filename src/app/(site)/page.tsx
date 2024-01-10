@@ -1,6 +1,7 @@
 // import { CardsKreatywny } from '@/components/base';
 // import { SliderTest } from '@/components/base/SliderTest';
 // import { ContactLinks, ContactFormInput } from '@/components/ui';
+import { ServiceCard } from '@/components/ui/ServiceCard/ServiceCard';
 
 import { Gallery } from '@/sections';
 
@@ -11,6 +12,17 @@ export default async function Home() {
   return (
     <>
       <Gallery title={gallery.titleHomePage} />
+
+      <div className="container">
+        <ServiceCard
+          {...{
+            path: '/images/services-cards/',
+            caption: 'Baby shower',
+            alt: '',
+            slug: '',
+          }}
+        />
+      </div>
 
       {/* <div className="container mt-10">
         <ContactLinks
