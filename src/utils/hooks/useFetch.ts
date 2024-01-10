@@ -29,7 +29,6 @@ export const useFetch = (type: string) => {
             revalidate: 3600, // look for updates to revalidate cache every hour
           },
         });
-
         setData(fetchedData);
       } catch (error) {
         console.error('Error fetching data:', error);
