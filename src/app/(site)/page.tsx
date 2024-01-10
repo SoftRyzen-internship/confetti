@@ -1,12 +1,20 @@
 import { CardsKreatywny } from '@/components/base';
 import { SliderTest } from '@/components/base/SliderTest';
-import { ContactLinks, Logo, SliderControls } from '@/components/ui';
+import { ContactLinks } from '@/components/ui';
+
+import { Gallery } from '@/sections';
+
+import gallery from '@/data/gallery.json';
 
 export default async function Home() {
   return (
     <>
-      <div className="container">
-        <Logo location="footer" />
+      <Gallery
+        title={gallery.titleHomePage}
+        labelledbyId="gallery-section-labelledby"
+      />
+
+      <div className="container mt-10">
         <ContactLinks
           location={'header'}
           className={'text-xl tracking-[-0.2px] smOnly:hidden'}
@@ -17,7 +25,6 @@ export default async function Home() {
         <CardsKreatywny />
         <ContactLinks location={'contacts'} className={'xl:items-start'} />
       </div>
-      <SliderControls section="services" />
 
       <div className="container my-[50px]">
         <SliderTest />

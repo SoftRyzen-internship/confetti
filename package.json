@@ -23,7 +23,8 @@
     "react-dom": "^18",
     "sanity": "^3.23.4",
     "styled-components": "^6.1.6",
-    "swiper": "^11.0.5"
+    "swiper": "^10.1.0",
+    "yet-another-react-lightbox": "^3.15.6"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",

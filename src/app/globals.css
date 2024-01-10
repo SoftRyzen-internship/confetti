@@ -20,3 +20,15 @@
   background: #222 !important;
   opacity: 1 !important;
 }
+
+/* Gallery Slider */
+.gallery-slider .swiper-slide {
+  @apply flex justify-center;
+}
+
+/* Lightbox styles */
+.yarl__root {
+  --yarl__color_backdrop: #fff;
+  --yarl__color_button: #ea80b3;
+  --yarl__color_button_active: #eab27f;
+}
