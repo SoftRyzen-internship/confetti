@@ -51,6 +51,8 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body className={`${manrope.variable} ${gilroy.className}`}>
+        <div>Layout</div>
+
         <main>{children}</main>
       </body>
     </html>
