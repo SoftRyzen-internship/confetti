@@ -1,0 +1,293 @@
+{
+  "titleHomePage": "Galeria",
+  "titleServicePage": "Zdjęcie",
+  "serviceImages": [
+    {
+      "slug": "baby-shower",
+      "images": [
+        {
+          "path": "/images/services/baby-shower/baby-shower-01.webp",
+          "alt": "Świąteczna dekoracja na Baby Shower"
+        },
+        {
+          "path": "/images/services/baby-shower/baby-shower-02.webp",
+          "alt": "Świąteczna dekoracja na Baby Shower"
+        },
+        {
+          "path": "/images/services/baby-shower/baby-shower-03.webp",
+          "alt": "Świąteczna dekoracja na Baby Shower"
+        },
+        {
+          "path": "/images/services/baby-shower/baby-shower-04.webp",
+          "alt": "Świąteczna dekoracja na Baby Shower"
+        },
+        {
+          "path": "/images/services/baby-shower/baby-shower-05.webp",
+          "alt": "Świąteczna dekoracja na Baby Shower"
+        },
+        {
+          "path": "/images/services/baby-shower/baby-shower-06.webp",
+          "alt": "Świąteczna dekoracja na Baby Shower"
+        },
+        {
+          "path": "/images/services/baby-shower/baby-shower-07.webp",
+          "alt": "Świąteczna dekoracja na Baby Shower"
+        },
+        {
+          "path": "/images/services/baby-shower/baby-shower-08.webp",
+          "alt": "Świąteczna dekoracja na Baby Shower"
+        },
+        {
+          "path": "/images/services/baby-shower/baby-shower-09.webp",
+          "alt": "Świąteczna dekoracja na Baby Shower"
+        }
+      ]
+    },
+    {
+      "slug": "baptism",
+      "images": [
+        {
+          "path": "/images/services/baptism/baptism-01.webp",
+          "alt": "Świąteczna dekoracja na Chrzciny"
+        },
+        {
+          "path": "/images/services/baptism/baptism-02.webp",
+          "alt": "Świąteczna dekoracja na Chrzciny"
+        },
+        {
+          "path": "/images/services/baptism/baptism-03.webp",
+          "alt": "Świąteczna dekoracja na Chrzciny"
+        },
+        {
+          "path": "/images/services/baptism/baptism-04.webp",
+          "alt": "Świąteczna dekoracja na Chrzciny"
+        },
+        {
+          "path": "/images/services/baptism/baptism-05.webp",
+          "alt": "Świąteczna dekoracja na Chrzciny"
+        },
+        {
+          "path": "/images/services/baptism/baptism-06.webp",
+          "alt": "Świąteczna dekoracja na Chrzciny"
+        },
+        {
+          "path": "/images/services/baptism/baptism-07.webp",
+          "alt": "Świąteczna dekoracja na Chrzciny"
+        },
+        {
+          "path": "/images/services/baptism/baptism-08.webp",
+          "alt": "Świąteczna dekoracja na Chrzciny"
+        },
+        {
+          "path": "/images/services/baptism/baptism-09.webp",
+          "alt": "Świąteczna dekoracja na Chrzciny"
+        }
+      ]
+    },
+    {
+      "slug": "birthday",
+      "images": [
+        {
+          "path": "/images/services/birthday/birthday-01.webp",
+          "alt": "Świąteczna dekoracja na Urodziny"
+        },
+        {
+          "path": "/images/services/birthday/birthday-02.webp",
+          "alt": "Świąteczna dekoracja na Urodziny"
+        },
+        {
+          "path": "/images/services/birthday/birthday-03.webp",
+          "alt": "Świąteczna dekoracja na Urodziny"
+        },
+        {
+          "path": "/images/services/birthday/birthday-04.webp",
+          "alt": "Świąteczna dekoracja na Urodziny"
+        },
+        {
+          "path": "/images/services/birthday/birthday-05.webp",
+          "alt": "Świąteczna dekoracja na Urodziny"
+        },
+        {
+          "path": "/images/services/birthday/birthday-06.webp",
+          "alt": "Świąteczna dekoracja na Urodziny"
+        },
+        {
+          "path": "/images/services/birthday/birthday-07.webp",
+          "alt": "Świąteczna dekoracja na Urodziny"
+        },
+        {
+          "path": "/images/services/birthday/birthday-08.webp",
+          "alt": "Świąteczna dekoracja na Urodziny"
+        },
+        {
+          "path": "/images/services/birthday/birthday-09.webp",
+          "alt": "Świąteczna dekoracja na Urodziny"
+        }
+      ]
+    },
+    {
+      "slug": "balloons",
+      "images": [
+        {
+          "path": "/images/services/balloons/balloons-01.webp",
+          "alt": "Świąteczna dekoracja. Balony z helem."
+        },
+        {
+          "path": "/images/services/balloons/balloons-02.webp",
+          "alt": "Świąteczna dekoracja. Balony z helem."
+        },
+        {
+          "path": "/images/services/balloons/balloons-03.webp",
+          "alt": "Świąteczna dekoracja. Balony z helem."
+        },
+        {
+          "path": "/images/services/balloons/balloons-04.webp",
+          "alt": "Świąteczna dekoracja. Balony z helem."
+        },
+        {
+          "path": "/images/services/balloons/balloons-05.webp",
+          "alt": "Świąteczna dekoracja. Balony z helem."
+        },
+        {
+          "path": "/images/services/balloons/balloons-06.webp",
+          "alt": "Świąteczna dekoracja. Balony z helem."
+        },
+        {
+          "path": "/images/services/balloons/balloons-07.webp",
+          "alt": "Świąteczna dekoracja. Balony z helem."
+        },
+        {
+          "path": "/images/services/balloons/balloons-08.webp",
+          "alt": "Świąteczna dekoracja. Balony z helem."
+        },
+        {
+          "path": "/images/services/balloons/balloons-09.webp",
+          "alt": "Świąteczna dekoracja. Balony z helem."
+        }
+      ]
+    },
+    {
+      "slug": "corporate",
+      "images": [
+        {
+          "path": "/images/services/corporate/corporate-01.webp",
+          "alt": "Świąteczna dekoracja na imprezę firmową"
+        },
+        {
+          "path": "/images/services/corporate/corporate-02.webp",
+          "alt": "Świąteczna dekoracja na imprezę firmową"
+        },
+        {
+          "path": "/images/services/corporate/corporate-03.webp",
+          "alt": "Świąteczna dekoracja na imprezę firmową"
+        },
+        {
+          "path": "/images/services/corporate/corporate-04.webp",
+          "alt": "Świąteczna dekoracja na imprezę firmową"
+        },
+        {
+          "path": "/images/services/corporate/corporate-05.webp",
+          "alt": "Świąteczna dekoracja na imprezę firmową"
+        },
+        {
+          "path": "/images/services/corporate/corporate-06.webp",
+          "alt": "Świąteczna dekoracja na imprezę firmową"
+        },
+        {
+          "path": "/images/services/corporate/corporate-07.webp",
+          "alt": "Świąteczna dekoracja na imprezę firmową"
+        },
+        {
+          "path": "/images/services/corporate/corporate-08.webp",
+          "alt": "Świąteczna dekoracja na imprezę firmową"
+        },
+        {
+          "path": "/images/services/corporate/corporate-09.webp",
+          "alt": "Świąteczna dekoracja na imprezę firmową"
+        }
+      ]
+    },
+    {
+      "slug": "valentines",
+      "images": [
+        {
+          "path": "/images/services/valentines/valentines-01.webp",
+          "alt": "Świąteczna dekoracja na Walentynki"
+        },
+        {
+          "path": "/images/services/valentines/valentines-02.webp",
+          "alt": "Świąteczna dekoracja na Walentynki"
+        },
+        {
+          "path": "/images/services/valentines/valentines-03.webp",
+          "alt": "Świąteczna dekoracja na Walentynki"
+        },
+        {
+          "path": "/images/services/valentines/valentines-04.webp",
+          "alt": "Świąteczna dekoracja na Walentynki"
+        },
+        {
+          "path": "/images/services/valentines/valentines-05.webp",
+          "alt": "Świąteczna dekoracja na Walentynki"
+        },
+        {
+          "path": "/images/services/valentines/valentines-06.webp",
+          "alt": "Świąteczna dekoracja na Walentynki"
+        },
+        {
+          "path": "/images/services/valentines/valentines-07.webp",
+          "alt": "Świąteczna dekoracja na Walentynki"
+        },
+        {
+          "path": "/images/services/valentines/valentines-08.webp",
+          "alt": "Świąteczna dekoracja na Walentynki"
+        },
+        {
+          "path": "/images/services/valentines/valentines-09.webp",
+          "alt": "Świąteczna dekoracja na Walentynki"
+        }
+      ]
+    },
+    {
+      "slug": "wedding",
+      "images": [
+        {
+          "path": "/images/services/wedding/wedding-01.webp",
+          "alt": "Świąteczna dekoracja na wesele"
+        },
+        {
+          "path": "/images/services/wedding/wedding-02.webp",
+          "alt": "Świąteczna dekoracja na wesele"
+        },
+        {
+          "path": "/images/services/wedding/wedding-03.webp",
+          "alt": "Świąteczna dekoracja na wesele"
+        },
+        {
+          "path": "/images/services/wedding/wedding-04.webp",
+          "alt": "Świąteczna dekoracja na wesele"
+        },
+        {
+          "path": "/images/services/wedding/wedding-05.webp",
+          "alt": "Świąteczna dekoracja na wesele"
+        },
+        {
+          "path": "/images/services/wedding/wedding-06.webp",
+          "alt": "Świąteczna dekoracja na wesele"
+        },
+        {
+          "path": "/images/services/wedding/wedding-07.webp",
+          "alt": "Świąteczna dekoracja na wesele"
+        },
+        {
+          "path": "/images/services/wedding/wedding-08.webp",
+          "alt": "Świąteczna dekoracja na wesele"
+        },
+        {
+          "path": "/images/services/wedding/wedding-09.webp",
+          "alt": "Świąteczna dekoracja na wesele"
+        }
+      ]
+    }
+  ]
+}

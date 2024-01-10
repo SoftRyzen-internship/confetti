@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Slider */
+.swiper-pagination {
+  position: static !important;
+  margin-top: 24px;
+  line-height: 0;
+
+  @apply md:mt-0 md:hidden;
+}
+
+.swiper-pagination-bullet {
+  background: #222 !important;
+  opacity: 0.25 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #222 !important;
+  opacity: 1 !important;
+}
+
+/* Gallery Slider */
+.gallery-slider .swiper-slide {
+  @apply flex justify-center;
+}
+
+/* Lightbox styles */
+.yarl__root {
+  --yarl__color_backdrop: #fff;
+  --yarl__color_button: #ea80b3;
+  --yarl__color_button_active: #eab27f;
+}

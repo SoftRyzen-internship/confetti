@@ -1,4 +1,7 @@
 import { CardsKreatywny } from '@/components/base';
+import { SliderTest } from '@/components/base/SliderTest';
+
+import { Gallery } from '@/sections';
 import {
   ContactLinks,
   Logo,
@@ -7,12 +10,18 @@ import {
   ContactFormInput,
 } from '@/components/ui';
 
+import gallery from '@/data/gallery.json';
 import formConfigData from '@/data/contactForm.json';
 
 export default async function Home() {
   return (
     <>
-      <div className="container">
+      <Gallery
+        title={gallery.titleHomePage}
+        labelledbyId="gallery-section-labelledby"
+      />
+
+      <div className="container mt-10">
         <Logo location="footer" />
         <ContactLinks
           location={'header'}
@@ -22,15 +31,20 @@ export default async function Home() {
 
       <div className="container bg-color-bg-primary">
         <CardsKreatywny />
+        <ContactLinks location={'contacts'} className={'xl:items-start'} />
       </div>
+
+      <div className="container my-[50px]">
+        <SliderTest />
+      </div>
+
+      <SliderControls section="services" />
 
       <div className="container">
         <SectionTitle ariaLabelledbyId="section" accentColor center>
           Hello!
         </SectionTitle>
       </div>
-
-      <SliderControls section="services" />
 
       <div className=" bg-color-bg-primary">
         <div className="container">
