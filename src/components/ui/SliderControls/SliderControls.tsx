@@ -1,7 +1,7 @@
 'use client';
 
-import PrevIcon from '~/icons/SliderControls/arrow-left.svg';
-import NextIcon from '~/icons/SliderControls/arrow-right.svg';
+import PrevIcon from '~/icons/arrow-left.svg';
+import NextIcon from '~/icons/arrow-right.svg';
 
 import common from '@/data/common.json';
 

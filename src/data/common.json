@@ -3,41 +3,66 @@
     "logo": {
       "label": "Logo serwisu i link do strony głównej"
     },
-    "navMenu": {
-      "categories": {
-        "main": "Główna",
-        "aboutUs": "O nas",
-        "gallery": "Galeria",
-        "reviews": "Opinie",
-        "contacts": "Kontakty"
+    "navigation": {
+      "home": {
+        "mainPageLink": {
+          "path": "/",
+          "label": "Główna"
+        },
+        "navLinks": [
+          {
+            "slug": "about",
+            "label": "O nas"
+          },
+          {
+            "slug": "gallery",
+            "label": "Galeria"
+          },
+          {
+            "slug": "reviews",
+            "label": "Opinie"
+          },
+          {
+            "slug": "contacts",
+            "label": "Kontakty"
+          }
+        ]
       },
-      "categoryPaths": {
-        "aboutUs": "about",
-        "gallery": "gallery",
-        "reviews": "reviews",
-        "contacts": "contacts"
-      },
-      "servicesTitle": "Usługi",
       "services": {
-        "babyShower": "Baby shower",
-        "baptism": "Chrzciny",
-        "birthday": "Urodziny",
-        "heliumBalloons": "Balony z helem",
-        "valentine": "Walentynki",
-        "companyParty": "Impreza firmowa",
-        "weddingReception": "Wesele"
-      },
-      "servicePaths": {
-        "babyShower": "/baby-shower",
-        "baptism": "/baptism",
-        "birthday": "/birthday",
-        "heliumBalloons": "/helium-balloons",
-        "valentine": "/valentine",
-        "companyParty": "/company-party",
-        "weddingReception": "/wedding-reception"
+        "servicesTitle": "Usługi",
+        "navLinks": [
+          {
+            "slug": "baby-shower",
+            "label": "Baby shower"
+          },
+          {
+            "slug": "baptism",
+            "label": "Chrzciny"
+          },
+          {
+            "slug": "birthday",
+            "label": "Urodziny"
+          },
+          {
+            "slug": "balloons",
+            "label": "Balony z helem"
+          },
+          {
+            "slug": "valentines",
+            "label": "Walentynki"
+          },
+          {
+            "slug": "corporate",
+            "label": "Impreza firmowa"
+          },
+          {
+            "slug": "wedding",
+            "label": "Wesele"
+          }
+        ]
       }
     },
-    "toggleNavMenuBtn": {
+    "menuBtn": {
       "close": "zamknięty",
       "open": "menu",
       "ariaLabel": "menu button"
@@ -48,7 +73,8 @@
       "prevBtnArialabel": "Poprzedni slajd",
       "nextBtnArialabel": "Następny slajd",
       "prevBtnArialabelIcon": "Strzałka w lewo",
-      "nextBtnArialabelIcon": "Prawa strzałka"
+      "nextBtnArialabelIcon": "Prawa strzałka",
+      "closeBtnArialabel": "Zamknij"
     }
   }
 }

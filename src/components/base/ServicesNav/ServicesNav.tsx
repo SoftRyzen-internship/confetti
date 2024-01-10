@@ -5,18 +5,8 @@ import data from '@/data/common.json';
 import { Props } from './types';
 
 const {
-  servicesTitle,
-  services: {
-    babyShower,
-    baptism,
-    birthday,
-    heliumBalloons,
-    valentine,
-    companyParty,
-    weddingReception,
-  },
-  servicePaths,
-} = data.layout.navMenu;
+  services: { servicesTitle, navLinks },
+} = data.layout.navigation;
 
 export const ServicesNav = ({ closeMenu }: Props) => {
   return (
@@ -25,57 +15,19 @@ export const ServicesNav = ({ closeMenu }: Props) => {
         {servicesTitle}
       </p>
 
-      <div className="mt-4 flex flex-col items-center gap-3 md:mt-6 md:items-start md:gap-4">
-        <NextLink
-          className="serviceNavLink"
-          onClick={closeMenu}
-          href={servicePaths.babyShower}
-        >
-          {babyShower}
-        </NextLink>
-        <NextLink
-          className="serviceNavLink"
-          onClick={closeMenu}
-          href={servicePaths.baptism}
-        >
-          {baptism}
-        </NextLink>
-        <NextLink
-          className="serviceNavLink"
-          onClick={closeMenu}
-          href={servicePaths.birthday}
-        >
-          {birthday}
-        </NextLink>
-        <NextLink
-          className="serviceNavLink"
-          onClick={closeMenu}
-          href={servicePaths.heliumBalloons}
-        >
-          {heliumBalloons}
-        </NextLink>
-        <NextLink
-          className="serviceNavLink"
-          onClick={closeMenu}
-          href={servicePaths.valentine}
-        >
-          {valentine}
-        </NextLink>
-        <NextLink
-          className="serviceNavLink"
-          onClick={closeMenu}
-          href={servicePaths.companyParty}
-        >
-          {companyParty}
-        </NextLink>
-        <NextLink
-          className="serviceNavLink"
-          onClick={closeMenu}
-          href={servicePaths.weddingReception}
-        >
-          {weddingReception}
-        </NextLink>
-      </div>
+      <ul className="mt-4 flex flex-col items-center gap-3 md:mt-6 md:items-start md:gap-4">
+        {navLinks.map(({ slug, label }) => (
+          <li key={slug}>
+            <NextLink
+              className="serviceNavLink"
+              onClick={closeMenu}
+              href={`/${slug}`}
+            >
+              {label}
+            </NextLink>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
