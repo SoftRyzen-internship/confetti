@@ -27,7 +27,7 @@ export const NavMenu = ({ setIsMenuOpen }: Props) => {
   }, [closeMenu]);
 
   return (
-    <div className="fixed bottom-0 left-0 z-30 h-full w-full overflow-y-auto bg-[#ffffff] pb-[56px] pt-[108px] md:pb-[158px] md:pt-[184px] xl:pb-[221px] xl:pt-[221px]">
+    <div className="fixed left-0 top-0 z-30 h-full w-full overflow-y-auto bg-color-secondary pb-[56px] pt-[108px] md:pb-[158px] md:pt-[184px] xl:pb-[221px] xl:pt-[221px]">
       <div className="overflow container flex flex-col items-center md:flex-row md:items-start md:justify-center md:gap-[192px] xl:gap-[352px]">
         <HomeNav closeMenu={closeMenu} />
         <ServicesNav closeMenu={closeMenu} />

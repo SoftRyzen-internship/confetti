@@ -1,54 +1,40 @@
-import { CardsKreatywny } from '@/components/base';
-import { SliderTest } from '@/components/base/SliderTest';
+// import { CardsKreatywny } from '@/components/base';
+// import { SliderTest } from '@/components/base/SliderTest';
+// import { ContactLinks, ContactFormInput } from '@/components/ui';
 
-import { Gallery } from '@/sections';
+import { Gallery, Review } from '@/sections';
 import {
   ContactLinks,
-  Logo,
-  SliderControls,
-  SectionTitle,
+  // Logo,
+  // SliderControls,
+  // SectionTitle,
   ContactFormInput,
+  ContactFormTextarea,
 } from '@/components/ui';
 
 import gallery from '@/data/gallery.json';
 import formConfigData from '@/data/contactForm.json';
-import { MenuBtn } from '@/components/ui';
 
 export default async function Home() {
   return (
     <>
-      <div className="container">
-        <MenuBtn />
-      </div>
-      <Gallery
-        title={gallery.titleHomePage}
-        labelledbyId="gallery-section-labelledby"
-      />
-
+      <Gallery title={gallery.titleHomePage} />
+      <Review />
       <div className="container mt-10">
-        <Logo location="footer" />
         <ContactLinks
           location={'header'}
           className={'text-xl tracking-[-0.2px] smOnly:hidden'}
         />
       </div>
 
-      <div className="container bg-color-bg-primary">
+      {/* <div className="container bg-color-bg-primary">
         <CardsKreatywny />
         <ContactLinks location={'contacts'} className={'xl:items-start'} />
       </div>
 
       <div className="container my-[50px]">
         <SliderTest />
-      </div>
-
-      <SliderControls section="services" />
-
-      <div className="container">
-        <SectionTitle ariaLabelledbyId="section" accentColor center>
-          Hello!
-        </SectionTitle>
-      </div>
+      </div> */}
 
       <div className=" bg-color-bg-primary">
         <div className="container">
@@ -64,6 +50,7 @@ export default async function Home() {
               // register
               // errors,
             />
+            <ContactFormTextarea config={formConfigData.message} />
           </div>
         </div>
       </div>

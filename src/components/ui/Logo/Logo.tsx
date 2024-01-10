@@ -16,7 +16,11 @@ export const Logo: React.FC<LogoProps> = ({ location }) => {
       : 'w-[171px] h-[24px] md:w-[204px] md:h-[28px] xl:w-[206px] xl:h-[28px]';
 
   return (
-    <Link href="/" className="inline-block" aria-label={logo.label}>
+    <Link
+      href="/"
+      className="relative z-40 inline-block"
+      aria-label={logo.label}
+    >
       <Image
         src="/images/logo.webp"
         width={236}

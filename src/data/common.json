@@ -76,5 +76,10 @@
       "nextBtnArialabelIcon": "Prawa strzałka",
       "closeBtnArialabel": "Zamknij"
     }
+  },
+  "sections": {
+    "review": {
+      "title": "Opinie"
+    }
   }
 }

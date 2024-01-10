@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Common */
+.section {
+  @apply pt-12 md:pt-16 xl:pt-[124px];
+}
+
 /* Slider */
 .swiper-pagination {
   position: static !important;
@@ -23,6 +28,11 @@
 
 /* Gallery Slider */
 .gallery-slider .swiper-slide {
+  @apply flex justify-center;
+}
+
+/* Review Slider */
+.review-slider .swiper-slide {
   @apply flex justify-center;
 }
 
