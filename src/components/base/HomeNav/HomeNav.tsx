@@ -11,9 +11,9 @@ const {
   home: { mainPageLink, navLinks },
 } = data.layout.navigation;
 
-export const HomeNav = ({ closeMenu }: Props) => {
+export const HomeNav: React.FC<Props> = ({ closeMenu }) => {
   return (
-    <div className="flex flex-col items-center gap-6 md:items-start md:gap-8">
+    <div className="mb-6 flex flex-col items-center gap-6 md:mb-0 md:items-start md:gap-8">
       <NextLink
         onClick={closeMenu}
         className="homeNavLink"

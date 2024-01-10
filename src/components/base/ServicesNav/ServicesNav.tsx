@@ -8,9 +8,9 @@ const {
   services: { servicesTitle, navLinks },
 } = data.layout.navigation;
 
-export const ServicesNav = ({ closeMenu }: Props) => {
+export const ServicesNav: React.FC<Props> = ({ closeMenu }) => {
   return (
-    <div className="mt-6 md:mt-0">
+    <div>
       <p className="text-center text-2xl/normal font-medium -tracking-[0.01em] md:text-start md:text-4xl/normal">
         {servicesTitle}
       </p>
@@ -19,7 +19,7 @@ export const ServicesNav = ({ closeMenu }: Props) => {
         {navLinks.map(({ slug, label }) => (
           <li key={slug}>
             <NextLink
-              className="serviceNavLink"
+              className="font-medium -tracking-[0.01em] transition-all hover:text-color-accent-primary focus:text-color-accent-primary md:text-2xl/normal"
               onClick={closeMenu}
               href={`/${slug}`}
             >

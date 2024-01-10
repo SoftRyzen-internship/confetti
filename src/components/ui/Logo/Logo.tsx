@@ -18,7 +18,9 @@ export const Logo: React.FC<LogoProps> = ({ location }) => {
   return (
     <Link
       href="/"
-      className="relative z-40 inline-block"
+      className={`${
+        location === 'header' ? 'relative z-40' : ''
+      }  inline-block`}
       aria-label={logo.label}
     >
       <Image
