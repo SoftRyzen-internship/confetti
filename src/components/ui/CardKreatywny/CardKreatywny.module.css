@@ -1,0 +1,46 @@
+.confeti1,
+.confeti2 {
+  position: relative;
+}
+
+@media screen and (min-width: 1280px) {
+  .confeti1::before,
+  .confeti1::after,
+  .confeti2::before,
+  .confeti2::after {
+    content: '';
+    position: absolute;
+  }
+
+  .confeti1::before {
+    width: 69px;
+    height: 69px;
+    right: 14px;
+    top: -27px;
+    background: url('/images/about/about-01.webp');
+  }
+
+  .confeti1::after {
+    width: 35px;
+    height: 35px;
+    right: -17px;
+    top: 50px;
+    background: url('/images/about/about-02.webp');
+  }
+
+  .confeti2::before {
+    width: 52px;
+    height: 52px;
+    left: -26px;
+    bottom: 64px;
+    background: url('/images/about/about-03.webp');
+  }
+
+  .confeti2::after {
+    width: 54px;
+    height: 70px;
+    left: -54px;
+    top: 103px;
+    background: url('/images/about/about-04.webp');
+  }
+}
