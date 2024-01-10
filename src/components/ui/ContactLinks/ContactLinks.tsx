@@ -1,35 +1,40 @@
+'use client';
 import { formatPhoneNumber } from '@/utils/helpers';
-
-import data from '@/data/contactLinks.json';
+import { useFetch } from '@/utils/hooks';
 
 import Tel from '~/icons/call.svg';
 import Mail from '~/icons/sms.svg';
 
-import { ContactLinksData, Props } from './types';
+import { Props } from './types';
+import { ContactType } from '@/types';
 
 export const ContactLinks: React.FC<Props> = ({ className = '', location }) => {
-  const { contactLinks } = data as ContactLinksData;
+  const { data } = useFetch('contact') as { data: ContactType[] };
+  if (!data || data.length === 0) {
+    return [];
+  }
+  const { phone, email } = data[0];
   return (
     <ul
       className={`flex flex-col items-center gap-4 font-manrope text-2xl font-medium tracking-[-0.24px] text-color-text-extra ${className}`}
     >
       <li>
         <a
-          href={`tel:${contactLinks.tel}`}
+          href={`tel:${phone}`}
           className="group inline-flex items-center justify-center gap-2 transition-all hover:text-color-accent-primary focus:text-color-accent-primary"
         >
-          <Tel className="h-6 w-6" /> {formatPhoneNumber(contactLinks.tel)}
+          <Tel className="h-6 w-6" /> {formatPhoneNumber(phone)}
         </a>
       </li>
 
       {location === 'contacts' && (
         <li>
           <a
-            href={`mailto:${contactLinks.mail}`}
+            href={`mailto:${email}`}
             className="group inline-flex items-center justify-center gap-2 transition-all hover:text-color-accent-primary focus:text-color-accent-primary"
           >
             <Mail className="h-6 w-6" />
-            {contactLinks.mail}
+            {email}
           </a>
         </li>
       )}
