@@ -1,3 +1,5 @@
+'use client';
+
 import NextLink from 'next/link';
 import { Link } from 'react-scroll';
 
@@ -11,7 +13,7 @@ const {
   home: { mainPageLink, navLinks },
 } = data.layout.navigation;
 
-export const HomeNav = ({ closeMenu }: Props) => {
+export const HomeNav: React.FC<Props> = ({ closeMenu }) => {
   return (
     <div className="flex flex-col items-center gap-6 md:items-start md:gap-8">
       <NextLink

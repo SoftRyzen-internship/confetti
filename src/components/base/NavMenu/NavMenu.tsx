@@ -2,12 +2,11 @@
 
 import { useEffect, useCallback } from 'react';
 
-import { HomeNav } from '../HomeNav';
-import { ServicesNav } from '../ServicesNav';
+import { HomeNav, ServicesNav } from '@/components/base';
 
 import { Props } from './types';
 
-export const NavMenu = ({ setIsMenuOpen }: Props) => {
+export const NavMenu: React.FC<Props> = ({ setIsMenuOpen }) => {
   const closeMenu = useCallback(() => {
     setIsMenuOpen(false);
   }, [setIsMenuOpen]);
@@ -27,8 +26,8 @@ export const NavMenu = ({ setIsMenuOpen }: Props) => {
   }, [closeMenu]);
 
   return (
-    <div className="fixed left-0 top-0 z-30 h-full w-full overflow-y-auto bg-color-secondary pb-[56px] pt-[108px] md:pb-[158px] md:pt-[184px] xl:pb-[221px] xl:pt-[221px]">
-      <div className="overflow container flex flex-col items-center md:flex-row md:items-start md:justify-center md:gap-[192px] xl:gap-[352px]">
+    <div className="fixed left-0 top-0 z-30 h-full w-full items-center bg-color-secondary font-manrope md:flex md:justify-center smOnly:pt-[108px]">
+      <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-center md:gap-[190px] xl:gap-[352px] smOnly:h-full">
         <HomeNav closeMenu={closeMenu} />
         <ServicesNav closeMenu={closeMenu} />
       </div>
