@@ -1,10 +1,11 @@
 // import { CardsKreatywny } from '@/components/base';
 // import { SliderTest } from '@/components/base/SliderTest';
-// import { ContactLinks } from '@/components/ui';
+// import { ContactLinks, ContactFormInput } from '@/components/ui';
 
 import { Gallery } from '@/sections';
 
 import gallery from '@/data/gallery.json';
+// import formConfigData from '@/data/contactForm.json';
 
 export default async function Home() {
   return (
@@ -25,6 +26,24 @@ export default async function Home() {
 
       {/* <div className="container my-[50px]">
         <SliderTest />
+      </div> */}
+
+      {/* <div className=" bg-color-bg-primary">
+        <div className="container">
+          <div className="md:mx-auto md:w-[608px] md:px-[82px] md:py-[38px]">
+            <ContactFormInput
+              config={formConfigData.name}
+              // register
+              // errors,
+            />
+
+            <ContactFormInput
+              config={formConfigData.email}
+              // register
+              // errors,
+            />
+          </div>
+        </div>
       </div> */}
     </>
   );

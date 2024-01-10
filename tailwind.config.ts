@@ -38,7 +38,6 @@ const config: Config = {
         'color-main': '#000000',
         'color-primary': '#222222',
         'color-secondary': '#FFFFFF',
-
         'color-text': {
           primary: '#474747',
           extra: '#565148',
@@ -52,6 +51,9 @@ const config: Config = {
           extra: '#FEF5EC',
         },
         'color-ctrl-btn-border': '#D2D2D2',
+        'color-form-label': '#949494',
+        'color-form-placeholder': '#888888',
+        'color-form-error': '#FF6060',
       },
       // FONTS
       fontFamily: {

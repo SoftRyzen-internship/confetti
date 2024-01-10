@@ -126,6 +126,16 @@ is a list of more common components and their API.
 | `location`  | `undefined` | Choose the position you'd need: `header`or `contacts` |
 | `className` | `undefined` | add any custom styles                                 |
 
+- #### SectionTitle
+
+| Prop               | Default     | Description                                                                |
+| ------------------ | ----------- | -------------------------------------------------------------------------- |
+| `children`         | `undefined` | required, ReactNode embedded components or text                            |
+| `ariaLabelledbyId` | `undefined` | required, string for accessibility, follow the section and section heading |
+| `accentColor`      | `undefined` | applies the "accent" text color option                                     |
+| `center`           | `undefined` | centers text                                                               |
+| `className`        | `undefined` | add string custom styles                                                   |
+
 - ### Slider Controls
 
 | Prop      | Default     | Description                            |
@@ -141,6 +151,21 @@ is a list of more common components and their API.
 | `slideClassName` | `''`        | add any custom styles of .swiper-slide element              |
 | `component`      | `undefined` | required, the element that will be placed inside the slide' |
 | `section`        | `undefined` | required, 'about' 'services' 'gallery' 'reviews';           |
+
+- #### ContactFormInput
+
+| Prop                | Default     | Description                                                                 |
+| ------------------- | ----------- | --------------------------------------------------------------------------- |
+| `config`            | `undefined` | required, object with required string fields: required, name, label,        |
+|                     |             | placeholder, isRequaredField, errorMessage and validationOptions.           |
+|                     |             |                                                                             |
+| `name`              | `undefined` | required, string, input value name                                          |
+| `label`             | `undefined` | required, string, label value                                               |
+| `placeholder`       | `undefined` | required, string, input placeholder value                                   |
+| `isRequaredField`   | `undefined` | required, boolean, enables validation and marks the field                   |
+|                     |             | as required                                                                 |
+| `errorMessage`      | `undefined` | required, string validation error text                                      |
+| `validationOptions` | `undefined` | required, object with optional string fields: pattern, maxLength, minLength |
 
 ### Technology stack
 
