@@ -16,7 +16,7 @@ export const ContactFormTextarea: React.FC<ContactFormTextareaProps> = ({
 
   return (
     <label className="relative mb-6 flex flex-col md:mb-8">
-      <span className="mb-2 ml-6 font-manrope text-base font-medium leading-[1.2] tracking-[-0.16px] text-color-form-label">
+      <span className="mb-2 pl-6 font-manrope text-base font-medium leading-[1.2] tracking-[-0.16px] text-color-form-label">
         {label}
       </span>
 
