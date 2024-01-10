@@ -1,11 +1,14 @@
-import { GalleryView } from '@/components/base/GalleryView';
+import { Gallery } from '@/sections';
+
+import gallery from '@/data/gallery.json';
 
 export default async function ServicePage() {
   return (
     <>
-      <div className="container">
-        <GalleryView />
-      </div>
+      <Gallery
+        title={gallery.titleServicePage}
+        labelledbyId="gallery-section-labelledby"
+      />
     </>
   );
 }

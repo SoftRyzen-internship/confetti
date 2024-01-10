@@ -1,5 +1,7 @@
 {
-  "gallery": [
+  "titleHomePage": "Galeria",
+  "titleServicePage": "Zdjęcie",
+  "serviceImages": [
     {
       "slug": "baby-shower",
       "images": [

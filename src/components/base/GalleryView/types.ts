@@ -1,1 +1,3 @@
-export type GalleryViewProps = {};
+export type GalleryViewProps = {
+  className?: string;
+};

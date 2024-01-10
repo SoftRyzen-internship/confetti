@@ -11,12 +11,12 @@ import { GalleryCard, LightboxImage, Slider } from '@/components/ui';
 import { useFetch } from '@/utils/hooks';
 
 import common from '@/data/common.json';
-import services from '@/data/services.json';
+import gallery from '@/data/gallery.json';
 
 import { GalleryDataType } from '@/types';
 import { GalleryViewProps } from './types';
 
-export const GalleryView: React.FC<GalleryViewProps> = () => {
+export const GalleryView: React.FC<GalleryViewProps> = ({ className = '' }) => {
   const [index, setIndex] = useState(-1);
 
   const pathname = usePathname();
@@ -27,7 +27,7 @@ export const GalleryView: React.FC<GalleryViewProps> = () => {
   const { data } = useFetch('gallery') as { data: GalleryDataType[] };
 
   const staticImages =
-    services.gallery.find(obj => obj.slug === slug)?.images || [];
+    gallery.serviceImages.find(obj => obj.slug === slug)?.images || [];
 
   const dynamicImages = data?.length > 0 ? data[0].image : [];
 
@@ -41,7 +41,7 @@ export const GalleryView: React.FC<GalleryViewProps> = () => {
   return (
     <>
       {isHomePage && (
-        <div className="mt-10 md:hidden">
+        <div className="md:hidden">
           <Slider
             component={GalleryCard}
             section="gallery"
@@ -52,7 +52,7 @@ export const GalleryView: React.FC<GalleryViewProps> = () => {
       )}
 
       <ul
-        className={`${listClassName} md:flex-row md:flex-wrap md:gap-4 xl:gap-[26px]`}
+        className={`${listClassName} md:flex-row md:flex-wrap md:gap-4 xl:gap-[26px] smOnly:self-center ${className}`}
       >
         {images.map((img, index) => {
           return (
