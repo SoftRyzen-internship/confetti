@@ -3,3 +3,4 @@ export * from './Logo';
 export * from './CardKreatywny';
 export * from './ContactLinks';
 export * from './Title';
+export * from './InputContactForm';

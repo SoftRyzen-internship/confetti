@@ -1,6 +1,13 @@
 import { CardsKreatywny } from '@/components/base';
-import { ContactLinks, Logo, SliderControls, SectionTitle } from '@/components/ui';
+import {
+  ContactLinks,
+  Logo,
+  SliderControls,
+  SectionTitle,
+  ContactFormInput,
+} from '@/components/ui';
 
+import formConfigData from '@/data/contactForm.json';
 
 export default async function Home() {
   return (
@@ -22,7 +29,26 @@ export default async function Home() {
           Hello!
         </SectionTitle>
       </div>
+
       <SliderControls section="services" />
+
+      <div className=" bg-color-bg-primary">
+        <div className="container">
+          <div className="md:mx-auto md:w-[608px] md:px-[82px] md:py-[38px]">
+            <ContactFormInput
+              config={formConfigData.name}
+              // register
+              // errors,
+            />
+
+            <ContactFormInput
+              config={formConfigData.email}
+              // register
+              // errors,
+            />
+          </div>
+        </div>
+      </div>
     </>
   );
 }

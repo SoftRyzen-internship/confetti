@@ -126,7 +126,6 @@ is a list of more common components and their API.
 | `location`  | `undefined` | Choose the position you'd need: `header`or `contacts` |
 | `className` | `undefined` | add any custom styles                                 |
 
-
 - #### SectionTitle
 
 | Prop               | Default     | Description                                                                |
@@ -137,13 +136,11 @@ is a list of more common components and their API.
 | `center`           | `true`      | centers text                                                               |
 | `className`        | `undefined` | add string custom styles                                                   |
 
-
 - ### Slider Controls
 
 | Prop      | Default     | Description                            |
 | --------- | ----------- | -------------------------------------- |
 | `section` | `undefined` | required, only 'services' or 'reviews' |
-
 
 ### Technology stack
 
