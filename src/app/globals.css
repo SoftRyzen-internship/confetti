@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Common */
+.section {
+  @apply pt-12 md:pt-16 xl:pt-[124px];
+}
+
 /* Slider */
 .swiper-pagination {
   position: static !important;

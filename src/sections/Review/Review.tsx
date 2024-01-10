@@ -17,11 +17,7 @@ export const Review: React.FC = () => {
     <section className="pt-[56px] md:pt-[64px] xl:pt-[124px]">
       <div className="container">
         <div className="flex justify-center md:justify-between">
-          <SectionTitle
-            ariaLabelledbyId="review-section-labelledby"
-            className={'mb-9 md:mb-12'}
-            accentColor
-          >
+          <SectionTitle className={'mb-9 md:mb-12'} accentColor>
             {common.sections.review.title}
           </SectionTitle>
           <SliderControls section={'reviews'} />

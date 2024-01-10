@@ -128,13 +128,12 @@ is a list of more common components and their API.
 
 - #### SectionTitle
 
-| Prop               | Default     | Description                                                                |
-| ------------------ | ----------- | -------------------------------------------------------------------------- |
-| `children`         | `undefined` | required, ReactNode embedded components or text                            |
-| `ariaLabelledbyId` | `undefined` | required, string for accessibility, follow the section and section heading |
-| `accentColor`      | `undefined` | applies the "accent" text color option                                     |
-| `center`           | `undefined` | centers text                                                               |
-| `className`        | `undefined` | add string custom styles                                                   |
+| Prop          | Default     | Description                                     |
+| ------------- | ----------- | ----------------------------------------------- |
+| `children`    | `undefined` | required, ReactNode embedded components or text |
+| `accentColor` | `undefined` | applies the "accent" text color option          |
+| `center`      | `undefined` | centers text                                    |
+| `className`   | `undefined` | add string custom styles                        |
 
 - ### Slider Controls
 
@@ -166,6 +165,18 @@ is a list of more common components and their API.
 |                     |             | as required                                                                 |
 | `errorMessage`      | `undefined` | required, string validation error text                                      |
 | `validationOptions` | `undefined` | required, object with optional string fields: pattern, maxLength, minLength |
+
+- #### ContactFormTextarea
+
+| Prop                | Default     | Description                                                          |
+| ------------------- | ----------- | -------------------------------------------------------------------- |
+| `config`            | `undefined` | required, object with required string fields: required, name, label, |
+|                     |             | placeholder and validationOptions.                                   |
+|                     |             |                                                                      |
+| `name`              | `undefined` | required, string, textarea value name                                |
+| `label`             | `undefined` | required, string, label value                                        |
+| `placeholder`       | `undefined` | required, string, textarea placeholder value                         |
+| `validationOptions` | `undefined` | required, object with optional string fields: maxLength              |
 
 ### Technology stack
 

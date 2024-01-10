@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
           <ul className="flex w-1/2 flex-wrap gap-2">
             {slugs.map((slug, index) => (
               <li key={index}>
-                <Link href={`/services/${slug}`} className="outline-dashed">
+                <Link href={`/${slug}`} className="outline-dashed">
                   {slug}
                 </Link>
               </li>
