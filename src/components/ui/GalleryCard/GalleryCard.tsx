@@ -22,9 +22,9 @@ export const GalleryCard: React.FC<GalleryCardProps> = ({
         height={388}
         alt={image.alt}
         src={image.path}
+        loading="lazy"
         placeholder="blur"
         blurDataURL={image.path}
-        // priority
       />
     </div>
   );

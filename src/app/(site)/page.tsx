@@ -1,12 +1,13 @@
-import { CardsKreatywny } from '@/components/base';
-import { SliderTest } from '@/components/base/SliderTest';
+// import { CardsKreatywny } from '@/components/base';
+// import { SliderTest } from '@/components/base/SliderTest';
+// import { ContactLinks, ContactFormInput } from '@/components/ui';
 
 import { Gallery } from '@/sections';
 import {
   ContactLinks,
-  Logo,
-  SliderControls,
-  SectionTitle,
+  // Logo,
+  // SliderControls,
+  // SectionTitle,
   ContactFormInput,
   ContactFormTextarea,
 } from '@/components/ui';
@@ -17,35 +18,23 @@ import formConfigData from '@/data/contactForm.json';
 export default async function Home() {
   return (
     <>
-      <Gallery
-        title={gallery.titleHomePage}
-        labelledbyId="gallery-section-labelledby"
-      />
+      <Gallery title={gallery.titleHomePage} />
 
       <div className="container mt-10">
-        <Logo location="footer" />
         <ContactLinks
           location={'header'}
           className={'text-xl tracking-[-0.2px] smOnly:hidden'}
         />
       </div>
 
-      <div className="container bg-color-bg-primary">
+      {/* <div className="container bg-color-bg-primary">
         <CardsKreatywny />
         <ContactLinks location={'contacts'} className={'xl:items-start'} />
       </div>
 
       <div className="container my-[50px]">
         <SliderTest />
-      </div>
-
-      <SliderControls section="services" />
-
-      <div className="container">
-        <SectionTitle ariaLabelledbyId="section" accentColor center>
-          Hello!
-        </SectionTitle>
-      </div>
+      </div> */}
 
       <div className=" bg-color-bg-primary">
         <div className="container">
