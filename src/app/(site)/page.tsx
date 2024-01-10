@@ -8,6 +8,7 @@ import {
   SliderControls,
   SectionTitle,
   ContactFormInput,
+  ContactFormTextarea,
 } from '@/components/ui';
 
 import gallery from '@/data/gallery.json';
@@ -60,6 +61,7 @@ export default async function Home() {
               // register
               // errors,
             />
+            <ContactFormTextarea config={formConfigData.message} />
           </div>
         </div>
       </div>

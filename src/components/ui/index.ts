@@ -5,5 +5,6 @@ export * from './ContactLinks';
 export * from './Slider';
 export * from './Title';
 export * from './InputContactForm';
+export * from './ContactFormTextarea';
 export * from './LightboxImage';
 export * from './GalleryCard';
