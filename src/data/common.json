@@ -9,7 +9,8 @@
       "prevBtnArialabel": "Poprzedni slajd",
       "nextBtnArialabel": "Następny slajd",
       "prevBtnArialabelIcon": "Strzałka w lewo",
-      "nextBtnArialabelIcon": "Prawa strzałka"
+      "nextBtnArialabelIcon": "Prawa strzałka",
+      "closeBtnArialabel": "Zamknij"
     }
   }
 }

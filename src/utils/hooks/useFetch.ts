@@ -1,19 +1,29 @@
 'use client';
-import React from 'react';
+
+import { useEffect, useState } from 'react';
 
 import { client } from '@/sanity/client';
-import { ContactType } from '@/components/ui/ContactLinks/types';
-import { ReviewType } from '@/components/ui/ReviewsCard/types';
 
-export type ApiData = ReviewType | ContactType;
+import { ContactType, GalleryDataType, ReviewType } from '@/types';
+
+export type ApiData = ReviewType | ContactType | GalleryDataType;
 
 export const useFetch = (type: string) => {
-  const [data, setData] = React.useState<ApiData[] | null>(null);
+  const [data, setData] = useState<ApiData[] | null>(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const fetchData = async () => {
       try {
-        const query = `*[_type=="${type}"]`;
+        const query =
+          type === 'gallery'
+            ? `*[_type=="${type}"]{
+                    image[]{
+                    alt,
+                    "path": asset -> url
+                    }
+                }`
+            : `*[_type=="${type}"]`;
+
         const fetchedData: ApiData[] = await client.fetch(query, {
           next: {
             revalidate: 3600, // look for updates to revalidate cache every hour

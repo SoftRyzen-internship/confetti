@@ -1,16 +1,27 @@
 import { CardsKreatywny } from '@/components/base';
+import { SliderTest } from '@/components/base/SliderTest';
 import { ReviewsCards } from '@/components/base/ReviewsCards/ReviewsCards';
+import { Gallery } from '@/sections';
 import {
   ContactLinks,
   Logo,
   SliderControls,
   SectionTitle,
+  ContactFormInput,
 } from '@/components/ui';
+
+import gallery from '@/data/gallery.json';
+import formConfigData from '@/data/contactForm.json';
 
 export default async function Home() {
   return (
     <>
-      <div className="container">
+      <Gallery
+        title={gallery.titleHomePage}
+        labelledbyId="gallery-section-labelledby"
+      />
+
+      <div className="container mt-10">
         <Logo location="footer" />
         <ContactLinks
           location={'header'}
@@ -21,15 +32,42 @@ export default async function Home() {
       <div className="container bg-green-200">
         <CardsKreatywny />
         <ContactLinks location={'contacts'} className={'xl:items-start'} />
-        <ReviewsCards />
       </div>
+
+      <div className="container my-[50px]">
+        <SliderTest />
+      </div>
+
+      <SliderControls section="services" />
 
       <div className="container">
         <SectionTitle ariaLabelledbyId="section" accentColor center>
           Hello!
         </SectionTitle>
       </div>
-      <SliderControls section="services" />
+
+      <div className=" bg-color-bg-primary">
+        <div className="container">
+          <div className="md:mx-auto md:w-[608px] md:px-[82px] md:py-[38px]">
+            <ContactFormInput
+              config={formConfigData.name}
+              // register
+              // errors,
+            />
+
+            <ContactFormInput
+              config={formConfigData.email}
+              // register
+              // errors,
+            />
+          </div>
+        </div>
+      </div>
+      <div className=" bg-color-bg-primary">
+        <div className="container">
+          <ReviewsCards />
+        </div>
+      </div>
     </>
   );
 }
