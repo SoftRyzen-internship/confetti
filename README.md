@@ -128,13 +128,12 @@ is a list of more common components and their API.
 
 - #### SectionTitle
 
-| Prop               | Default     | Description                                                                |
-| ------------------ | ----------- | -------------------------------------------------------------------------- |
-| `children`         | `undefined` | required, ReactNode embedded components or text                            |
-| `ariaLabelledbyId` | `undefined` | required, string for accessibility, follow the section and section heading |
-| `accentColor`      | `undefined` | applies the "accent" text color option                                     |
-| `center`           | `undefined` | centers text                                                               |
-| `className`        | `undefined` | add string custom styles                                                   |
+| Prop          | Default     | Description                                     |
+| ------------- | ----------- | ----------------------------------------------- |
+| `children`    | `undefined` | required, ReactNode embedded components or text |
+| `accentColor` | `undefined` | applies the "accent" text color option          |
+| `center`      | `undefined` | centers text                                    |
+| `className`   | `undefined` | add string custom styles                        |
 
 - ### Slider Controls
 
