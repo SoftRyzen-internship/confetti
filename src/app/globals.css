@@ -42,3 +42,12 @@
   --yarl__color_button: #ea80b3;
   --yarl__color_button_active: #eab27f;
 }
+
+/* Navigation menu*/
+.homeNavLink {
+  @apply cursor-pointer text-2xl/normal font-medium -tracking-[0.01em] transition-all hover:text-color-accent-primary focus:text-color-accent-primary md:text-4xl/normal;
+}
+
+.serviceNavLink {
+  @apply font-medium -tracking-[0.01em] transition-all hover:text-color-accent-primary focus:text-color-accent-primary md:text-2xl/normal;
+}
