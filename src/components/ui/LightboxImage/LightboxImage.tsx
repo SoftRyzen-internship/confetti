@@ -13,13 +13,6 @@ export const LightboxImage: React.FC<Props> = ({ slide, rect }) => {
   const { imageFit } = useLightboxProps().carousel;
   const cover = isImageSlide(slide) && isImageFitCover(slide, imageFit);
 
-  //   console.log(isImageSlide(slide));
-  //   console.log(isImageFitCover(slide, imageFit));
-
-  //   console.log(slide);
-
-  // if (!isNextJsImage(slide)) return undefined;
-
   const width =
     !cover && slide.width && slide.height
       ? Math.round(
@@ -43,7 +36,7 @@ export const LightboxImage: React.FC<Props> = ({ slide, rect }) => {
         loading="eager"
         draggable={false}
         placeholder="blur"
-        blurDataURL={slide.src}
+        blurDataURL={'/images/balloons.webp'}
         style={{ objectFit: cover ? 'cover' : 'contain' }}
         sizes={`${Math.ceil((width / window.innerWidth) * 100)}vw`}
       />
