@@ -2,7 +2,7 @@
 // import { SliderTest } from '@/components/base/SliderTest';
 // import { ContactLinks, ContactFormInput } from '@/components/ui';
 
-import { Gallery, Review } from '@/sections';
+import { Gallery, Hero, Review } from '@/sections';
 import {
   ContactLinks,
   // Logo,
@@ -18,6 +18,7 @@ import formConfigData from '@/data/contactForm.json';
 export default async function Home() {
   return (
     <>
+      <Hero />
       <Gallery title={gallery.titleHomePage} />
       <Review />
       <div className="container mt-10">
