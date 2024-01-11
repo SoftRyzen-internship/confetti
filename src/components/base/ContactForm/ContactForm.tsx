@@ -57,7 +57,7 @@ export const ContactForm = () => {
 
         <button
           className="flex w-full items-center justify-center rounded-[24px] bg-color-accent-primary px-8 py-5 text-[28px] font-extrabold 
-        leading-[1.23] tracking-[-0.28px] text-color-secondary md:py-6 md:text-[40px] md:tracking-[-0.4px]"
+        leading-[1.23] tracking-[-0.28px] text-color-secondary hover:bg-color-form-btn-hover focus:bg-color-form-btn-hover md:py-6 md:text-[40px] md:tracking-[-0.4px]"
           type="submit"
         >
           {contactFormData.submitBtn.label}
