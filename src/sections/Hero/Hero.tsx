@@ -1,10 +1,10 @@
-import { sliceTextBlock } from '@/utils/helpers/sliceTextBlock';
+import { sliceTextBlock } from '@/utils/helpers';
 
 import common from '@/data/common.json';
 
 import css from './Hero.module.css';
 
-export const Hero = () => {
+export const Hero: React.FC = () => {
   const {
     hero: { title: heroTitle },
   } = common.sections;
