@@ -31,9 +31,29 @@
   @apply flex justify-center;
 }
 
+/* Review Slider */
+.review-slider .swiper-slide {
+  @apply flex justify-center;
+}
+
 /* Lightbox styles */
 .yarl__root {
   --yarl__color_backdrop: #fff;
   --yarl__color_button: #ea80b3;
   --yarl__color_button_active: #eab27f;
+}
+
+/* Navigation menu*/
+.homeNavLink {
+  @apply cursor-pointer text-2xl/normal font-medium -tracking-[0.01em] transition-all hover:text-color-accent-primary focus:text-color-accent-primary md:text-4xl/normal;
+}
+
+.serviceNavLink {
+  @apply font-medium -tracking-[0.01em] transition-all hover:text-color-accent-primary focus:text-color-accent-primary md:text-2xl/normal;
+}
+
+/* Footer line */
+.footerLine::before {
+  content: '';
+  @apply absolute left-0 top-0 h-[1px] w-full bg-color-accent-primary;
 }

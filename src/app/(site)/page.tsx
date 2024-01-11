@@ -3,7 +3,15 @@
 // import { ContactLinks, ContactFormInput } from '@/components/ui';
 import { ServiceCard } from '@/components/ui/ServiceCard/ServiceCard';
 
-import { Gallery } from '@/sections';
+import { About, Gallery, Review } from '@/sections';
+// import {
+// ContactLinks,
+// Logo,
+// SliderControls,
+// SectionTitle,
+// ContactFormInput,
+// ContactFormTextarea,
+// } from '@/components/ui';
 
 import gallery from '@/data/gallery.json';
 // import formConfigData from '@/data/contactForm.json';
@@ -11,7 +19,15 @@ import gallery from '@/data/gallery.json';
 export default async function Home() {
   return (
     <>
+      <section className="min-h-[300px] bg-slate-50 pt-[175px] md:pt-[264px] xl:pt-[280px] ">
+        Hero
+      </section>
+
+      <About />
       <Gallery title={gallery.titleHomePage} />
+      <Review />
+
+      {/* COMPONENTS TESTING: */}
 
       <div className="container">
         <ServiceCard
@@ -27,16 +43,16 @@ export default async function Home() {
       {/* <div className="container mt-10">
         <ContactLinks
           location={'header'}
-          className={'smOnly:hidden text-xl tracking-[-0.2px]'}
+          className={'text-xl tracking-[-0.2px] smOnly:hidden'}
         />
       </div> */}
 
-      {/* <div className="bg-color-bg-primary container">
+      {/* <div className="container bg-color-bg-primary">
         <CardsKreatywny />
         <ContactLinks location={'contacts'} className={'xl:items-start'} />
-      </div> */}
+      </div>
 
-      {/* <div className="container my-[50px]">
+      <div className="container my-[50px]">
         <SliderTest />
       </div> */}
 
@@ -54,6 +70,7 @@ export default async function Home() {
               // register
               // errors,
             />
+            <ContactFormTextarea config={formConfigData.message} />
           </div>
         </div>
       </div> */}
