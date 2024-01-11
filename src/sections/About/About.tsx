@@ -6,7 +6,10 @@ import data from '@/data/section-about.json';
 export const About: React.FC = () => {
   const { subtitle, title } = data;
   return (
-    <section className="bg-color-bg-primary pb-[80px] pt-[48px] md:py-[64px] xl:pb-[106px] xl:pt-[96px]">
+    <section
+      id="about"
+      className="bg-color-bg-primary pb-[80px] pt-[48px] md:py-[64px] xl:pb-[106px] xl:pt-[96px]"
+    >
       <div className="container">
         <SectionTitle className="mx-auto mb-[16px] md:w-[584px]" center>
           {title}

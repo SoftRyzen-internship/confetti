@@ -5,7 +5,7 @@ import data from '@/data/common.json';
 
 import { LogoProps } from './types';
 
-export const Logo: React.FC<LogoProps> = ({ location }) => {
+export const Logo: React.FC<LogoProps> = ({ location, className = '' }) => {
   const {
     layout: { logo },
   } = data;
@@ -18,9 +18,7 @@ export const Logo: React.FC<LogoProps> = ({ location }) => {
   return (
     <Link
       href="/"
-      className={`${
-        location === 'header' ? 'relative z-40' : ''
-      }  inline-block`}
+      className={`${className} inline-block`}
       aria-label={logo.label}
     >
       <Image
