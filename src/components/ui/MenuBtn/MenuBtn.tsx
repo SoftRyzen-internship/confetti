@@ -27,10 +27,7 @@ export const MenuBtn: React.FC = () => {
         type="button"
       >
         {isMenuOpen ? (
-          <Cross
-            className="hidden fill-color-primary md:block md:h-7 md:w-7 xl:h-8 xl:w-8"
-            aria-label={label}
-          />
+          <Cross className="h-6 w-6 fill-color-primary md:h-7 md:w-7 xl:h-8 xl:w-8" />
         ) : (
           <Menu
             className="h-6 w-6 fill-color-primary md:h-7 md:w-7 xl:h-8 xl:w-8"

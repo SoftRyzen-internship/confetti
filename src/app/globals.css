@@ -51,3 +51,9 @@
 .serviceNavLink {
   @apply font-medium -tracking-[0.01em] transition-all hover:text-color-accent-primary focus:text-color-accent-primary md:text-2xl/normal;
 }
+
+/* Footer line */
+.footerLine::before {
+  content: '';
+  @apply absolute left-0 top-0 h-[1px] w-full bg-color-accent-primary;
+}
