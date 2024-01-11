@@ -15,6 +15,11 @@ import { About, Gallery, Review } from '@/sections';
 
 import gallery from '@/data/gallery.json';
 // import formConfigData from '@/data/contactForm.json';
+import serviceCardsData from '@/data/common.json';
+
+const {
+  layout: { serviceCards },
+} = serviceCardsData;
 
 export default async function Home() {
   return (
@@ -30,14 +35,13 @@ export default async function Home() {
       {/* COMPONENTS TESTING: */}
 
       <div className="container">
-        <ServiceCard
-          {...{
-            path: '/images/services-cards/',
-            caption: 'Baby shower',
-            alt: '',
-            slug: '',
-          }}
-        />
+        <ul className="flex w-fit flex-wrap justify-center gap-6">
+          {serviceCards.map(card => (
+            <li key={card.slug}>
+              <ServiceCard {...card} />
+            </li>
+          ))}
+        </ul>
       </div>
 
       {/* <div className="container mt-10">
