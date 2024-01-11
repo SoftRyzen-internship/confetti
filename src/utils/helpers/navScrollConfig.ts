@@ -1,5 +1,5 @@
 export const linkSettings = {
   smooth: true,
-  duration: 300,
+  duration: 600,
   tabIndex: 0,
 };
