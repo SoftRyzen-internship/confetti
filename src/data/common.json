@@ -2,6 +2,77 @@
   "layout": {
     "logo": {
       "label": "Logo serwisu i link do strony głównej"
+    },
+    "navigation": {
+      "home": {
+        "mainPageLink": {
+          "path": "/",
+          "label": "Główna"
+        },
+        "navLinks": [
+          {
+            "slug": "about",
+            "label": "O nas"
+          },
+          {
+            "slug": "gallery",
+            "label": "Galeria"
+          },
+          {
+            "slug": "reviews",
+            "label": "Opinie"
+          },
+          {
+            "slug": "contacts",
+            "label": "Kontakty"
+          }
+        ]
+      },
+      "services": {
+        "servicesTitle": "Usługi",
+        "navLinks": [
+          {
+            "slug": "baby-shower",
+            "label": "Baby shower"
+          },
+          {
+            "slug": "baptism",
+            "label": "Chrzciny"
+          },
+          {
+            "slug": "birthday",
+            "label": "Urodziny"
+          },
+          {
+            "slug": "balloons",
+            "label": "Balony z helem"
+          },
+          {
+            "slug": "valentines",
+            "label": "Walentynki"
+          },
+          {
+            "slug": "corporate",
+            "label": "Impreza firmowa"
+          },
+          {
+            "slug": "wedding",
+            "label": "Wesele"
+          }
+        ]
+      }
+    },
+    "menuBtn": {
+      "close": "zamknięty",
+      "open": "menu",
+      "ariaLabel": "menu button"
+    },
+    "footer": {
+      "rights": "confetti © 2023",
+      "link": {
+        "label": "Made by SoftRyzen",
+        "href": "https://softryzen.com/"
+      }
     }
   },
   "components": {
@@ -11,6 +82,11 @@
       "prevBtnArialabelIcon": "Strzałka w lewo",
       "nextBtnArialabelIcon": "Prawa strzałka",
       "closeBtnArialabel": "Zamknij"
+    }
+  },
+  "sections": {
+    "review": {
+      "title": "Opinie"
     }
   }
 }

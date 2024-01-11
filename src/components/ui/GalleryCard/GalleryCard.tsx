@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import { GalleryCardProps } from './types';
+import { getBase64, shimmer } from '@/utils/helpers';
 
 export const GalleryCard: React.FC<GalleryCardProps> = ({
   card: image,
@@ -24,7 +25,9 @@ export const GalleryCard: React.FC<GalleryCardProps> = ({
         src={image.path}
         loading="lazy"
         placeholder="blur"
-        blurDataURL={image.path}
+        blurDataURL={`data:image/svg+xml;base64,${getBase64(
+          shimmer(388, 388),
+        )}`}
       />
     </div>
   );
