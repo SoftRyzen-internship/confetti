@@ -18,7 +18,7 @@ export const HomeNav: React.FC<Props> = ({ closeMenu }) => {
   const path = usePathname();
 
   return (
-    <div className="flex flex-col items-center gap-6 md:items-start md:gap-8">
+    <div className="mb-6 flex flex-col items-center gap-6 md:mb-0 md:items-start md:gap-8">
       <NextLink
         onClick={closeMenu}
         className="homeNavLink"
@@ -30,7 +30,7 @@ export const HomeNav: React.FC<Props> = ({ closeMenu }) => {
       <ul className="flex flex-col items-center gap-6 md:items-start md:gap-8">
         {navLinks.map(({ label, slug }) => (
           <li key={slug}>
-            {path === '/' && (
+            {path === '/' ? (
               <Link
                 onClick={closeMenu}
                 className="homeNavLink"
@@ -39,6 +39,14 @@ export const HomeNav: React.FC<Props> = ({ closeMenu }) => {
               >
                 {label}
               </Link>
+            ) : (
+              <NextLink
+                onClick={closeMenu}
+                className="homeNavLink"
+                href={`/#${slug}`}
+              >
+                {label}
+              </NextLink>
             )}
           </li>
         ))}
