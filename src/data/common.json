@@ -66,6 +66,13 @@
       "close": "zamknięty",
       "open": "menu",
       "ariaLabel": "menu button"
+    },
+    "footer": {
+      "rights": "confetti © 2023",
+      "link": {
+        "label": "Made by SoftRyzen",
+        "href": "https://softryzen.com/"
+      }
     }
   },
   "components": {
