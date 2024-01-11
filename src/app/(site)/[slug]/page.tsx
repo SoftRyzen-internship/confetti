@@ -1,13 +1,12 @@
-import { Gallery } from '@/sections';
+import { Gallery, ServicesHero } from '@/sections';
 
 import gallery from '@/data/gallery.json';
+import hero from '@/data/services-hero.json';
 
 export default async function ServicePage() {
   return (
     <>
-      <section className="min-h-[300px] bg-slate-50 pt-[175px] md:pt-[264px] xl:pt-[280px] ">
-        Hero
-      </section>
+      <ServicesHero {...hero['baby-shower']} />
 
       <Gallery title={gallery.titleServicePage} />
     </>
