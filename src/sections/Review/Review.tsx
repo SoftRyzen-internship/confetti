@@ -15,7 +15,7 @@ import { ReviewType } from '@/types';
 export const Review: React.FC = () => {
   const { data } = useFetch('review') as { data: ReviewType[] };
   return (
-    <section className="section smOnly:pt-[56px]">
+    <section id="reviews" className="section smOnly:pt-[56px]">
       <div className="container">
         <div className="flex justify-center md:justify-between">
           <SectionTitle className={'mb-9 md:mb-12'} accentColor>
