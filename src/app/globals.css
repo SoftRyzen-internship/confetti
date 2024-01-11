@@ -7,14 +7,6 @@
   @apply pt-12 md:pt-16 xl:pt-[124px];
 }
 
-/* Hero */
-.hero-bg {
-  background-image: url('../../public/images/hero/hero-bg.webp');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 /* Slider */
 .swiper-pagination {
   position: static !important;

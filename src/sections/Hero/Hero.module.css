@@ -1,0 +1,116 @@
+/* Hero */
+.heroBg {
+  /* background-image: url('../../public/images/hero/hero-bg.webp'); */
+  background-image: url('~/public/images/hero/hero-bg.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bgBalloons {
+  position: relative;
+}
+
+.balloons::before {
+  content: '';
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  left: -35%;
+  top: 20%;
+  background: url('~/public/images/hero/left-balloons.webp');
+  z-index: 10;
+  background-size: cover;
+}
+
+.balloons::after {
+  content: '';
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  right: -23%;
+  bottom: -50%;
+  background: url('~/public/images/hero/right-balloons.webp');
+  z-index: 10;
+  background-size: cover;
+}
+
+@media screen and (min-width: 480px) {
+  .balloons::before {
+    left: -12%;
+  }
+
+  .balloons::after {
+    right: -4%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .balloons::before {
+    width: 330px;
+    height: 325px;
+    top: 40%;
+    left: -19%;
+  }
+
+  .balloons::after {
+    width: 320px;
+    height: 320px;
+    bottom: -63%;
+    right: -12%;
+  }
+
+  .bgBalloons::before {
+    content: '';
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    left: -15%;
+    top: 33%;
+    background: url('~/public/images/hero/bg-left.webp');
+    z-index: 1;
+    background-size: cover;
+  }
+
+  .bgBalloons::after {
+    content: '';
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    right: -15%;
+    top: 65%;
+    background: url('~/public/images/hero/bg-left.webp');
+    z-index: 1;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .balloons::before {
+    width: 620px;
+    height: 640px;
+    top: 15%;
+    left: -27%;
+  }
+
+  .balloons::after {
+    width: 650px;
+    height: 650px;
+    bottom: -101%;
+    right: -19%;
+  }
+
+  .bgBalloons::before {
+    width: 720px;
+    height: 720px;
+    top: 17%;
+  }
+
+  .bgBalloons::after {
+    width: 720px;
+    height: 720px;
+    transform: rotate(180deg);
+    right: -10%;
+    top: 48%;
+  }
+}
