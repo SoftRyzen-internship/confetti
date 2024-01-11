@@ -2,8 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/* === ANIMATIONS === */
+/* Common */
+.section {
+  @apply pt-12 md:pt-16 xl:pt-[124px];
+}
 
-.common-transition {
-  @apply transition duration-300 ease-in-out;
+/* Slider */
+.swiper-pagination {
+  position: static !important;
+  margin-top: 24px;
+  line-height: 0;
+
+  @apply md:mt-0 md:hidden;
+}
+
+.swiper-pagination-bullet {
+  background: #222 !important;
+  opacity: 0.25 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #222 !important;
+  opacity: 1 !important;
+}
+
+/* Gallery Slider */
+.gallery-slider .swiper-slide {
+  @apply flex justify-center;
+}
+
+/* Review Slider */
+.review-slider .swiper-slide {
+  @apply flex justify-center;
+}
+
+/* Lightbox styles */
+.yarl__root {
+  --yarl__color_backdrop: #fff;
+  --yarl__color_button: #ea80b3;
+  --yarl__color_button_active: #eab27f;
+}
+
+/* Navigation menu*/
+.homeNavLink {
+  @apply cursor-pointer text-2xl/normal font-medium -tracking-[0.01em] transition-all hover:text-color-accent-primary focus:text-color-accent-primary md:text-4xl/normal;
+}
+
+.serviceNavLink {
+  @apply font-medium -tracking-[0.01em] transition-all hover:text-color-accent-primary focus:text-color-accent-primary md:text-2xl/normal;
+}
+
+/* Footer line */
+.footerLine::before {
+  content: '';
+  @apply absolute left-0 top-0 h-[1px] w-full bg-color-accent-primary;
 }

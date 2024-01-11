@@ -36,6 +36,8 @@ const config: Config = {
       // COLORS
       colors: {
         'color-main': '#000000',
+        'color-primary': '#222222',
+        'color-secondary': '#FFFFFF',
         'color-text': {
           primary: '#474747',
           extra: '#565148',
@@ -48,11 +50,22 @@ const config: Config = {
           primary: '#FFEFF0',
           extra: '#FEF5EC',
         },
+        'color-ctrl-btn-border': '#D2D2D2',
+        'color-form-label': '#949494',
+        'color-form-placeholder': '#888888',
+        'color-form-error': '#FF6060',
       },
       // FONTS
       fontFamily: {
         gilroy: ['var(--font-gilroy)'],
         manrope: ['var(--font-manrope)'],
+      },
+      // TRANSITION
+      transitionDuration: {
+        DEFAULT: '300ms',
+      },
+      transitionTimingFunction: {
+        DEFAULT: 'cubic-bezier(0.4, 0, 0.2, 1)',
       },
     },
   },

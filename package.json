@@ -17,11 +17,17 @@
   },
   "dependencies": {
     "@sanity/vision": "^3.23.4",
+    "@types/react-scroll": "^1.8.10",
     "next": "14.0.4",
     "next-sanity": "^7.0.6",
     "react": "^18",
     "react-dom": "^18",
-    "sanity": "^3.23.4"
+    "react-hook-form": "^7.49.3",
+    "sanity": "^3.23.4",
+    "styled-components": "^6.1.6",
+    "swiper": "^11.0.5",
+    "yet-another-react-lightbox": "^3.15.6",
+    "react-scroll": "^1.9.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
