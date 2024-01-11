@@ -1,9 +1,11 @@
 import { UseFormRegister, FieldErrors } from 'react-hook-form';
 
+import { ContactFormInputs } from '@/components/base/ContactForm/types';
+
 export type ContactFormTextareaProps = {
   config: ContactFormTextareaConfig;
-  errors?: FieldErrors<FormInputs>;
-  register?: UseFormRegister<FormInputs>;
+  errors: FieldErrors<ContactFormInputs>;
+  register: UseFormRegister<ContactFormInputs>;
 };
 
 type ContactFormTextareaConfig = {
@@ -11,13 +13,7 @@ type ContactFormTextareaConfig = {
   label: string;
   placeholder: string;
   validationOptions: {
+    pattern?: string;
     maxLength?: number;
   };
-};
-
-//Потрібно перенести у тайпи форми
-type FormInputs = {
-  name: string;
-  email: string;
-  message: string;
 };

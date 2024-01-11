@@ -3,10 +3,10 @@
     "name": "name",
     "label": "Imię",
     "placeholder": "Imię",
-    "isRequaredField": true,
+    "isRequiredField": true,
     "errorMessage": "Nieprawidłowe Іmię",
     "validationOptions": {
-      "minLength": 2,
+      "pattern": "^(?!.*(?:[ -]{2,}| -| - ).*$)[A-Za-zĄąĆćĘęŁłŃńÓóŚśŹźŻż -]+$",
       "maxLength": 70
     }
   },
@@ -14,11 +14,12 @@
     "name": "email",
     "label": "E-mail",
     "placeholder": "mail@gmail.com",
-    "isRequaredField": true,
+    "isRequiredField": true,
     "errorMessage": "Nieprawidłowy email",
 
     "validationOptions": {
-      "pattern": "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/i"
+      "pattern": "^[a-zA-Z0-9]+([._-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([.-][a-zA-Z0-9]+)*\\.[a-zA-Z]{2,}(\\.[a-zA-Z]{2,})?$",
+      "maxLength": 63
     }
   },
   "message": {
@@ -26,7 +27,11 @@
     "label": "Wiadomość",
     "placeholder": "Twoja wiadomość...",
     "validationOptions": {
-      "maxLength": 1000
+      "maxLength": 1000,
+      "pattern": "^[A-Za-zĄąĆćĘęŁłŃńÓóŚśŹźŻż\\d\\W\\s\\r\\n]*$"
     }
+  },
+  "submitBtn": {
+    "label": "Wyślij"
   }
 }
