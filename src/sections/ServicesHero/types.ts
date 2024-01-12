@@ -1,5 +1,6 @@
 export type ServicesHeroProps = {
+  slug: string;
   title: string;
   text: string[];
-  image: { path: string; alt: string };
+  img: { path: string; alt: string };
 };

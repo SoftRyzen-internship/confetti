@@ -1,7 +1,7 @@
 import { Gallery, ServicesHero } from '@/sections';
 
 import gallery from '@/data/gallery.json';
-import hero from '@/data/services-hero.json';
+import services from '@/data/services-hero.json';
 
 export const dynamicParams = false;
 export const dynamic = 'error';
@@ -23,10 +23,11 @@ export default async function ServicePage({
 }) {
   // const images = gallery.serviceImages.find(obj => obj.slug === slug);
   console.log('Current page: ', slug);
+  const service = services.find(obj => obj.slug === slug);
 
   return (
     <>
-      <ServicesHero {...hero['baby-shower']} />
+      {service && <ServicesHero {...service} />}
 
       <Gallery title={gallery.titleServicePage} />
     </>
