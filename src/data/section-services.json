@@ -1,0 +1,48 @@
+{
+  "title": "Usługi confetti",
+  "subtitle": "Tworzymy wakacje dla każdego",
+  "serviceCards": [
+    {
+      "path": "/images/services-cards/baby-shower.webp",
+      "caption": "Baby shower",
+      "alt": "Dziewczyna w ciąży",
+      "slug": "baby-shower"
+    },
+    {
+      "path": "/images/services-cards/baptism.webp",
+      "caption": "Chrzciny",
+      "alt": "Przechodzić",
+      "slug": "baptism"
+    },
+    {
+      "path": "/images/services-cards/birthday.webp",
+      "caption": "Urodziny",
+      "alt": "Urodziny",
+      "slug": "birthday"
+    },
+    {
+      "path": "/images/services-cards/balloons.webp",
+      "caption": "Balony z helem",
+      "alt": "Balony",
+      "slug": "balloons"
+    },
+    {
+      "path": "/images/services-cards/valentines.webp",
+      "caption": "Walentynki",
+      "alt": "Fotografia walentynkowa",
+      "slug": "valentines"
+    },
+    {
+      "path": "/images/services-cards/corporate.webp",
+      "caption": "Impreza firmowa",
+      "alt": "Ukłon",
+      "slug": "corporate"
+    },
+    {
+      "path": "/images/services-cards/wedding.webp",
+      "caption": "Wesele",
+      "alt": "Wesele",
+      "slug": "wedding"
+    }
+  ]
+}

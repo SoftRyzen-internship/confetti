@@ -2,7 +2,7 @@
 // import { SliderTest } from '@/components/base/SliderTest';
 // import { ContactLinks } from '@/components/ui';
 
-import { About, Gallery, Hero, Review } from '@/sections';
+import { About, Gallery, Review, Services, Hero } from '@/sections';
 // import {
 // ContactLinks,
 // Logo,
@@ -20,10 +20,21 @@ export default async function Home() {
     <>
       <Hero />
       <About />
+      <Services />
       <Gallery title={gallery.titleHomePage} />
       <Review />
 
       {/* COMPONENTS TESTING: */}
+
+      {/* <div className="container">
+        <ul className="flex w-fit flex-wrap justify-center gap-6">
+          {serviceCards.map(card => (
+            <li key={card.slug}>
+              <ServiceCard {...card} />
+            </li>
+          ))}
+        </ul>
+      </div> */}
 
       {/* <div className="container mt-10">
         <ContactLinks
