@@ -23,7 +23,7 @@ export const MenuBtn: React.FC = () => {
       <button
         aria-label={ariaLabel}
         onClick={() => setIsMenuOpen(prev => !prev)}
-        className="relative z-40 inline-flex items-center gap-1 font-manrope text-[16px] font-semibold uppercase leading-[0.9] tracking-[2.08px] text-color-text-extra transition-all hover:text-color-accent-primary focus:text-color-accent-primary md:gap-4 md:text-[20px] md:tracking-[2.6px] xl:text-[22px] xl:tracking-[2.86px]"
+        className="relative z-50 inline-flex items-center gap-1 font-manrope text-[16px] font-semibold uppercase leading-[0.9] tracking-[2.08px] text-color-text-extra transition-all hover:text-color-accent-primary focus:text-color-accent-primary md:gap-4 md:text-[20px] md:tracking-[2.6px] xl:text-[22px] xl:tracking-[2.86px]"
         type="button"
       >
         {isMenuOpen ? (

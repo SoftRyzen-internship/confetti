@@ -4,6 +4,8 @@ import localFont from 'next/font/local';
 
 import { Footer, Header } from '@/layout';
 
+import meta from '@/data/meta.json';
+
 import '../globals.css';
 
 const manrope = Manrope({
@@ -39,11 +41,23 @@ const gilroy = localFont({
   variable: '--font-gilroy',
 });
 
-export const metadata: Metadata = {
-  title: 'Confetti',
-  description:
-    'Tworzymy unikalne i niepowtarzalne dekoracje balonowe na imprezy',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL as string;
+
+  const { title, description, manifest, keywords, twitter, openGraph, icons } =
+    meta;
+
+  return {
+    title,
+    description,
+    metadataBase: new URL(baseUrl),
+    manifest,
+    keywords,
+    twitter,
+    openGraph: { ...openGraph, url: `${baseUrl}` },
+    icons,
+  };
+}
 
 export default function RootLayout({
   children,
