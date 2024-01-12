@@ -1,9 +1,9 @@
 // import { CardsKreatywny } from '@/components/base';
 // import { SliderTest } from '@/components/base/SliderTest';
 // import { ContactLinks, ContactFormInput } from '@/components/ui';
-import { ServiceCard } from '@/components/ui/ServiceCard/ServiceCard';
+// import { ServiceCard } from '@/components/ui/ServiceCard/ServiceCard';
 
-import { About, Gallery, Review } from '@/sections';
+import { About, Gallery, Review, Services } from '@/sections';
 // import {
 // ContactLinks,
 // Logo,
@@ -15,11 +15,11 @@ import { About, Gallery, Review } from '@/sections';
 
 import gallery from '@/data/gallery.json';
 // import formConfigData from '@/data/contactForm.json';
-import serviceCardsData from '@/data/common.json';
+// import serviceCardsData from '@/data/common.json';
 
-const {
-  layout: { serviceCards },
-} = serviceCardsData;
+// const {
+//   layout: { serviceCards },
+// } = serviceCardsData;
 
 export default async function Home() {
   return (
@@ -29,12 +29,13 @@ export default async function Home() {
       </section>
 
       <About />
+      <Services />
       <Gallery title={gallery.titleHomePage} />
       <Review />
 
       {/* COMPONENTS TESTING: */}
 
-      <div className="container">
+      {/* <div className="container">
         <ul className="flex w-fit flex-wrap justify-center gap-6">
           {serviceCards.map(card => (
             <li key={card.slug}>
@@ -42,7 +43,7 @@ export default async function Home() {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
 
       {/* <div className="container mt-10">
         <ContactLinks
