@@ -37,7 +37,6 @@ export const ContactFormTextarea: React.FC<ContactFormTextareaProps> = ({
       {isError ? (
         <span
           role="alert"
-          id="errorMessage"
           className="absolute right-6 top-full mt-2 text-right font-manrope text-sm font-medium leading-[1.2] tracking-[-0.14px] text-color-form-error"
         >
           {errorMessage}
