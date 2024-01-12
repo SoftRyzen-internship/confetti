@@ -3,32 +3,53 @@
     "name": "name",
     "label": "Imię",
     "placeholder": "Imię",
-    "isRequiredField": true,
-    "errorMessage": "Nieprawidłowe Іmię",
+
     "validationOptions": {
-      "pattern": "^(?!.*(?:[ -]{2,}| -| - ).*$)[A-Za-zĄąĆćĘęŁłŃńÓóŚśŹźŻż -]+$",
-      "maxLength": 70
+      "required": {
+        "value": true,
+        "message": "To pole jest wymagane"
+      },
+      "pattern": {
+        "value": "^(?!.*(?:[ -]{2,}| -| - ).*$)[A-Za-zĄąĆćĘęŁłŃńÓóŚśŹźŻż -]+$",
+        "message": "Nieprawidłowe Іmię"
+      },
+      "maxLength": {
+        "value": 70,
+        "message": "Musi mieć maksymalnie 70 znaki."
+      }
     }
   },
+
   "email": {
     "name": "email",
     "label": "E-mail",
     "placeholder": "mail@gmail.com",
-    "isRequiredField": true,
-    "errorMessage": "Nieprawidłowy email",
 
     "validationOptions": {
-      "pattern": "^[a-zA-Z0-9]+([._-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([.-][a-zA-Z0-9]+)*\\.[a-zA-Z]{2,}(\\.[a-zA-Z]{2,})?$",
-      "maxLength": 63
+      "required": {
+        "value": true,
+        "message": "To pole jest wymagane"
+      },
+      "pattern": {
+        "value": "^[a-zA-Z0-9]+([._-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([.-][a-zA-Z0-9]+)*\\.[a-zA-Z]{2,}(\\.[a-zA-Z]{2,})?$",
+        "message": "Nieprawidłowy email"
+      },
+      "maxLength": {
+        "value": 63,
+        "message": "Musi mieć maksymalnie 63 znaki."
+      }
     }
   },
+
   "message": {
     "name": "message",
     "label": "Wiadomość",
     "placeholder": "Twoja wiadomość...",
     "validationOptions": {
-      "maxLength": 1000,
-      "pattern": "^[A-Za-zĄąĆćĘęŁłŃńÓóŚśŹźŻż\\d\\W\\s\\r\\n]*$"
+      "maxLength": {
+        "value": 1000,
+        "message": "Musi mieć maksymalnie 1000 znaki."
+      }
     }
   },
   "submitBtn": {

@@ -4,17 +4,9 @@ export const ContactFormInput: React.FC<ContactFormInputProps> = ({
   config,
   errors,
   trigger,
-
   register,
 }) => {
-  const {
-    name,
-    label,
-    placeholder,
-    isRequiredField,
-    errorMessage,
-    validationOptions,
-  } = config;
+  const { name, label, placeholder, validationOptions } = config;
 
   const isError = errors?.[name];
 
@@ -22,9 +14,9 @@ export const ContactFormInput: React.FC<ContactFormInputProps> = ({
     ? 'text-color-form-error'
     : 'text-color-primary';
 
-  const patternRegExp = validationOptions.pattern
-    ? new RegExp(validationOptions.pattern)
-    : undefined;
+  const errorMessage = errors?.[name]?.message;
+
+  const isRequiredField = validationOptions?.required;
 
   return (
     <label className="relative mb-6 flex flex-col md:mb-8">
@@ -43,7 +35,14 @@ export const ContactFormInput: React.FC<ContactFormInputProps> = ({
         {...register(name, {
           ...validationOptions,
           required: isRequiredField,
-          pattern: patternRegExp,
+          pattern: {
+            value: validationOptions?.pattern
+              ? new RegExp(validationOptions.pattern.value)
+              : new RegExp(''),
+            message: validationOptions?.pattern
+              ? validationOptions?.pattern?.message
+              : '',
+          },
         })}
         onBlur={() => trigger(name)}
         type="text"

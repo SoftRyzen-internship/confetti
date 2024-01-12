@@ -13,11 +13,32 @@ type ContactFormInputConfig = {
   name: string;
   label: string;
   placeholder: string;
-  isRequiredField: boolean;
-  errorMessage: string;
-  validationOptions: {
-    pattern?: string;
-    maxLength?: number;
-    minLength?: number;
-  };
+  validationOptions?: validationOptionsInput;
+};
+
+type validationOptionsInput = {
+  required: validationOptionsRequired;
+  pattern?: validationOptionsPattern;
+  maxLength?: validationOptionsMaxLength;
+  minLength?: validationOptionsMinLength;
+};
+
+type validationOptionsRequired = {
+  value: boolean;
+  message: string;
+};
+
+type validationOptionsPattern = {
+  value: string;
+  message: string;
+};
+
+type validationOptionsMaxLength = {
+  value: number;
+  message: string;
+};
+
+type validationOptionsMinLength = {
+  value: number;
+  message: string;
 };

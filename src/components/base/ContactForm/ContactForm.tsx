@@ -10,8 +10,6 @@ import contactFormData from '@/data/contactForm.json';
 
 import { ContactFormInputs } from './types';
 
-import styles from './styles.module.css';
-
 export const ContactForm = () => {
   const {
     register,
@@ -34,7 +32,11 @@ export const ContactForm = () => {
   return (
     <>
       <Toaster />
-      <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+      <form
+        className="bg-color-bg-primary py-8 sm:mx-auto sm:w-[440px] 
+  md:relative md:w-[608px] md:rounded-[24px] md:px-[82px] md:py-[38px] xl:py-[48px]"
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <ContactFormInput
           config={contactFormData.name}
           register={register}
@@ -53,11 +55,12 @@ export const ContactForm = () => {
           config={contactFormData.message}
           register={register}
           errors={errors}
+          trigger={trigger}
         />
 
         <button
           className="flex w-full items-center justify-center rounded-[24px] bg-color-accent-primary px-8 py-5 text-[28px] font-extrabold 
-        leading-[1.23] tracking-[-0.28px] text-color-secondary hover:bg-color-form-btn-hover focus:bg-color-form-btn-hover md:py-6 md:text-[40px] md:tracking-[-0.4px]"
+        leading-[1.23] tracking-[-0.28px] text-color-secondary transition-all hover:bg-color-form-btn-hover focus:bg-color-form-btn-hover md:py-6 md:text-[40px] md:tracking-[-0.4px]"
           type="submit"
         >
           {contactFormData.submitBtn.label}

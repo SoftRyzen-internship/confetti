@@ -4,16 +4,17 @@ export const ContactFormTextarea: React.FC<ContactFormTextareaProps> = ({
   config,
   errors,
   register,
+  trigger,
 }) => {
   const { name, label, placeholder, validationOptions } = config;
+
+  const isError = errors?.[name];
 
   const errorColorClassName = errors?.[name]
     ? 'text-color-form-error'
     : 'text-color-primary';
 
-  const patternRegExp = validationOptions.pattern
-    ? new RegExp(validationOptions.pattern)
-    : undefined;
+  const errorMessage = errors?.[name]?.message;
 
   return (
     <label className="relative mb-6 flex flex-col md:mb-8">
@@ -29,9 +30,19 @@ export const ContactFormTextarea: React.FC<ContactFormTextareaProps> = ({
         placeholder={placeholder}
         {...register(name, {
           ...validationOptions,
-          pattern: patternRegExp,
         })}
+        onBlur={() => trigger(name)}
       />
+
+      {isError ? (
+        <span
+          role="alert"
+          id="errorMessage"
+          className="absolute right-6 top-full mt-2 text-right font-manrope text-sm font-medium leading-[1.2] tracking-[-0.14px] text-color-form-error"
+        >
+          {errorMessage}
+        </span>
+      ) : null}
     </label>
   );
 };
