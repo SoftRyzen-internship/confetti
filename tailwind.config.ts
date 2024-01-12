@@ -12,7 +12,6 @@ const config: Config = {
   theme: {
     // MEDIA QUERIES
     screens: {
-      xs: '360px',
       sm: '480px',
       md: '768px',
       xl: '1280px',

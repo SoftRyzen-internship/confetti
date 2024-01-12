@@ -54,7 +54,7 @@ export const Slider: React.FC<SliderProps> = ({
           key={idx}
           className={`overflow-hidden ${slideClassName}`}
         >
-          <Component card={card} />
+          <Component card={card} idx={idx} />
         </SwiperSlide>
       ))}
     </Swiper>
