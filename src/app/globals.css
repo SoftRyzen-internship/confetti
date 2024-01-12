@@ -57,3 +57,35 @@
   content: '';
   @apply absolute left-0 top-0 h-[1px] w-full bg-color-accent-primary;
 }
+
+/* Not Found*/
+.notFound {
+  background-image: url('~/public/images/hero/hero-bg.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.balloonsUp {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  animation: slide-up 8s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}

@@ -90,6 +90,11 @@
     },
     "hero": {
       "title": "Tworzymy unikalne i niepowtarzalne dekoracje balonowe na imprezy"
+    },
+    "notFound": {
+      "title": "Ups! Strona, której szukasz nie istnieje! Proszę wrócić do strony głównej.",
+      "button": "Wróć do domu",
+      "img": "balony"
     }
   }
 }
