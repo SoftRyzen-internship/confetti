@@ -13,7 +13,7 @@ import { About, Gallery, Review, Services, Hero } from '@/sections';
 // } from '@/components/ui';
 
 import gallery from '@/data/gallery.json';
-// import { ContactForm } from '@/components/base';
+import { ContactForm } from '@/components/base';
 
 export default async function Home() {
   return (
@@ -52,11 +52,11 @@ export default async function Home() {
         <SliderTest />
       </div> */}
 
-      {/* <div className="bg-color-bg-primary md:bg-transparent">
+      <div className="bg-color-bg-primary md:bg-transparent">
         <div className="container max-w-full">
           <ContactForm />
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
