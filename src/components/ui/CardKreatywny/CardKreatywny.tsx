@@ -1,3 +1,5 @@
+import { sliceTextBlock } from '@/utils/helpers';
+
 import { CardKreatywnyProps } from './types';
 
 import css from './CardKreatywny.module.css';
@@ -18,7 +20,17 @@ export const CardKreatywny: React.FC<CardKreatywnyProps> = ({ card }) => {
       <h3
         className={`font-gilroy text-[24px] font-extrabold leading-[1.2] tracking-[-0.24px] md:text-[40px] md:tracking-[-0.4px] ${titleColorClass}`}
       >
-        {title}
+        <span>
+          {id === 2 || id === 4
+            ? sliceTextBlock(title, 0, 2)
+            : sliceTextBlock(title, 0, 3)}
+        </span>
+        <br />
+        <span>
+          {id === 2 || id === 4
+            ? sliceTextBlock(title, 2, 5)
+            : sliceTextBlock(title, 3, 6)}
+        </span>
       </h3>
 
       <p className="font-manrope text-[16px] font-medium leading-[1.45] tracking-[-0.16px] text-color-text-extra md:text-[20px] md:tracking-[-0.2px]">
