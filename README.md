@@ -178,6 +178,14 @@ is a list of more common components and their API.
 | `placeholder`       | `undefined` | required, string, textarea placeholder value                         |
 | `validationOptions` | `undefined` | required, object with optional string fields: maxLength              |
 
+- #### ReviewsCard
+
+| Prop        | Default     | Description                                               |
+| ----------- | ----------- | --------------------------------------------------------- |
+| `className` | `' '`       | add any custom string styles                              |
+| `card`      | `undefined` | required, item of array, should contain \_id,review, name |
+|             |             | as string field                                           |
+
 ### Technology stack
 
 - **Main technologies**:
