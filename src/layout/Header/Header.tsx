@@ -10,12 +10,12 @@ export const Header: React.FC = () => {
           <MenuBtn />
 
           <div className="flex items-center md:ml-auto md:gap-[68px] xl:gap-[312px]">
-            <Logo location="header" className="relative z-40" />
+            <Logo location="header" className="relative z-50" />
 
             <ContactLinks
               location={'header'}
               className={
-                'relative z-40 text-xl tracking-[-0.2px] smOnly:hidden'
+                'relative z-50 text-xl tracking-[-0.2px] smOnly:hidden'
               }
             />
           </div>
