@@ -1,8 +1,6 @@
 # CONFETTI :tada::balloon::confetti_ball:
 
-**[VIEW LIVE PAGE](#)**
-
-> :exclamation: Edit demo-link after deploy on vercel
+**[VIEW LIVE PAGE](https://confetti-event.vercel.app)**
 
 ---
 
@@ -177,6 +175,14 @@ is a list of more common components and their API.
 | `label`             | `undefined` | required, string, label value                                        |
 | `placeholder`       | `undefined` | required, string, textarea placeholder value                         |
 | `validationOptions` | `undefined` | required, object with optional string fields: maxLength              |
+
+- #### ReviewsCard
+
+| Prop        | Default     | Description                                               |
+| ----------- | ----------- | --------------------------------------------------------- |
+| `className` | `' '`       | add any custom string styles                              |
+| `card`      | `undefined` | required, item of array, should contain \_id,review, name |
+|             |             | as string field                                           |
 
 ### Technology stack
 

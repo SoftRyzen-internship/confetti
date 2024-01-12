@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
 
-import { Gallery } from '@/sections';
+import { Gallery, ServicesHero } from '@/sections';
 
 import meta from '@/data/meta.json';
 import gallery from '@/data/gallery.json';
 import common from '@/data/common.json';
+import data from '@/data/services-hero.json';
 
 export const dynamicParams = false;
 export const dynamic = 'error';
@@ -44,12 +45,11 @@ export default async function ServicePage({
 }) {
   // const images = gallery.serviceImages.find(obj => obj.slug === slug);
   console.log('Current page: ', slug);
+  const service = data.find(obj => obj.slug === slug);
 
   return (
     <>
-      <section className="min-h-[300px] bg-slate-50 pt-[175px] md:pt-[264px] xl:pt-[280px] ">
-        Hero
-      </section>
+      {service && <ServicesHero {...service} />}
 
       <Gallery title={gallery.titleServicePage} />
     </>

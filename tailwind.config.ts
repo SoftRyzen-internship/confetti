@@ -54,6 +54,7 @@ const config: Config = {
         'color-form-label': '#949494',
         'color-form-placeholder': '#888888',
         'color-form-error': '#FF6060',
+        'color-form-btn-hover': '#da679e',
       },
       // FONTS
       fontFamily: {

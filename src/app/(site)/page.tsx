@@ -1,6 +1,6 @@
 // import { CardsKreatywny } from '@/components/base';
 // import { SliderTest } from '@/components/base/SliderTest';
-// import { ContactLinks, ContactFormInput } from '@/components/ui';
+// import { ContactLinks } from '@/components/ui';
 
 import { About, Gallery, Hero, Review } from '@/sections';
 // import {
@@ -13,7 +13,7 @@ import { About, Gallery, Hero, Review } from '@/sections';
 // } from '@/components/ui';
 
 import gallery from '@/data/gallery.json';
-// import formConfigData from '@/data/contactForm.json';
+import { ContactForm } from '@/components/base';
 
 export default async function Home() {
   return (
@@ -35,30 +35,17 @@ export default async function Home() {
       {/* <div className="container bg-color-bg-primary">
         <CardsKreatywny />
         <ContactLinks location={'contacts'} className={'xl:items-start'} />
-      </div>
-
-      <div className="container my-[50px]">
+        </div>
+        
+        <div className="container my-[50px]">
         <SliderTest />
       </div> */}
 
-      {/* <div className=" bg-color-bg-primary">
-        <div className="container">
-          <div className="md:mx-auto md:w-[608px] md:px-[82px] md:py-[38px]">
-            <ContactFormInput
-              config={formConfigData.name}
-              // register
-              // errors,
-            />
-
-            <ContactFormInput
-              config={formConfigData.email}
-              // register
-              // errors,
-            />
-            <ContactFormTextarea config={formConfigData.message} />
-          </div>
+      <div className="bg-color-bg-primary md:bg-transparent">
+        <div className="container max-w-full">
+          <ContactForm />
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
