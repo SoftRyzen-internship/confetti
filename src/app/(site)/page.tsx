@@ -3,7 +3,7 @@
 // import { ContactLinks, ContactFormInput } from '@/components/ui';
 // import { ServiceCard } from '@/components/ui/ServiceCard/ServiceCard';
 
-import { About, Gallery, Review, Services } from '@/sections';
+import { About, Gallery, Review, Services, Hero } from '@/sections';
 // import {
 // ContactLinks,
 // Logo,
@@ -24,10 +24,7 @@ import gallery from '@/data/gallery.json';
 export default async function Home() {
   return (
     <>
-      <section className="min-h-[300px] bg-slate-50 pt-[175px] md:pt-[264px] xl:pt-[280px] ">
-        Hero
-      </section>
-
+      <Hero />
       <About />
       <Services />
       <Gallery title={gallery.titleHomePage} />
