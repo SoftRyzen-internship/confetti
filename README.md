@@ -1,8 +1,6 @@
 # CONFETTI :tada::balloon::confetti_ball:
 
-**[VIEW LIVE PAGE](#)**
-
-> :exclamation: Edit demo-link after deploy on vercel
+**[VIEW LIVE PAGE](https://confetti-event.vercel.app)**
 
 ---
 
