@@ -1,6 +1,7 @@
 export type GalleryImage = {
-  path: string;
   alt: string;
+  path: string;
+  pathCrop?: string;
 };
 
 export type GalleryDataType = {

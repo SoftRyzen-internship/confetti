@@ -7,38 +7,47 @@
       "images": [
         {
           "path": "/images/services/baby-shower/baby-shower-01.webp",
+          "pathCrop": "/images/services/baby-shower/baby-shower-01-sm.webp",
           "alt": "Świąteczna dekoracja na Baby Shower"
         },
         {
           "path": "/images/services/baby-shower/baby-shower-02.webp",
+          "pathCrop": "/images/services/baby-shower/baby-shower-02-sm.webp",
           "alt": "Świąteczna dekoracja na Baby Shower"
         },
         {
           "path": "/images/services/baby-shower/baby-shower-03.webp",
+          "pathCrop": "/images/services/baby-shower/baby-shower-03-sm.webp",
           "alt": "Świąteczna dekoracja na Baby Shower"
         },
         {
           "path": "/images/services/baby-shower/baby-shower-04.webp",
+          "pathCrop": "/images/services/baby-shower/baby-shower-04-sm.webp",
           "alt": "Świąteczna dekoracja na Baby Shower"
         },
         {
           "path": "/images/services/baby-shower/baby-shower-05.webp",
+          "pathCrop": "/images/services/baby-shower/baby-shower-05-sm.webp",
           "alt": "Świąteczna dekoracja na Baby Shower"
         },
         {
           "path": "/images/services/baby-shower/baby-shower-06.webp",
+          "pathCrop": "/images/services/baby-shower/baby-shower-06-sm.webp",
           "alt": "Świąteczna dekoracja na Baby Shower"
         },
         {
           "path": "/images/services/baby-shower/baby-shower-07.webp",
+          "pathCrop": "/images/services/baby-shower/baby-shower-07-sm.webp",
           "alt": "Świąteczna dekoracja na Baby Shower"
         },
         {
           "path": "/images/services/baby-shower/baby-shower-08.webp",
+          "pathCrop": "/images/services/baby-shower/baby-shower-08-sm.webp",
           "alt": "Świąteczna dekoracja na Baby Shower"
         },
         {
           "path": "/images/services/baby-shower/baby-shower-09.webp",
+          "pathCrop": "/images/services/baby-shower/baby-shower-09-sm.webp",
           "alt": "Świąteczna dekoracja na Baby Shower"
         }
       ]
@@ -48,38 +57,47 @@
       "images": [
         {
           "path": "/images/services/baptism/baptism-01.webp",
+          "pathCrop": "/images/services/baptism/baptism-01-sm.webp",
           "alt": "Świąteczna dekoracja na Chrzciny"
         },
         {
           "path": "/images/services/baptism/baptism-02.webp",
+          "pathCrop": "/images/services/baptism/baptism-02-sm.webp",
           "alt": "Świąteczna dekoracja na Chrzciny"
         },
         {
           "path": "/images/services/baptism/baptism-03.webp",
+          "pathCrop": "/images/services/baptism/baptism-03-sm.webp",
           "alt": "Świąteczna dekoracja na Chrzciny"
         },
         {
           "path": "/images/services/baptism/baptism-04.webp",
+          "pathCrop": "/images/services/baptism/baptism-04-sm.webp",
           "alt": "Świąteczna dekoracja na Chrzciny"
         },
         {
           "path": "/images/services/baptism/baptism-05.webp",
+          "pathCrop": "/images/services/baptism/baptism-05-sm.webp",
           "alt": "Świąteczna dekoracja na Chrzciny"
         },
         {
           "path": "/images/services/baptism/baptism-06.webp",
+          "pathCrop": "/images/services/baptism/baptism-06-sm.webp",
           "alt": "Świąteczna dekoracja na Chrzciny"
         },
         {
           "path": "/images/services/baptism/baptism-07.webp",
+          "pathCrop": "/images/services/baptism/baptism-07-sm.webp",
           "alt": "Świąteczna dekoracja na Chrzciny"
         },
         {
           "path": "/images/services/baptism/baptism-08.webp",
+          "pathCrop": "/images/services/baptism/baptism-08-sm.webp",
           "alt": "Świąteczna dekoracja na Chrzciny"
         },
         {
           "path": "/images/services/baptism/baptism-09.webp",
+          "pathCrop": "/images/services/baptism/baptism-09-sm.webp",
           "alt": "Świąteczna dekoracja na Chrzciny"
         }
       ]
@@ -89,38 +107,47 @@
       "images": [
         {
           "path": "/images/services/birthday/birthday-01.webp",
+          "pathCrop": "/images/services/birthday/birthday-01-sm.webp",
           "alt": "Świąteczna dekoracja na Urodziny"
         },
         {
           "path": "/images/services/birthday/birthday-02.webp",
+          "pathCrop": "/images/services/birthday/birthday-02-sm.webp",
           "alt": "Świąteczna dekoracja na Urodziny"
         },
         {
           "path": "/images/services/birthday/birthday-03.webp",
+          "pathCrop": "/images/services/birthday/birthday-03-sm.webp",
           "alt": "Świąteczna dekoracja na Urodziny"
         },
         {
           "path": "/images/services/birthday/birthday-04.webp",
+          "pathCrop": "/images/services/birthday/birthday-04-sm.webp",
           "alt": "Świąteczna dekoracja na Urodziny"
         },
         {
           "path": "/images/services/birthday/birthday-05.webp",
+          "pathCrop": "/images/services/birthday/birthday-05-sm.webp",
           "alt": "Świąteczna dekoracja na Urodziny"
         },
         {
           "path": "/images/services/birthday/birthday-06.webp",
+          "pathCrop": "/images/services/birthday/birthday-06-sm.webp",
           "alt": "Świąteczna dekoracja na Urodziny"
         },
         {
           "path": "/images/services/birthday/birthday-07.webp",
+          "pathCrop": "/images/services/birthday/birthday-07-sm.webp",
           "alt": "Świąteczna dekoracja na Urodziny"
         },
         {
           "path": "/images/services/birthday/birthday-08.webp",
+          "pathCrop": "/images/services/birthday/birthday-08-sm.webp",
           "alt": "Świąteczna dekoracja na Urodziny"
         },
         {
           "path": "/images/services/birthday/birthday-09.webp",
+          "pathCrop": "/images/services/birthday/birthday-09-sm.webp",
           "alt": "Świąteczna dekoracja na Urodziny"
         }
       ]
@@ -130,38 +157,47 @@
       "images": [
         {
           "path": "/images/services/balloons/balloons-01.webp",
+          "pathCrop": "/images/services/balloons/balloons-01-sm.webp",
           "alt": "Świąteczna dekoracja. Balony z helem."
         },
         {
           "path": "/images/services/balloons/balloons-02.webp",
+          "pathCrop": "/images/services/balloons/balloons-02-sm.webp",
           "alt": "Świąteczna dekoracja. Balony z helem."
         },
         {
           "path": "/images/services/balloons/balloons-03.webp",
+          "pathCrop": "/images/services/balloons/balloons-03-sm.webp",
           "alt": "Świąteczna dekoracja. Balony z helem."
         },
         {
           "path": "/images/services/balloons/balloons-04.webp",
+          "pathCrop": "/images/services/balloons/balloons-04-sm.webp",
           "alt": "Świąteczna dekoracja. Balony z helem."
         },
         {
           "path": "/images/services/balloons/balloons-05.webp",
+          "pathCrop": "/images/services/balloons/balloons-05-sm.webp",
           "alt": "Świąteczna dekoracja. Balony z helem."
         },
         {
           "path": "/images/services/balloons/balloons-06.webp",
+          "pathCrop": "/images/services/balloons/balloons-06-sm.webp",
           "alt": "Świąteczna dekoracja. Balony z helem."
         },
         {
           "path": "/images/services/balloons/balloons-07.webp",
+          "pathCrop": "/images/services/balloons/balloons-07-sm.webp",
           "alt": "Świąteczna dekoracja. Balony z helem."
         },
         {
           "path": "/images/services/balloons/balloons-08.webp",
+          "pathCrop": "/images/services/balloons/balloons-08-sm.webp",
           "alt": "Świąteczna dekoracja. Balony z helem."
         },
         {
           "path": "/images/services/balloons/balloons-09.webp",
+          "pathCrop": "/images/services/balloons/balloons-09-sm.webp",
           "alt": "Świąteczna dekoracja. Balony z helem."
         }
       ]
@@ -171,38 +207,47 @@
       "images": [
         {
           "path": "/images/services/corporate/corporate-01.webp",
+          "pathCrop": "/images/services/corporate/corporate-01-sm.webp",
           "alt": "Świąteczna dekoracja na imprezę firmową"
         },
         {
           "path": "/images/services/corporate/corporate-02.webp",
+          "pathCrop": "/images/services/corporate/corporate-02-sm.webp",
           "alt": "Świąteczna dekoracja na imprezę firmową"
         },
         {
           "path": "/images/services/corporate/corporate-03.webp",
+          "pathCrop": "/images/services/corporate/corporate-03-sm.webp",
           "alt": "Świąteczna dekoracja na imprezę firmową"
         },
         {
           "path": "/images/services/corporate/corporate-04.webp",
+          "pathCrop": "/images/services/corporate/corporate-04-sm.webp",
           "alt": "Świąteczna dekoracja na imprezę firmową"
         },
         {
           "path": "/images/services/corporate/corporate-05.webp",
+          "pathCrop": "/images/services/corporate/corporate-05-sm.webp",
           "alt": "Świąteczna dekoracja na imprezę firmową"
         },
         {
           "path": "/images/services/corporate/corporate-06.webp",
+          "pathCrop": "/images/services/corporate/corporate-06-sm.webp",
           "alt": "Świąteczna dekoracja na imprezę firmową"
         },
         {
           "path": "/images/services/corporate/corporate-07.webp",
+          "pathCrop": "/images/services/corporate/corporate-07-sm.webp",
           "alt": "Świąteczna dekoracja na imprezę firmową"
         },
         {
           "path": "/images/services/corporate/corporate-08.webp",
+          "pathCrop": "/images/services/corporate/corporate-08-sm.webp",
           "alt": "Świąteczna dekoracja na imprezę firmową"
         },
         {
           "path": "/images/services/corporate/corporate-09.webp",
+          "pathCrop": "/images/services/corporate/corporate-09-sm.webp",
           "alt": "Świąteczna dekoracja na imprezę firmową"
         }
       ]
@@ -212,38 +257,47 @@
       "images": [
         {
           "path": "/images/services/valentines/valentines-01.webp",
+          "pathCrop": "/images/services/valentines/valentines-01-sm.webp",
           "alt": "Świąteczna dekoracja na Walentynki"
         },
         {
           "path": "/images/services/valentines/valentines-02.webp",
+          "pathCrop": "/images/services/valentines/valentines-02-sm.webp",
           "alt": "Świąteczna dekoracja na Walentynki"
         },
         {
           "path": "/images/services/valentines/valentines-03.webp",
+          "pathCrop": "/images/services/valentines/valentines-03-sm.webp",
           "alt": "Świąteczna dekoracja na Walentynki"
         },
         {
           "path": "/images/services/valentines/valentines-04.webp",
+          "pathCrop": "/images/services/valentines/valentines-04-sm.webp",
           "alt": "Świąteczna dekoracja na Walentynki"
         },
         {
           "path": "/images/services/valentines/valentines-05.webp",
+          "pathCrop": "/images/services/valentines/valentines-05-sm.webp",
           "alt": "Świąteczna dekoracja na Walentynki"
         },
         {
           "path": "/images/services/valentines/valentines-06.webp",
+          "pathCrop": "/images/services/valentines/valentines-06-sm.webp",
           "alt": "Świąteczna dekoracja na Walentynki"
         },
         {
           "path": "/images/services/valentines/valentines-07.webp",
+          "pathCrop": "/images/services/valentines/valentines-07-sm.webp",
           "alt": "Świąteczna dekoracja na Walentynki"
         },
         {
           "path": "/images/services/valentines/valentines-08.webp",
+          "pathCrop": "/images/services/valentines/valentines-08-sm.webp",
           "alt": "Świąteczna dekoracja na Walentynki"
         },
         {
           "path": "/images/services/valentines/valentines-09.webp",
+          "pathCrop": "/images/services/valentines/valentines-09-sm.webp",
           "alt": "Świąteczna dekoracja na Walentynki"
         }
       ]
@@ -253,38 +307,47 @@
       "images": [
         {
           "path": "/images/services/wedding/wedding-01.webp",
+          "pathCrop": "/images/services/wedding/wedding-01-sm.webp",
           "alt": "Świąteczna dekoracja na wesele"
         },
         {
           "path": "/images/services/wedding/wedding-02.webp",
+          "pathCrop": "/images/services/wedding/wedding-02-sm.webp",
           "alt": "Świąteczna dekoracja na wesele"
         },
         {
           "path": "/images/services/wedding/wedding-03.webp",
+          "pathCrop": "/images/services/wedding/wedding-03-sm.webp",
           "alt": "Świąteczna dekoracja na wesele"
         },
         {
           "path": "/images/services/wedding/wedding-04.webp",
+          "pathCrop": "/images/services/wedding/wedding-04-sm.webp",
           "alt": "Świąteczna dekoracja na wesele"
         },
         {
           "path": "/images/services/wedding/wedding-05.webp",
+          "pathCrop": "/images/services/wedding/wedding-05-sm.webp",
           "alt": "Świąteczna dekoracja na wesele"
         },
         {
           "path": "/images/services/wedding/wedding-06.webp",
+          "pathCrop": "/images/services/wedding/wedding-06-sm.webp",
           "alt": "Świąteczna dekoracja na wesele"
         },
         {
           "path": "/images/services/wedding/wedding-07.webp",
+          "pathCrop": "/images/services/wedding/wedding-07-sm.webp",
           "alt": "Świąteczna dekoracja na wesele"
         },
         {
           "path": "/images/services/wedding/wedding-08.webp",
+          "pathCrop": "/images/services/wedding/wedding-08-sm.webp",
           "alt": "Świąteczna dekoracja na wesele"
         },
         {
           "path": "/images/services/wedding/wedding-09.webp",
+          "pathCrop": "/images/services/wedding/wedding-09-sm.webp",
           "alt": "Świąteczna dekoracja na wesele"
         }
       ]
