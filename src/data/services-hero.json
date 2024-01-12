@@ -1,0 +1,95 @@
+[
+  {
+    "slug": "baby-shower",
+    "title": "Baby Shower",
+    "text": [
+      "Nie tylko przyszli rodzice są podekscytowani narodzinami maluszka. Najprawdopodobniej dziadkowie, ciotki i wujkowie, kuzyni, przyjaciele i inni bliscy również chętnie powitają nowego członka rodziny.",
+      "Baby shower, czy inaczej mówiąc „bociankowe”, to jeden z najlepszych sposobów, aby wyrazić radość z ciąży i nadchodzących narodzin. To czas dla przyjaciół i rodziny, aby spędzić czas z przyszłymi rodzicami i obsypać ich prezentami, miłością i dobrymi życzeniami przed narodzinami ich pociechy.",
+      "Aby nadać imprezie odpowiedniej atmosfery i radosnego klimatu najlepiej zdecydować się na dekoracje balonowe. Bo co bardziej pasuje do przyjęcia na cześć narodzin dziecka, jeśli nie balony?"
+    ],
+    "img": {
+      "path": "/images/services/baby-shower/hero-baby-shower.webp",
+      "alt": "Świąteczna dekoracja na Baby Shower"
+    }
+  },
+  {
+    "slug": "baptism",
+    "title": "Chrzciny",
+    "text": [
+      "To pierwsze ważne wydarzenie w życiu dziecka. Pomimo, że prawdopodobnie maluch nie będzie go pamiętać, dla całej rodziny to podniosła duchowo chwila, którą warto dobrze zaplanować.",
+      "Poza ustaleniem daty w kościele i wyborem rodziców chrzestnych, należy także przygotować menu na przyjęcie lub znaleźć odpowiedni catering, zaprosić gości i ustalić kilka innych rzeczy",
+      "Niezależnie od tego czy przyjęcie po mszy odbędzie się w domu czy w restauracji warto zadbać o odpowiednią oprawę pomieszczenia. Dekoracje dodadzą wnętrzu odświętnego charakteru, a pamiątkowe zdjęcia będą wspaniałym prezentem, który w przyszłości będzie można podarować dziecku."
+    ],
+    "img": {
+      "path": "/images/services/baptism/hero-baptism.webp",
+      "alt": "Świąteczna dekoracja na Chrzciny"
+    }
+  },
+  {
+    "slug": "birthday",
+    "title": "Urodziny",
+    "text": [
+      "Urodziny dziecka to zawsze ważne wydarzenie w życiu całej rodziny oraz najbliższych.",
+      "Warto zadbać więc o to, aby ta uroczystość była wyjątkowa i zapadła w pamięci wszystkich gości.",
+      "Jeśli więc chcesz, aby urodziny Twojego dziecka miały szczególną oprawę niczym z bajki w której marzenia stają się rzeczywistością, pozwól że wyczarujemy dla Was niesamowity świat pełen kolorów, radości i ulubionych, bajkowych postaci!",
+      "Urodziny Twojego dziecka będą niezapomniane!"
+    ],
+    "img": {
+      "path": "/images/services/birthday/hero-birthday.webp",
+      "alt": "Świąteczna dekoracja na Urodziny"
+    }
+  },
+  {
+    "slug": "balloons",
+    "title": "Balony z helem",
+    "text": [
+      "Oferujemy balony z helem, dekoracje balonowe i balony eventowe.",
+      "Balony z dostawą w Warszawie lub odbiór osobisty.",
+      "Tworzymy unikalne i niepowtarzalne bukiety balonowe z balonów z helem, przygotowujemy niestandardowe girlandy z balonów, a także projektujemy i realizujemy oryginalne dekoracje balonowe.",
+      "Wykonamy dla Ciebie KAŻDĄ wymarzoną balonową niespodziankę. Głowy mamy pełne pomysłów, którymi chętnie się z Tobą podzielimy"
+    ],
+    "img": {
+      "path": "/images/services/balloons/hero-balloons.webp",
+      "alt": "Świąteczna dekoracja. Balony z helem."
+    }
+  },
+  {
+    "slug": "corporate",
+    "title": "Impreza firmowa",
+    "text": [
+      "Imprezy dla firm to zazwyczaj przyjęcia organizowane dla większej liczby osób i w dużych pomieszczeniach. W takiej sytuacji zawsze najlepiej sprawdzają się bukiety balonowe, które fantastycznie wypełniają przestrzeń oraz stanowią główny element przyjęcia widoczny już z daleka i przez wszystkich zaproszonych gości.",
+      "Tworzymy balonowe konstrukcje pod wymiar. Nasza propozycja to bramy z balonów, a także słupy balonowe. W ostatnim czasie na topie są organiczne dekoracje balonowe, czyli stworzone z balonów różnej wielkości.",
+      "Balony rewelacyjnie sprawdzają się do wykonywania na nich nadruków. Możesz zamówić wiewiórcze balony ze swoim personalizowanym napisem, logotypem, nazwa Twojej firmy, marki, produktu czy bloga. Może to być także znak graficzny. Nadruki przygotowujemy na gwiazdach, sercach, kulach 3d, gigantach itp."
+    ],
+    "img": {
+      "path": "/images/services/corporate/hero-corporate.webp",
+      "alt": "Świąteczna dekoracja na imprezę firmową"
+    }
+  },
+  {
+    "slug": "valentines",
+    "title": "Walentynki",
+    "text": [
+      "Jedyną rzeczą lepszą od otrzymania idealnego prezentu na Walentynki jest wręczenie takiego podarunku osobie, którą się kocha.",
+      "Uczucia powinno się wyrażać przez cały rok, a 14 luty to dzień dobry jak każdy inny. Jednak wszechobecna presja, nasilana przez uwiecznianie wszystkiego w mediach społecznościowych może powodować stres, zwłaszcza jeśli brakuje Ci pomysłu na prezent.",
+      "Zamiast spędzać godziny na wybranie oryginalnego prezentu, dlaczego nie zorganizować po prostu romantycznego wieczoru w akompaniamencie eleganckich balonów i kolacji przy świecach?"
+    ],
+    "img": {
+      "path": "/images/services/valentines/hero-valentines.webp",
+      "alt": "Świąteczna dekoracja na Walentynki"
+    }
+  },
+  {
+    "slug": "wedding",
+    "title": "Wesele",
+    "text": [
+      "Najpopularniejszą dekoracją wybieraną przez Młode Pary są girlandy balonowe, w które można przystroić całe wnętrze, tworząc dzięki temu niepowtarzalny, bajkowy klimat.",
+      "Dawniej balony były kojarzone głównie z radosnymi dekoracjami na przyjęcia dla dzieci – nic bardziej mylnego. W CONFETTI  tworzymy wyrafinowane kompozycje balonowe, dzięki którym zmienicie prostą uroczystość w wesele waszych marzeń!",
+      "Do girland balonowych dobieramy kompozycje balonowe na stoły i bramy balonowe, aby stworzyć pełnowymiarową dekorację sali. Trendem sezonu są ścianki balonowe i ramki z balonów, dedykowane do sesji zdjęciowych dla nowożeńców czy spontanicznych kadrów do wrzucenia na Instagram lub Facebooka. Ścianki balonowe można łatwo dobrać do kolorystki wnętrza i spersonalizować je wybranymi dodatkami lub napisami. Balony ucieszą zarówno dzieci jak i dorosłych."
+    ],
+    "img": {
+      "path": "/images/services/wedding/hero-wedding.webp",
+      "alt": "Świąteczna dekoracja na wesele"
+    }
+  }
+]
