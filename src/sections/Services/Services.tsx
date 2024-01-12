@@ -1,9 +1,7 @@
-'use client';
+import { ServiceSlider } from '@/components/base';
 
 import { SectionTitle } from '@/components/ui';
 import { ServiceCard } from '@/components/ui';
-import { Slider } from '@/components/ui';
-import { SliderControls } from '@/components/ui';
 
 import data from '@/data/section-services.json';
 
@@ -31,17 +29,7 @@ export const Services: React.FC = () => {
           ))}
         </ul>
 
-        <div className="smOnly:hidden">
-          <div className="md:absolute md:right-[32px] md:top-[41px] xl:top-[3px]">
-            <SliderControls section="services" />
-          </div>
-
-          <Slider
-            component={ServiceCard}
-            data={serviceCards}
-            section="services"
-          />
-        </div>
+        <ServiceSlider serviceCards={serviceCards} />
       </div>
     </section>
   );
