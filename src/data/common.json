@@ -64,8 +64,7 @@
     },
     "menuBtn": {
       "close": "zamknięty",
-      "open": "menu",
-      "ariaLabel": "menu button"
+      "open": "menu"
     },
     "footer": {
       "rights": "confetti © 2023",

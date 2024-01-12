@@ -11,3 +11,4 @@ export * from './GalleryCard';
 export * from './MenuBtn';
 export * from './ReviewsCard';
 export * from './ServiceCard';
+export * from './FooterLink';

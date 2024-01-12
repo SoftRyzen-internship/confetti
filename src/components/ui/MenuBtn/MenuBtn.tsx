@@ -10,7 +10,7 @@ import Cross from '~/icons/cross.svg';
 import Menu from '~/icons/menu.svg';
 
 const {
-  menuBtn: { close, open, ariaLabel },
+  menuBtn: { close, open },
 } = data.layout;
 
 export const MenuBtn: React.FC = () => {
@@ -21,7 +21,6 @@ export const MenuBtn: React.FC = () => {
   return (
     <>
       <button
-        aria-label={ariaLabel}
         onClick={(e: MouseEvent<HTMLButtonElement>) => {
           setIsMenuOpen(prev => !prev);
           e.currentTarget.blur();

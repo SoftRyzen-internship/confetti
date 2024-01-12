@@ -23,7 +23,7 @@ export const ServiceCard: React.FC<Props> = ({ card }) => {
         />
       </div>
 
-      <p className="font-manrope text-[20px]/[0.95] font-semibold -tracking-[0.2px] text-color-primary transition-all group-hover:text-color-accent-primary md:text-[28px] xl:text-[32px]">
+      <p className="font-gilroy text-[20px]/[1.2] font-semibold -tracking-[0.2px] text-color-primary transition-all group-hover:text-color-accent-primary md:text-[28px] xl:text-[32px]">
         {caption}
       </p>
     </Link>

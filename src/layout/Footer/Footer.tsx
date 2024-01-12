@@ -1,5 +1,5 @@
 import { Logo } from '@/components/ui';
-import { FooterLink } from '@/components/ui/FooterLink';
+import { FooterLink } from '@/components/ui';
 
 import data from '@/data/common.json';
 
