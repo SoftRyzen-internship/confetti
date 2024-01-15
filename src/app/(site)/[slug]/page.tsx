@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import { Gallery, ServicesHero } from '@/sections';
+import { Contacts, Gallery, ServicesHero } from '@/sections';
 
 import meta from '@/data/meta.json';
 import gallery from '@/data/gallery.json';
@@ -31,7 +31,8 @@ export async function generateMetadata({
 
 export async function generateStaticParams() {
   // todo: Will be updated as json data structure develops...
-  const staticParams = gallery.serviceImages.map(({ slug }) => {
+  const { services } = common.layout.navigation;
+  const staticParams = services.navLinks.map(({ slug }) => {
     return { slug };
   });
 
@@ -43,15 +44,13 @@ export default async function ServicePage({
 }: {
   params: { slug: string };
 }) {
-  // const images = gallery.serviceImages.find(obj => obj.slug === slug);
-  console.log('Current page: ', slug);
   const service = data.find(obj => obj.slug === slug);
 
   return (
     <>
       {service && <ServicesHero {...service} />}
-
       <Gallery title={gallery.titleServicePage} />
+      <Contacts />
     </>
   );
 }
