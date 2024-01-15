@@ -9,7 +9,7 @@ export const ReviewsCard: React.FC<PropsReviews> = ({
 }) => {
   return (
     <div
-      className={`flex h-[229px] w-[320px] flex-col justify-between rounded-3xl ${
+      className={`flex h-[229px] flex-col justify-between rounded-3xl ${
         idx % 2 ? 'bg-color-bg-extra' : 'bg-color-bg-primary'
       } p-6 md:h-[206px] md:w-[346px] xl:h-[294px] xl:w-[388px] ${className}`}
     >
