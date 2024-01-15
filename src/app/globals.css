@@ -4,7 +4,7 @@
 
 /* Common */
 .section {
-  @apply pt-12 md:pt-16 xl:pt-[124px];
+  @apply pt-14 md:pt-16 xl:pt-[124px];
 }
 
 /* Slider */

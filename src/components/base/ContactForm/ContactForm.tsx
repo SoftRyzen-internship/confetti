@@ -10,9 +10,9 @@ import { sendEmail } from '@/utils/helpers';
 
 import contactFormData from '@/data/contactForm.json';
 
-import { ContactFormInputs } from './types';
+import { ContactFormInputs, Props } from './types';
 
-export const ContactForm = () => {
+export const ContactForm: React.FC<Props> = ({ className }) => {
   const {
     register,
     handleSubmit,
@@ -35,8 +35,8 @@ export const ContactForm = () => {
     <>
       <Toaster />
       <form
-        className="bg-color-bg-primary py-8 sm:mx-auto sm:w-[440px] 
-  md:relative md:w-[608px] md:rounded-[24px] md:px-[82px] md:py-[38px] xl:py-[48px]"
+        className={`bg-color-bg-primary px-5 py-8 sm:w-[440px] 
+        md:relative md:w-[608px] md:rounded-[24px] md:px-[82px] md:py-[38px] xl:py-[48px] ${className}`}
         onSubmit={handleSubmit(onSubmit)}
       >
         <ContactFormInput

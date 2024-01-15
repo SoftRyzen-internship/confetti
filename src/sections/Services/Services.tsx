@@ -9,7 +9,7 @@ const { title, subtitle, serviceCards } = data;
 
 export const Services: React.FC = () => {
   return (
-    <section className="pb-7 pt-12 md:pb-8 md:pt-16 xl:pb-[62px] xl:pt-[124px]">
+    <section className="bg-color-secondary pt-12 md:pt-16 xl:pt-[124px]">
       <div className="container relative">
         <SectionTitle
           className="mb-3 text-center md:mb-4 md:text-start"
