@@ -10,7 +10,7 @@
         "message": "To pole jest wymagane"
       },
       "pattern": {
-        "value": "^(?!.*(?:[ -]{2,}| -| - ).*$)[A-Za-zĄąĆćĘęŁłŃńÓóŚśŹźŻż -]+$",
+        "value": "^(?!.*(?:[ -]{2,}| -| - |^[ -]|^-))[A-Za-zĄąĆćĘęŁłŃńÓóŚśŹźŻż -]+$",
         "message": "Nieprawidłowe Іmię"
       },
       "maxLength": {
