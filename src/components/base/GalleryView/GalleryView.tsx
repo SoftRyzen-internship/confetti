@@ -29,7 +29,8 @@ export const GalleryView: React.FC<GalleryViewProps> = ({ className = '' }) => {
   const staticImages =
     gallery.serviceImages.find(obj => obj.slug === slug)?.images || [];
 
-  const dynamicImages = data?.length > 0 ? data[0].image : [];
+  const dynamicImages =
+    data?.length > 0 ? data[0].image : gallery.galleryPlaceholderView;
 
   const images = isHomePage ? dynamicImages : staticImages;
 

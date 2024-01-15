@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { MouseEvent, useState } from 'react';
 
 import { NavMenu } from '@/components/base';
 
@@ -10,7 +10,7 @@ import Cross from '~/icons/cross.svg';
 import Menu from '~/icons/menu.svg';
 
 const {
-  menuBtn: { close, open, ariaLabel },
+  menuBtn: { close, open },
 } = data.layout;
 
 export const MenuBtn: React.FC = () => {
@@ -21,8 +21,10 @@ export const MenuBtn: React.FC = () => {
   return (
     <>
       <button
-        aria-label={ariaLabel}
-        onClick={() => setIsMenuOpen(prev => !prev)}
+        onClick={(e: MouseEvent<HTMLButtonElement>) => {
+          setIsMenuOpen(prev => !prev);
+          e.currentTarget.blur();
+        }}
         className="relative z-50 inline-flex items-center gap-1 font-manrope text-[16px] font-semibold uppercase leading-[0.9] tracking-[2.08px] text-color-text-extra transition-all hover:text-color-accent-primary focus:text-color-accent-primary md:gap-4 md:text-[20px] md:tracking-[2.6px] xl:text-[22px] xl:tracking-[2.86px]"
         type="button"
       >
