@@ -23,7 +23,7 @@ export const Services: React.FC = () => {
 
         <ul className="flex flex-col items-center gap-7 md:hidden">
           {serviceCards.map(card => (
-            <li key={card.slug}>
+            <li key={card.slug} className="w-full">
               <ServiceCard card={card} />
             </li>
           ))}

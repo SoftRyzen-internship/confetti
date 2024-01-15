@@ -3,4 +3,5 @@ export type ServicesHeroProps = {
   title: string;
   text: string[];
   img: { path: string; alt: string };
+  base64: string;
 };

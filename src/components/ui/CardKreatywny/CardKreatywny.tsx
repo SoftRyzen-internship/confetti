@@ -15,7 +15,7 @@ export const CardKreatywny: React.FC<CardKreatywnyProps> = ({ card }) => {
 
   return (
     <div
-      className={`${cardConfetiClass} mx-auto flex h-[253px] w-[320px] flex-col justify-between rounded-3xl bg-white p-[23px] md:h-[319px] md:w-[596px] md:p-12`}
+      className={`${cardConfetiClass} mx-auto flex h-[253px] flex-col justify-between rounded-3xl bg-white p-[23px] md:h-[319px] md:w-[596px] md:p-12`}
     >
       <h3
         className={`font-gilroy text-[24px] font-extrabold leading-[1.2] tracking-[-0.24px] md:text-[40px] md:tracking-[-0.4px] ${titleColorClass}`}

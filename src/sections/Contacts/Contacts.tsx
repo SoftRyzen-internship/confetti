@@ -11,7 +11,7 @@ const { title, location } = data;
 
 export const Contacts: React.FC = () => {
   return (
-    <section className="bg-color-secondary pb-[38px] pt-7 md:pb-16 md:pt-10 xl:pb-[113px] xl:pt-[91px]">
+    <section className="overflow-hidden bg-color-secondary pb-[38px] pt-7 md:pb-16 md:pt-10 xl:pb-[113px] xl:pt-[91px]">
       <div
         className={`container relative items-center md:flex md:flex-col md:items-center xl:flex-row xl:justify-between ${css.container}`}
       >

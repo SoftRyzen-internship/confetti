@@ -6,6 +6,7 @@ export const ServicesHero: React.FC<ServicesHeroProps> = ({
   title,
   text,
   img,
+  base64,
 }) => {
   return (
     <section className="pt-[108px] md:pt-[155px]">
@@ -38,6 +39,8 @@ export const ServicesHero: React.FC<ServicesHeroProps> = ({
               width={608}
               height={726}
               className="object-cover md:h-[899px] xl:h-[726px]"
+              placeholder="blur"
+              blurDataURL={base64}
             />
           </div>
         </div>
