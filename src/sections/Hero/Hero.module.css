@@ -20,6 +20,11 @@
   background: url('~/public/images/hero/left-balloons.webp');
   z-index: 10;
   background-size: cover;
+  transition: transform 0.9s ease-out;
+}
+
+.balloons.parallax::before {
+  transform: translateY(calc(-30% + 20px));
 }
 
 .balloons::after {
@@ -32,6 +37,11 @@
   background: url('~/public/images/hero/right-balloons.webp');
   z-index: 10;
   background-size: cover;
+  transition: transform 0.9s ease-out;
+}
+
+.balloons.parallax::after {
+  transform: translateY(calc(10% + 40px));
 }
 
 @media screen and (min-width: 480px) {
