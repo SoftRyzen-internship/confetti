@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss';
 
-const config: Config = {
+export const config: Config = {
   mode: 'jit',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
