@@ -15,10 +15,7 @@ export const About: React.FC = () => {
           {title}
         </SectionTitle>
 
-        <p
-          className="mx-auto mb-[48px] text-center font-manrope text-[20px] font-medium leading-[1.4] 
-                     tracking-[-0.2px] md:w-[584px]  md:text-[24px] md:tracking-[-0.24px] xl:mb-[56px]"
-        >
+        <p className="mx-auto mb-[48px] text-center font-manrope text-[20px] font-medium leading-[1.4] tracking-[-0.2px] md:w-[584px] md:text-[24px] md:tracking-[-0.24px] xl:mb-[56px]">
           {subtitle}
         </p>
 
