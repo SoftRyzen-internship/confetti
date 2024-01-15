@@ -1,16 +1,36 @@
 @media screen and (min-width: 768px) {
   .container:before {
     position: absolute;
-    top: 295px;
-    right: -18px;
+    top: 276px;
+    left: -45px;
 
     display: block;
-    width: 825px;
-    height: 651px;
+    width: 412px;
+    height: 420px;
 
-    background-image: url(../../../public/images/contacts/tablet/baloons-tab.webp);
+    background-image: url(../../../public/images/hero/left-balloons.webp);
     background-size: cover;
     background-position: center;
+
+    transform: rotate(-35deg);
+
+    content: '';
+  }
+
+  .container:after {
+    position: absolute;
+    bottom: 80px;
+    right: -20px;
+
+    display: block;
+    width: 344px;
+    height: 350px;
+
+    background-image: url(../../../public/images/hero/right-balloons.webp);
+    background-size: cover;
+    background-position: center;
+
+    transform: rotate(-5deg);
 
     content: '';
   }
@@ -19,33 +39,23 @@
 @media screen and (min-width: 1280px) {
   .container:before {
     position: absolute;
-    top: -120px;
-    right: -60px;
+    top: -115px;
+    left: 485px;
 
-    display: block;
-    width: 883;
-    height: 708px;
+    width: 461px;
+    height: 469px;
 
-    background-image: url(../../../public/images/contacts/desktop/baloons-desk.webp);
-    background-size: cover;
-    background-position: center;
-
-    content: '';
+    transform: rotate(-35deg);
   }
-}
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) and (min-width: 768px),
-  (min-resolution: 2dppx) and (min-width: 768px) {
-  .container:before {
-    background-image: url(../../../public/images/contacts/tablet/baloons-tab@2x.webp);
-  }
-}
+  .container:after {
+    position: absolute;
+    bottom: 75px;
+    right: -70px;
 
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) and (min-width: 1280px),
-  (min-resolution: 2dppx) and (min-width: 1280px) {
-  .container:before {
-    background-image: url(../../../public/images/contacts/desktop/baloons-desk@2x.webp);
+    width: 384px;
+    height: 391px;
+
+    transform: rotate(-5deg);
   }
 }
