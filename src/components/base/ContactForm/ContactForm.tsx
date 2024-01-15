@@ -2,9 +2,11 @@
 
 import { useForm, SubmitHandler } from 'react-hook-form';
 import useFormPersist from 'react-hook-form-persist';
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 
 import { ContactFormInput, ContactFormTextarea } from '@/components/ui';
+
+import { sendEmail } from '@/utils/helpers';
 
 import contactFormData from '@/data/contactForm.json';
 
@@ -23,9 +25,9 @@ export const ContactForm = () => {
 
   useFormPersist('contactForm', { watch, setValue });
 
-  const onSubmit: SubmitHandler<ContactFormInputs> = () => {
-    toast.success('Formularz został pomyślnie wysłany. Dziękujemy');
-    toast.error('Błąd wysyłania formularza. Proszę spróbować ponownie');
+  const onSubmit: SubmitHandler<ContactFormInputs> = data => {
+    sendEmail(data);
+
     reset();
   };
 
