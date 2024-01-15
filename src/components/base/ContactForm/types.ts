@@ -5,3 +5,8 @@ export type ContactFormInputs = {
 export type Props = {
   className: string;
 };
+// export type ContactFormInputs = {
+//   name: string;
+//   email: string;
+//   message: string;
+// };

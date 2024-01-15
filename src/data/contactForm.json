@@ -54,5 +54,15 @@
   },
   "submitBtn": {
     "label": "Wyślij"
+  },
+  "submitMessages": {
+    "success": "Formularz został pomyślnie wysłany. Dziękujemy",
+    "error": "Błąd wysyłania formularza. Proszę spróbować ponownie"
+  },
+  "mailerMessage": {
+    "title": "Wiadomość ze strony internetowej CONFETTI od ",
+    "name": "Imię: ",
+    "email": "E-mail: ",
+    "message": "Wiadomość: "
   }
 }
