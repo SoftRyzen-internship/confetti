@@ -9,7 +9,7 @@ export const ServiceCard: React.FC<Props> = ({ card }) => {
   return (
     <Link
       href={`/${slug}`}
-      className="group flex w-fit flex-col items-center gap-4 rounded-tl-3xl rounded-tr-3xl transition-all md:items-start xl:gap-6"
+      className="group flex w-full flex-col items-center gap-4 transition-all md:items-start xl:gap-6"
     >
       <div className="h-full w-full overflow-hidden rounded-3xl md:h-[304px] md:w-[346px] xl:h-[374px] xl:w-[389px] smOnly:aspect-square">
         <Image
