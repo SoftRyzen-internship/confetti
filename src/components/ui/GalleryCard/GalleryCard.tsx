@@ -14,11 +14,11 @@ export const GalleryCard: React.FC<GalleryCardProps> = ({
 
   return (
     <div
-      className={`h-[320px] w-[320px] overflow-hidden rounded-lg md:h-[224px] md:w-[224px] md:rounded-3xl xl:h-[388px] xl:w-[388px] ${className}`}
+      className={`h-full w-full overflow-hidden rounded-lg md:h-[224px] md:w-[224px] md:rounded-3xl xl:h-[388px] xl:w-[388px] smOnly:aspect-square ${className}`}
       onClick={handleClick}
     >
       <Image
-        className="h-full w-full object-cover object-center"
+        className="h-full w-full object-cover md:object-center"
         width={388}
         height={388}
         alt={image.alt}

@@ -9,7 +9,7 @@ const { title, subtitle, serviceCards } = data;
 
 export const Services: React.FC = () => {
   return (
-    <section className="xl:pb- pb-7 pt-12 md:pb-8 md:pt-16 xl:pb-[62px] xl:pt-[124px]">
+    <section className="pb-7 pt-12 md:pb-8 md:pt-16 xl:pb-[62px] xl:pt-[124px]">
       <div className="container relative">
         <SectionTitle
           className="mb-3 text-center md:mb-4 md:text-start"
@@ -23,7 +23,7 @@ export const Services: React.FC = () => {
 
         <ul className="flex flex-col items-center gap-7 md:hidden">
           {serviceCards.map(card => (
-            <li key={card.slug}>
+            <li key={card.slug} className="w-full">
               <ServiceCard card={card} />
             </li>
           ))}
