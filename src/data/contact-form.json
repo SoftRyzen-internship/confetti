@@ -53,7 +53,8 @@
     }
   },
   "submitBtn": {
-    "label": "Wyślij"
+    "label": "Wyślij",
+    "loadingText": "Wysyłanie"
   },
   "submitMessages": {
     "success": "Formularz został pomyślnie wysłany. Dziękujemy",

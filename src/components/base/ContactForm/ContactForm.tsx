@@ -87,7 +87,9 @@ export const ContactForm: React.FC<Props> = ({ className }) => {
           ) : (
             <>
               <Spinner />
-              <span className="block animate-pulse">Wysyłanie</span>
+              <span className="block animate-pulse">
+                {contactFormData.submitBtn.loadingText}
+              </span>
             </>
           )}
         </button>
