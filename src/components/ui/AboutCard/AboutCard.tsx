@@ -1,10 +1,10 @@
 import { sliceTextBlock } from '@/utils/helpers';
 
-import { CardKreatywnyProps } from './types';
+import { AboutCardProps } from './types';
 
-import css from './CardKreatywny.module.css';
+import css from './AboutCard.module.css';
 
-export const CardKreatywny: React.FC<CardKreatywnyProps> = ({ card }) => {
+export const AboutCard: React.FC<AboutCardProps> = ({ card }) => {
   const { id, title, description } = card;
   const titleColorClass =
     id === 1 || id === 4

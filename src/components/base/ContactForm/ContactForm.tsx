@@ -13,7 +13,7 @@ import {
 
 import { sendEmail } from '@/utils/helpers';
 
-import contactFormData from '@/data/contactForm.json';
+import contactFormData from '@/data/contact-form.json';
 
 import { ContactFormInputs, Props } from './types';
 

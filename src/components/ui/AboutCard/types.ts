@@ -3,6 +3,6 @@ export type Card = {
   title: string;
   description: string;
 };
-export type CardKreatywnyProps = {
+export type AboutCardProps = {
   card: Card;
 };

@@ -6,7 +6,7 @@ import { render } from '@react-email/render';
 
 import { Email } from '@/components/ui/Email';
 
-import contactFormData from '@/data/contactForm.json';
+import contactFormData from '@/data/contact-form.json';
 
 import { ContactFormReq } from '@/types/ContactFormReq';
 
