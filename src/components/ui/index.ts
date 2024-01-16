@@ -1,6 +1,6 @@
 export * from './SliderControls';
 export * from './Logo';
-export * from './CardKreatywny';
+export * from './AboutCard';
 export * from './ContactLinks';
 export * from './Slider';
 export * from './SectionTitle';

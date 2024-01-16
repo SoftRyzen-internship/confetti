@@ -1,8 +1,8 @@
 'use client';
 
 import { Slider } from '@/components/ui/Slider';
-import { CardKreatywny } from '@/components/ui';
-import { CardsKreatywny } from '@/components/base/CardsKreatywny';
+import { AboutCard } from '@/components/ui';
+import { AboutCards } from '@/components/base/AboutCards';
 
 import data from '@/data/common.json';
 
@@ -12,9 +12,9 @@ export const AboutList: React.FC = () => {
   return (
     <>
       <div className="md:hidden">
-        <Slider component={CardKreatywny} data={cards} section="about" />
+        <Slider component={AboutCard} data={cards} section="about" />
       </div>
-      <CardsKreatywny />
+      <AboutCards />
     </>
   );
 };
