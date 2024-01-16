@@ -7,7 +7,7 @@
     "validationOptions": {
       "required": {
         "value": true,
-        "message": "To pole jest wymagane"
+        "message": "Pole obowiązkowe do wypełnienia"
       },
       "pattern": {
         "value": "^(?!.*(?:[ -]{2,}| -| - |^[ -]|^-))[A-Za-zĄąĆćĘęŁłŃńÓóŚśŹźŻż -]+$",
@@ -15,7 +15,7 @@
       },
       "maxLength": {
         "value": 70,
-        "message": "Musi mieć maksymalnie 70 znaki."
+        "message": "Dopuszczamy nie więcej niż 70 znaków."
       }
     }
   },
@@ -28,7 +28,7 @@
     "validationOptions": {
       "required": {
         "value": true,
-        "message": "To pole jest wymagane"
+        "message": "Pole obowiązkowe do wypełnienia"
       },
       "pattern": {
         "value": "^[a-zA-Z0-9]+([._-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([.-][a-zA-Z0-9]+)*\\.[a-zA-Z]{2,}(\\.[a-zA-Z]{2,})?$",
@@ -36,7 +36,7 @@
       },
       "maxLength": {
         "value": 63,
-        "message": "Musi mieć maksymalnie 63 znaki."
+        "message": "Dopuszczamy nie więcej niż 63 znaków."
       }
     }
   },
@@ -48,7 +48,7 @@
     "validationOptions": {
       "maxLength": {
         "value": 1000,
-        "message": "Musi mieć maksymalnie 1000 znaki."
+        "message": "Dopuszczamy nie więcej niż 1000 znaków."
       }
     }
   },
