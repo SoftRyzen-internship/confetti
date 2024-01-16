@@ -36,19 +36,17 @@ export const Hero: React.FC = () => {
         <div
           className={`${css.bgBalloons} pb-[116px] pt-[175px] md:pb-[200px] md:pt-[264px]  xl:pb-[282px] xl:pt-[281px]`}
         >
-          <div
-            className={`${css.balloons} ${isScrolled ? css.parallax : ''}`}
-          ></div>
-
-          <h1 className="relative z-20 m-auto text-center font-gilroy text-[32px] font-extrabold leading-[1.2] tracking-[-0.32px] text-color-accent-primary  md:text-[48px] md:tracking-[-0.48px] xl:w-[893px] xl:text-[66px] xl:tracking-[-0.66px] smOnly:w-[320px]">
-            <span>{sliceTextBlock(heroTitle, 0, 2)}</span>
-            <br />
-            <span>{sliceTextBlock(heroTitle, 2, 4)}</span>{' '}
-            <span className="text-color-primary">
-              {sliceTextBlock(heroTitle, 4, 6)}
-            </span>{' '}
-            <span>{sliceTextBlock(heroTitle, 6, 8)}</span>
-          </h1>
+          <div className={`${css.balloons} ${isScrolled ? css.parallax : ''}`}>
+            <h1 className="relative z-20 m-auto text-center font-gilroy text-[32px] font-extrabold leading-[1.2] tracking-[-0.32px] text-color-accent-primary md:text-[48px] md:tracking-[-0.48px] xl:w-[893px] xl:text-[66px] xl:tracking-[-0.66px] smOnly:w-[320px]">
+              <span>{sliceTextBlock(heroTitle, 0, 2)}</span>
+              <br />
+              <span>{sliceTextBlock(heroTitle, 2, 4)}</span>{' '}
+              <span className="text-color-primary">
+                {sliceTextBlock(heroTitle, 4, 6)}
+              </span>{' '}
+              <span>{sliceTextBlock(heroTitle, 6, 8)}</span>
+            </h1>
+          </div>
         </div>
       </div>
     </section>

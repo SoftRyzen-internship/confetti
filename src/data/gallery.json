@@ -353,42 +353,8 @@
       ]
     }
   ],
-  "galleryPlaceholderView": [
-    {
-      "alt": "Balony z helem",
-      "path": "/images/balloons.webp"
-    },
-    {
-      "alt": "Balony z helem",
-      "path": "/images/balloons.webp"
-    },
-    {
-      "alt": "Balony z helem",
-      "path": "/images/balloons.webp"
-    },
-    {
-      "alt": "Balony z helem",
-      "path": "/images/balloons.webp"
-    },
-    {
-      "alt": "Balony z helem",
-      "path": "/images/balloons.webp"
-    },
-    {
-      "alt": "Balony z helem",
-      "path": "/images/balloons.webp"
-    },
-    {
-      "alt": "Balony z helem",
-      "path": "/images/balloons.webp"
-    },
-    {
-      "alt": "Balony z helem",
-      "path": "/images/balloons.webp"
-    },
-    {
-      "alt": "Balony z helem",
-      "path": "/images/balloons.webp"
-    }
-  ]
+  "galleryPlaceholder": {
+    "alt": "Balony z helem",
+    "path": "/images/balloons.webp"
+  }
 }

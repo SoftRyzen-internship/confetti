@@ -1,19 +1,17 @@
 'use client';
 
-import { useEffect, useCallback } from 'react';
+import { useEffect } from 'react';
 
 import { HomeNav, ServicesNav } from '@/components/base';
 
+import { Logo } from '@/components/ui';
+
 import { Props } from './types';
 
-export const NavMenu: React.FC<Props> = ({ setIsMenuOpen }) => {
-  const closeMenu = useCallback(() => {
-    setIsMenuOpen(false);
-  }, [setIsMenuOpen]);
-
+export const NavMenu: React.FC<Props> = ({ toggleMenu }) => {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.code === 'Escape') closeMenu();
+      if (e.code === 'Escape') toggleMenu();
     };
 
     window.addEventListener('keydown', handleKeyDown);
@@ -23,21 +21,21 @@ export const NavMenu: React.FC<Props> = ({ setIsMenuOpen }) => {
       document.body.style.overflow = 'unset';
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [closeMenu]);
+  }, [toggleMenu]);
 
-  // Оставил, стили для варианта, где скорллится только услуги, чтобы если что, вернуть.
-  // Переделываю (на вариант, который я тебе присылал в телеге) потому, что такой вариант выглядит некоректно на мобилбилках в горизонтальном режиме
   return (
-    <div
-      // className="fixed left-0 top-0 z-40 h-full w-full items-center bg-color-secondary font-manrope md:flex md:justify-center smOnly:pt-[108px]"
-      className="fixed left-0 top-0 z-40 h-full w-full items-center bg-color-secondary pb-[20px] pt-[108px] font-manrope md:flex md:justify-center md:pb-[32px] md:pt-[184px] xl:pt-[221px]"
-    >
-      <div
-        // className="flex flex-col gap-6 md:flex-row md:items-start md:justify-center md:gap-[190px] xl:gap-[352px] smOnly:h-full"
-        className="flex h-full flex-col gap-6 overflow-hidden overflow-y-auto md:flex-row md:items-start md:justify-center md:gap-[190px] xl:gap-[352px]"
-      >
-        <HomeNav closeMenu={closeMenu} />
-        <ServicesNav closeMenu={closeMenu} />
+    <div className="fixed left-0 top-0 z-40 h-full w-full items-center bg-color-secondary pb-[20px] pt-[108px] font-manrope md:flex md:justify-center md:pb-[32px] md:pt-[184px] xl:pt-[221px]">
+      <div className="smOnly:container smOnly:relative">
+        <Logo
+          location="header"
+          onClick={toggleMenu}
+          className="absolute -top-[72px] right-5 md:right-[50%] md:top-8 md:translate-x-[50%] xl:top-[48px]"
+        />
+      </div>
+
+      <div className="container flex h-full flex-col gap-6 overflow-hidden overflow-y-auto md:flex-row md:items-start md:justify-center md:gap-[190px] xl:gap-[352px] smOnly:relative ">
+        <HomeNav toggleMenu={toggleMenu} />
+        <ServicesNav toggleMenu={toggleMenu} />
       </div>
     </div>
   );

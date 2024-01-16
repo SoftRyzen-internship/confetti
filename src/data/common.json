@@ -3,6 +3,7 @@
     "logo": {
       "label": "Logo serwisu i link do strony głównej"
     },
+
     "navigation": {
       "home": {
         "mainPageLink": {
@@ -62,10 +63,12 @@
         ]
       }
     },
+
     "menuBtn": {
       "close": "zamknięty",
       "open": "menu"
     },
+
     "footer": {
       "rights": "confetti © 2023",
       "link": {
@@ -74,6 +77,7 @@
       }
     }
   },
+
   "components": {
     "sliderControls": {
       "prevBtnArialabel": "Poprzedni slajd",
@@ -83,18 +87,102 @@
       "closeBtnArialabel": "Zamknij"
     }
   },
+
   "sections": {
     "review": {
       "title": "Opinie"
     },
+
     "hero": {
       "title": "Tworzymy unikalne i niepowtarzalne dekoracje balonowe na imprezy"
     },
+
     "notFound": {
       "title": "404",
       "subtitle": "Ups! Strona, której szukasz nie istnieje! Proszę wrócić do strony głównej.",
       "button": "Wróć do domu",
       "img": "balony"
+    },
+
+    "about": {
+      "title": "Kreatywny zespół dekoratorów",
+      "subtitle": "Młodzi i energiczni, rozwijający działalność w zakresie tworzenia dekoracji na imprezy i wydarzenia",
+      "cards": [
+        {
+          "id": 1,
+          "title": "Kreatywne podejście i dbałość o szczegóły",
+          "description": "Specjaliści zapewniają doradztwo i kreatywność przy wyborze dekoracji balonowych, z dbałością o szczegóły."
+        },
+        {
+          "id": 2,
+          "title": "Materiały przyjazne dla środowiska",
+          "description": "Wykorzystywane są materiały najwyższej jakości, w tym biodegradowalne materiały balonowe, aby pozostawić jak najmniejszy ślad na środowisku."
+        },
+        {
+          "id": 3,
+          "title": "Szeroka gama kolorów do personalizacji",
+          "description": "Balony i dekoracje są wybierane z szerokiej gamy kolorów, co pozwala spersonalizować wystrój na każdą okazję."
+        },
+        {
+          "id": 4,
+          "title": "Gwarancja dostawy i montażu",
+          "description": "Firma gwarantuje nie tylko wysokiej jakości dostawę zamówień, ale także ich montaż, zapewniając klientom kompleksową obsługę."
+        }
+      ]
+    },
+
+    "contacts": {
+      "title": "Kontakty",
+      "location": "Confetti - Studio Dekoracij Balonami Warszawa"
+    },
+
+    "services": {
+      "title": "Usługi confetti",
+      "subtitle": "Tworzymy wakacje dla każdego",
+      "serviceCards": [
+        {
+          "path": "/images/services-cards/baby-shower.webp",
+          "caption": "Baby shower",
+          "alt": "Dziewczyna w ciąży",
+          "slug": "baby-shower"
+        },
+        {
+          "path": "/images/services-cards/baptism.webp",
+          "caption": "Chrzciny",
+          "alt": "Przechodzić",
+          "slug": "baptism"
+        },
+        {
+          "path": "/images/services-cards/birthday.webp",
+          "caption": "Urodziny",
+          "alt": "Urodziny",
+          "slug": "birthday"
+        },
+        {
+          "path": "/images/services-cards/balloons.webp",
+          "caption": "Balony z helem",
+          "alt": "Balony",
+          "slug": "balloons"
+        },
+        {
+          "path": "/images/services-cards/valentines.webp",
+          "caption": "Walentynki",
+          "alt": "Fotografia walentynkowa",
+          "slug": "valentines"
+        },
+        {
+          "path": "/images/services-cards/corporate.webp",
+          "caption": "Impreza firmowa",
+          "alt": "Ukłon",
+          "slug": "corporate"
+        },
+        {
+          "path": "/images/services-cards/wedding.webp",
+          "caption": "Wesele",
+          "alt": "Wesele",
+          "slug": "wedding"
+        }
+      ]
     }
   }
 }

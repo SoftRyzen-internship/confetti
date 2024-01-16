@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
           <MenuBtn />
 
           <div className="flex items-center md:ml-auto md:gap-[68px] xl:gap-[312px]">
-            <Logo location="header" className="relative z-50" />
+            <Logo location="header" />
 
             <ContactLinks
               location={'header'}

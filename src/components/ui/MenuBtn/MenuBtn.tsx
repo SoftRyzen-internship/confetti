@@ -16,15 +16,17 @@ const {
 export const MenuBtn: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const toggleMenu = (e?: MouseEvent<HTMLButtonElement>) => {
+    setIsMenuOpen(prev => !prev);
+    if (e) e.currentTarget.blur();
+  };
+
   const label = isMenuOpen ? close : open;
 
   return (
     <>
       <button
-        onClick={(e: MouseEvent<HTMLButtonElement>) => {
-          setIsMenuOpen(prev => !prev);
-          e.currentTarget.blur();
-        }}
+        onClick={toggleMenu}
         className="relative z-50 inline-flex items-center gap-1 font-manrope text-[16px] font-semibold uppercase leading-[0.9] tracking-[2.08px] text-color-text-extra transition-all hover:text-color-accent-primary focus:text-color-accent-primary md:gap-4 md:text-[20px] md:tracking-[2.6px] xl:text-[22px] xl:tracking-[2.86px]"
         type="button"
       >
@@ -40,7 +42,7 @@ export const MenuBtn: React.FC = () => {
         {label}
       </button>
 
-      {isMenuOpen && <NavMenu setIsMenuOpen={setIsMenuOpen} />}
+      {isMenuOpen && <NavMenu toggleMenu={toggleMenu} />}
     </>
   );
 };
