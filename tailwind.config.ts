@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss';
 
-const config: Config = {
+export const config: Config = {
   mode: 'jit',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -12,7 +12,6 @@ const config: Config = {
   theme: {
     // MEDIA QUERIES
     screens: {
-      xs: '360px',
       sm: '480px',
       md: '768px',
       xl: '1280px',
@@ -54,6 +53,7 @@ const config: Config = {
         'color-form-label': '#949494',
         'color-form-placeholder': '#888888',
         'color-form-error': '#FF6060',
+        'color-form-btn-hover': '#da679e',
       },
       // FONTS
       fontFamily: {

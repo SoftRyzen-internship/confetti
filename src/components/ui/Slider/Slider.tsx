@@ -26,6 +26,7 @@ export const Slider: React.FC<SliderProps> = ({
       loop={true}
       modules={[Navigation, Pagination]}
       speed={800}
+      spaceBetween={16}
       pagination={{ clickable: true }}
       navigation={{
         nextEl: `.button-next-${section}`,
@@ -54,7 +55,7 @@ export const Slider: React.FC<SliderProps> = ({
           key={idx}
           className={`overflow-hidden ${slideClassName}`}
         >
-          <Component card={card} />
+          <Component card={card} idx={idx} />
         </SwiperSlide>
       ))}
     </Swiper>

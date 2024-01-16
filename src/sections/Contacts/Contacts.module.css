@@ -1,0 +1,61 @@
+@media screen and (min-width: 768px) {
+  .container:before {
+    position: absolute;
+    top: 276px;
+    left: -45px;
+
+    display: block;
+    width: 412px;
+    height: 420px;
+
+    background-image: url(../../../public/images/hero/left-balloons.webp);
+    background-size: cover;
+    background-position: center;
+
+    transform: rotate(-35deg);
+
+    content: '';
+  }
+
+  .container:after {
+    position: absolute;
+    bottom: 80px;
+    right: -20px;
+
+    display: block;
+    width: 344px;
+    height: 350px;
+
+    background-image: url(../../../public/images/hero/right-balloons.webp);
+    background-size: cover;
+    background-position: center;
+
+    transform: rotate(-5deg);
+
+    content: '';
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container:before {
+    position: absolute;
+    top: -115px;
+    left: 485px;
+
+    width: 461px;
+    height: 469px;
+
+    transform: rotate(-35deg);
+  }
+
+  .container:after {
+    position: absolute;
+    bottom: 75px;
+    right: -70px;
+
+    width: 384px;
+    height: 391px;
+
+    transform: rotate(-5deg);
+  }
+}
