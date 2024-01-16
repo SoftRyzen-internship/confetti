@@ -1,9 +1,9 @@
 import { CardKreatywny } from '@/components/ui';
 
-import about from '@/data/section-about.json';
+import data from '@/data/common.json';
 
 export const CardsKreatywny: React.FC = () => {
-  const { cards } = about;
+  const { cards } = data.sections.about;
   return (
     <ul className="hidden md:flex md:flex-col md:gap-6 xl:flex-row xl:flex-wrap">
       {cards.map(card => (

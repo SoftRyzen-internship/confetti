@@ -3,9 +3,9 @@ import { ServiceSlider } from '@/components/base';
 import { SectionTitle } from '@/components/ui';
 import { ServiceCard } from '@/components/ui';
 
-import data from '@/data/section-services.json';
+import data from '@/data/common.json';
 
-const { title, subtitle, serviceCards } = data;
+const { title, subtitle, serviceCards } = data.sections.services;
 
 export const Services: React.FC = () => {
   return (
