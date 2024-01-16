@@ -1,10 +1,15 @@
 'use client';
 
+import { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import useFormPersist from 'react-hook-form-persist';
-import { Toaster } from 'react-hot-toast';
+import toast, { Toaster } from 'react-hot-toast';
 
-import { ContactFormInput, ContactFormTextarea } from '@/components/ui';
+import {
+  ContactFormInput,
+  ContactFormTextarea,
+  Spinner,
+} from '@/components/ui';
 
 import { sendEmail } from '@/utils/helpers';
 
@@ -23,12 +28,24 @@ export const ContactForm: React.FC<Props> = ({ className }) => {
     formState: { errors },
   } = useForm<ContactFormInputs>();
 
+  const [isLoading, setIsLoading] = useState(false);
+
+  const { success, error } = contactFormData.submitMessages;
+
   useFormPersist('contactForm', { watch, setValue });
 
-  const onSubmit: SubmitHandler<ContactFormInputs> = data => {
-    sendEmail(data);
+  const onSubmit: SubmitHandler<ContactFormInputs> = async data => {
+    try {
+      setIsLoading(true);
+      await sendEmail(data);
 
-    reset();
+      reset();
+      toast.success(success);
+    } catch (e) {
+      toast.error(error);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -65,7 +82,16 @@ export const ContactForm: React.FC<Props> = ({ className }) => {
         leading-[1.23] tracking-[-0.28px] text-color-secondary transition-all hover:bg-color-form-btn-hover focus:bg-color-form-btn-hover md:py-6 md:text-[40px] md:tracking-[-0.4px]"
           type="submit"
         >
-          {contactFormData.submitBtn.label}
+          {!isLoading ? (
+            contactFormData.submitBtn.label
+          ) : (
+            <>
+              <Spinner />
+              <span className="block animate-pulse">
+                {contactFormData.submitBtn.loadingText}
+              </span>
+            </>
+          )}
         </button>
       </form>
     </>
