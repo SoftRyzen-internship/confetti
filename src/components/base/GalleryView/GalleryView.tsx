@@ -8,6 +8,7 @@ import 'yet-another-react-lightbox/styles.css';
 
 import { GalleryCard, LightboxImage, Slider } from '@/components/ui';
 
+import { getPlaceholders } from '@/utils/helpers';
 import { useFetch } from '@/utils/hooks';
 
 import common from '@/data/common.json';
@@ -29,8 +30,12 @@ export const GalleryView: React.FC<GalleryViewProps> = ({ className = '' }) => {
   const staticImages =
     gallery.serviceImages.find(obj => obj.slug === slug)?.images || [];
 
-  const dynamicImages =
-    data?.length > 0 ? data[0].image : gallery.galleryPlaceholderView;
+  const placeholders = getPlaceholders({
+    qty: 9,
+    obj: gallery.galleryPlaceholder,
+  });
+
+  const dynamicImages = data?.length > 0 ? data[0].image : placeholders;
 
   const images = isHomePage ? dynamicImages : staticImages;
 
@@ -85,6 +90,14 @@ export const GalleryView: React.FC<GalleryViewProps> = ({ className = '' }) => {
           Next: `${nextBtnArialabel}`,
           Previous: `${prevBtnArialabel}`,
           Close: `${closeBtnArialabel}`,
+        }}
+        on={{
+          entered: () => {
+            document.body.style.overflow = 'hidden';
+          },
+          exited: () => {
+            document.body.style.overflow = 'unset';
+          },
         }}
       />
     </>

@@ -1,10 +1,10 @@
 import { SectionTitle } from '@/components/ui';
 import { AboutList } from '@/components/base/AboutList';
 
-import data from '@/data/section-about.json';
+import data from '@/data/common.json';
 
 export const About: React.FC = () => {
-  const { subtitle, title } = data;
+  const { subtitle, title } = data.sections.about;
   return (
     <section
       id="about"

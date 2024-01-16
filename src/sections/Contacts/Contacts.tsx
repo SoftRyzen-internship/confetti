@@ -3,11 +3,11 @@ import { ContactForm } from '@/components/base';
 import { SectionTitle } from '@/components/ui';
 import { ContactLinks } from '@/components/ui';
 
-import data from '@/data/section-contacts.json';
+import data from '@/data/common.json';
 
 import css from './Contacts.module.css';
 
-const { title, location } = data;
+const { title, location } = data.sections.contacts;
 
 export const Contacts: React.FC = () => {
   return (
