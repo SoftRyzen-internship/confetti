@@ -8,7 +8,7 @@
     width: 412px;
     height: 420px;
 
-    background-image: url(../../../public/images/hero/left-balloons.webp);
+    background-image: url('~/public/images/hero/left-balloons.webp');
     background-size: cover;
     background-position: center;
 
@@ -26,7 +26,7 @@
     width: 344px;
     height: 350px;
 
-    background-image: url(../../../public/images/hero/right-balloons.webp);
+    background-image: url('~/public/images/hero/right-balloons.webp');
     background-size: cover;
     background-position: center;
 

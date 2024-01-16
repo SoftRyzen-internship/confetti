@@ -11,11 +11,14 @@ const { title, location } = data.sections.contacts;
 
 export const Contacts: React.FC = () => {
   return (
-    <section className="overflow-hidden bg-color-secondary pb-[38px] pt-14 md:pb-16 md:pt-20 xl:pb-[113px] xl:pt-[182px]">
+    <section
+      id="contacts"
+      className="overflow-hidden bg-color-secondary pb-[38px] pt-14 md:pb-16 md:pt-20 xl:pb-[113px] xl:pt-[182px]"
+    >
       <div
         className={`container relative items-center md:flex md:flex-col md:items-center xl:flex-row xl:justify-between ${css.container}`}
       >
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center xl:items-start">
           <SectionTitle
             className="mb-9 md:mb-[48px] xl:mb-10 xl:self-start"
             accentColor
@@ -27,7 +30,7 @@ export const Contacts: React.FC = () => {
             {location}
           </p>
           <ContactLinks
-            className="mb-[48px] md:mb-[38px] xl:mb-0"
+            className="mb-[48px] md:mb-[38px] xl:mb-0 xl:items-start"
             location="contacts"
           />
         </div>

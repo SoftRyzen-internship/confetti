@@ -5,7 +5,11 @@ import data from '@/data/common.json';
 
 import { LogoProps } from './types';
 
-export const Logo: React.FC<LogoProps> = ({ location, className = '' }) => {
+export const Logo: React.FC<LogoProps> = ({
+  onClick,
+  location,
+  className = '',
+}) => {
   const {
     layout: { logo },
   } = data;
@@ -20,6 +24,7 @@ export const Logo: React.FC<LogoProps> = ({ location, className = '' }) => {
       href="/"
       className={`${className} inline-block`}
       aria-label={logo.label}
+      onClick={onClick}
     >
       <Image
         src="/images/logo.webp"
