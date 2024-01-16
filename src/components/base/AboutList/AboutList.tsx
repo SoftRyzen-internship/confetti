@@ -12,6 +12,7 @@ export const AboutList: React.FC = () => {
       <div className="md:hidden">
         <Slider component={CardKreatywny} data={about.cards} section="about" />
       </div>
+
       <CardsKreatywny />
     </>
   );
