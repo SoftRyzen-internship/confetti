@@ -9,7 +9,6 @@ import { Props } from './types';
 export const NavMenu: React.FC<Props> = ({ toggleMenu }) => {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      console.log('esc');
       if (e.code === 'Escape') toggleMenu();
     };
 
