@@ -1,4 +1,4 @@
-export * from './CardsKreatywny';
+export * from './AboutCards';
 export * from './GalleryView';
 export * from './HomeNav';
 export * from './ServicesNav';

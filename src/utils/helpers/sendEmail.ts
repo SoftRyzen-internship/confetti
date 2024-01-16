@@ -1,6 +1,6 @@
 import { toast } from 'react-hot-toast';
 
-import contactFormData from '@/data/contactForm.json';
+import contactFormData from '@/data/contact-form.json';
 
 import { ContactFormInputs } from '@/components/base/ContactForm/types';
 
