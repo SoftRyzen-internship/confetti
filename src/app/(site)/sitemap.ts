@@ -1,10 +1,11 @@
-// todo: Temporary using gallery json data...
-import gallery from '@/data/gallery.json';
+import data from '@/data/common.json';
 
 export default function sitemap() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL as string;
 
-  const services = gallery.serviceImages.map(({ slug }) => slug);
+  const { navLinks } = data.layout.navigation.services;
+
+  const services = navLinks.map(({ slug }) => slug);
 
   const homeUrl = {
     url: baseUrl,

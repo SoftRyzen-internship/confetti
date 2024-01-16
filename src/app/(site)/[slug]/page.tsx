@@ -5,7 +5,7 @@ import { Contacts, Gallery, ServicesHero } from '@/sections';
 import meta from '@/data/meta.json';
 import gallery from '@/data/gallery.json';
 import common from '@/data/common.json';
-import data from '@/data/services-hero.json';
+import hero from '@/data/service-hero.json';
 
 export const dynamicParams = false;
 export const dynamic = 'error';
@@ -44,7 +44,7 @@ export default async function ServicePage({
 }: {
   params: { slug: string };
 }) {
-  const service = data.find(obj => obj.slug === slug);
+  const service = hero.find(obj => obj.slug === slug);
 
   return (
     <>
