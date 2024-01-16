@@ -1,7 +1,7 @@
 import { Html } from '@react-email/html';
 import { Container, Text, Tailwind } from '@react-email/components';
 
-import contactFormData from '@/data/contactForm.json';
+import contactFormData from '@/data/contact-form.json';
 
 import config from '/tailwind.config';
 
