@@ -1,4 +1,3 @@
-//todo: TEMPORARY COMPONENT VERSION
 import { HeaderContent } from '@/components/base';
 
 export const Header: React.FC = () => {
