@@ -14,13 +14,13 @@ const {
   home: { mainPageLink, navLinks },
 } = data.layout.navigation;
 
-export const HomeNav: React.FC<Props> = ({ toggleMenu }) => {
+export const HomeNav: React.FC<Props> = ({ closeMenu }) => {
   const path = usePathname();
 
   return (
     <div className="mb-6 flex flex-col items-center gap-6 md:mb-0 md:items-start md:gap-8">
       <NextLink
-        onClick={toggleMenu}
+        onClick={closeMenu}
         className="homeNavLink"
         href={mainPageLink.path}
       >
@@ -32,7 +32,7 @@ export const HomeNav: React.FC<Props> = ({ toggleMenu }) => {
           <li key={slug}>
             {path === '/' ? (
               <Link
-                onClick={toggleMenu}
+                onClick={closeMenu}
                 className="homeNavLink"
                 to={slug}
                 {...linkSettings}
@@ -41,7 +41,7 @@ export const HomeNav: React.FC<Props> = ({ toggleMenu }) => {
               </Link>
             ) : (
               <NextLink
-                onClick={toggleMenu}
+                onClick={closeMenu}
                 className="homeNavLink"
                 href={`/#${slug}`}
               >

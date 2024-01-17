@@ -1,7 +1,6 @@
 import { ServiceSlider } from '@/components/base';
 
-import { SectionTitle } from '@/components/ui';
-import { ServiceCard } from '@/components/ui';
+import { SectionTitle, ServiceCard } from '@/components/ui';
 
 import data from '@/data/common.json';
 

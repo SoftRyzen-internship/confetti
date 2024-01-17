@@ -5,3 +5,5 @@ export * from './shimmer';
 export * from './sliceTextBlock';
 export * from './sendEmail';
 export * from './getPlaceholders';
+export * from './disableTabFocusForOutMenuEls';
+export * from './restoreTabFocusForOutMenuEls';
