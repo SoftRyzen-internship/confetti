@@ -62,7 +62,7 @@ export const GalleryView: React.FC<GalleryViewProps> = ({ className = '' }) => {
       >
         {images.map((img, index) => {
           return (
-            <li key={index}>
+            <li key={index} className="gallery-item flex">
               <GalleryCard
                 card={img}
                 onClick={() => setIndex(index)}
