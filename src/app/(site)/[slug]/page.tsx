@@ -8,8 +8,6 @@ import common from '@/data/common.json';
 import hero from '@/data/service-hero.json';
 
 export const dynamicParams = false;
-export const dynamic = 'error';
-export const revalidate = false;
 
 export async function generateMetadata({
   params: { slug },
