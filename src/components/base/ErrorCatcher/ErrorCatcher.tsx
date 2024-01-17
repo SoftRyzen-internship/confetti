@@ -40,7 +40,7 @@ export const ErrorCatcher: React.FC<ErrorType> = ({ error }) => {
           width={700}
           height={700}
           alt={img}
-          className="balloonsUp"
+          className="balloonsUp h-[367px] w-[364px] md:h-[704px] md:w-[700px]"
           priority
         />
       </div>
