@@ -37,6 +37,7 @@ export const ContactForm: React.FC<Props> = ({ className }) => {
   const onSubmit: SubmitHandler<ContactFormInputs> = async data => {
     try {
       setIsLoading(true);
+
       await sendEmail(data);
 
       reset();
