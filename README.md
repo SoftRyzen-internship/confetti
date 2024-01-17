@@ -4,7 +4,7 @@
 
 ---
 
-![Site image](./public/meta/ogp-image.webp)
+![Site image](./public/meta/ogp-image.jpg)
 
 ## 📝 Project description
 
