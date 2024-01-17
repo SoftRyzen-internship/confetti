@@ -1,3 +1,3 @@
 export type Props = {
-  toggleMenu: () => void;
+  closeMenu: () => void;
 };

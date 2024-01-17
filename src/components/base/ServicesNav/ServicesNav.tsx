@@ -8,7 +8,7 @@ const {
   services: { servicesTitle, navLinks },
 } = data.layout.navigation;
 
-export const ServicesNav: React.FC<Props> = ({ toggleMenu }) => {
+export const ServicesNav: React.FC<Props> = ({ closeMenu }) => {
   return (
     <div>
       <p className="mb-4 text-center text-2xl/normal font-medium -tracking-[0.01em] md:text-start md:text-4xl/normal">
@@ -20,7 +20,7 @@ export const ServicesNav: React.FC<Props> = ({ toggleMenu }) => {
           <li key={slug}>
             <NextLink
               className="font-medium -tracking-[0.01em] transition-all hover:text-color-accent-primary focus:text-color-accent-primary md:text-2xl/normal"
-              onClick={toggleMenu}
+              onClick={closeMenu}
               href={`/${slug}`}
             >
               {label}

@@ -1,7 +1,6 @@
 import { ContactForm } from '@/components/base';
 
-import { SectionTitle } from '@/components/ui';
-import { ContactLinks } from '@/components/ui';
+import { SectionTitle, ContactLinks } from '@/components/ui';
 
 import data from '@/data/common.json';
 
@@ -35,7 +34,7 @@ export const Contacts: React.FC = () => {
           />
         </div>
 
-        <ContactForm className="z-50 smOnly:hidden" />
+        <ContactForm className="z-10 smOnly:hidden" />
       </div>
       <ContactForm className="mx-auto md:hidden" />
     </section>

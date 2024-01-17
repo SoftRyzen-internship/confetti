@@ -23,7 +23,6 @@ export async function POST(request: NextRequest) {
   });
   const emailHtml = render(Email({ name, email, message }));
 
-  // todo: Message template
   const mailOptions: Mail.Options = {
     from: process.env.NODEMAILER_EMAIL,
     to: process.env.NODEMAILER_EMAIL,
@@ -44,6 +43,7 @@ export async function POST(request: NextRequest) {
 
   try {
     await sendMailPromise();
+
     return NextResponse.json({ message: 'Email sent' }, { status: 200 });
   } catch (err) {
     return NextResponse.json({ error: err }, { status: 500 });
