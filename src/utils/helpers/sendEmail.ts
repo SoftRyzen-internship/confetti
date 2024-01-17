@@ -7,5 +7,8 @@ export const sendEmail = async (data: ContactFormInputs) => {
     method: 'POST',
     body: JSON.stringify(data),
   });
+
+  if (!res.ok) throw new Error();
+
   return res.json();
 };
