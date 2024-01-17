@@ -17,6 +17,7 @@ export const Slider: React.FC<SliderProps> = ({
   section,
 }) => {
   const spaceBetweenXl = section === 'reviews' ? 26 : 24;
+  const loopXl = data.length > 3 ? true : false;
 
   return (
     <Swiper
@@ -36,16 +37,19 @@ export const Slider: React.FC<SliderProps> = ({
         320: {
           slidesPerView: 1,
           allowTouchMove: true,
+          loop: true,
         },
         768: {
           slidesPerView: 2,
           spaceBetween: 16,
           allowTouchMove: false,
+          loop: true,
         },
         1280: {
           slidesPerView: 3,
           spaceBetween: spaceBetweenXl,
           allowTouchMove: false,
+          loop: loopXl,
         },
       }}
     >

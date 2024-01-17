@@ -22,7 +22,10 @@ export const Review: React.FC = () => {
             <SectionTitle className={'mb-9 md:mb-12'} accentColor>
               {common.sections.review.title}
             </SectionTitle>
-            <SliderControls section={'reviews'} />
+
+            <div className={`${data.length > 3 ? 'xl:block' : 'xl:hidden'}`}>
+              <SliderControls section={'reviews'} />
+            </div>
           </div>
           <Slider
             component={ReviewsCard}

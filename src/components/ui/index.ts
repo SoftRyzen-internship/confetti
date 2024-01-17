@@ -13,3 +13,4 @@ export * from './ReviewsCard';
 export * from './ServiceCard';
 export * from './FooterLink';
 export * from './Email';
+export * from './Spinner';
