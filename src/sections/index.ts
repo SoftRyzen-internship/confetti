@@ -5,3 +5,4 @@ export * from './Services';
 export * from './ServicesHero';
 export * from './Hero';
 export * from './Contacts';
+export * from './ErrorCatcher';

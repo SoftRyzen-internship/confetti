@@ -38,9 +38,9 @@ export const ErrorCatcher: React.FC<ErrorType> = ({ error }) => {
         <Image
           src={balloons}
           width={700}
-          height={700}
+          height={704}
           alt={img}
-          className="balloonsUp h-[367px] w-[364px] md:h-[704px] md:w-[700px]"
+          className="balloonsUp h-[367px] w-[364px] md:h-[703px] md:w-[699px]"
           priority
         />
       </div>

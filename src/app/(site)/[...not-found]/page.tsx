@@ -1,4 +1,4 @@
-import { ErrorCatcher } from '@/components/base/ErrorCatcher';
+import { ErrorCatcher } from '@/sections/ErrorCatcher';
 
 const NotFound = async () => {
   return <ErrorCatcher error="not-found" />;
