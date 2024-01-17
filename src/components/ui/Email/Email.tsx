@@ -1,9 +1,7 @@
 import { Html } from '@react-email/html';
-import { Container, Text, Tailwind } from '@react-email/components';
+import { Container, Text } from '@react-email/components';
 
 import contactFormData from '@/data/contact-form.json';
-
-import config from '/tailwind.config';
 
 import { ContactFormReq } from '@/types/ContactFormReq';
 
@@ -12,29 +10,27 @@ export function Email(props: ContactFormReq) {
   const { email, message, name } = props;
 
   return (
-    <Tailwind config={config}>
-      <Html lang="pl">
-        <div className="text-color-primary">
-          <Container>
+    <Html lang="pl">
+      <div>
+        <Container>
+          <Text>
+            <b>{mailerMessage.name}</b>
+            <span>{name}</span>
+          </Text>
+
+          <Text>
+            <b>{mailerMessage.email}</b>
+            <span>{email}</span>
+          </Text>
+
+          {message && (
             <Text>
-              <span className="font-semibold">{mailerMessage.name}</span>
-              <span>{name}</span>
+              <b>{mailerMessage.message}</b>
+              <span>{message}</span>
             </Text>
-
-            <Text className="font-semibold">
-              <span className="font-semibold">{mailerMessage.email}</span>
-              <span>{email}</span>
-            </Text>
-
-            {message && (
-              <Text>
-                <span className="font-semibold">{mailerMessage.message}</span>
-                <span>{message}</span>
-              </Text>
-            )}
-          </Container>
-        </div>
-      </Html>
-    </Tailwind>
+          )}
+        </Container>
+      </div>
+    </Html>
   );
 }
