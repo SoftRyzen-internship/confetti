@@ -36,6 +36,11 @@ const gilroy = localFont({
       weight: '700',
       style: 'normal',
     },
+    {
+      path: '../../../public/fonts/Gilroy-ExtraBold.ttf',
+      weight: '800',
+      style: 'normal',
+    },
   ],
   display: 'swap',
   variable: '--font-gilroy',

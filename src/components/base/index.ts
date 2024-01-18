@@ -6,3 +6,4 @@ export * from './NavMenu';
 export * from './ContactForm';
 export * from './ServiceSlider';
 export * from './HeaderContent';
+export * from './ErrorBoundaryView';

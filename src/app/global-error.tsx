@@ -1,19 +1,15 @@
 'use client';
+
 import { useEffect } from 'react';
 
-import { ErrorCatcher } from '@/sections/ErrorCatcher';
+import { ErrorBoundaryView } from '@/components/base';
 
 const GlobalError = ({ error }: { error: Error & { digest?: string } }) => {
   useEffect(() => {
     console.log(error);
   }, [error]);
 
-  return (
-    <html>
-      <body>
-        <ErrorCatcher error="server-error" />
-      </body>
-    </html>
-  );
+  return <ErrorBoundaryView error="server-error" />;
 };
+
 export default GlobalError;
