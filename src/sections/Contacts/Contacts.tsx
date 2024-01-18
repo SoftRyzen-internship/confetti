@@ -36,7 +36,7 @@ export const Contacts: React.FC = () => {
 
         <ContactForm className="z-10 smOnly:hidden" />
       </div>
-      <div className="bg-color-bg-primary">
+      <div className="bg-color-bg-primary md:hidden">
         <ContactForm className="mx-auto md:hidden" />
       </div>
     </section>
