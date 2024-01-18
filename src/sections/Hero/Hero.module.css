@@ -1,6 +1,6 @@
 /* Hero */
 .heroBg {
-  background-image: url('~/public/images/hero/hero-bg.webp');
+  background-image: url('~/public/images/hero/hero-bg-mb.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -17,9 +17,11 @@
   height: 220px;
   left: -38%;
   top: 15%;
-  background: url('~/public/images/hero/left-balloons.webp');
+  background: url('~/public/images/hero/left-balloons-mb.webp');
   z-index: 10;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   transition: transform 0.9s ease-out;
 }
 
@@ -34,14 +36,40 @@
   height: 220px;
   right: -23%;
   bottom: -12%;
-  background: url('~/public/images/hero/right-balloons.webp');
+  background: url('~/public/images/hero/right-balloons-mb.webp');
   z-index: 10;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   transition: transform 0.9s ease-out;
 }
 
 .balloons.parallax::after {
   transform: translateY(calc(10% + 40px));
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .heroBg {
+    background-image: url('~/public/images/hero/hero-bg-mb@2x.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .balloons::before {
+    background: url('~/public/images/hero/left-balloons-mb@2x.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .balloons::after {
+    background: url('~/public/images/hero/right-balloons-mb@2x.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -55,7 +83,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .heroBg {
+    background-image: url('~/public/images/hero/hero-bg-tb.webp');
+    background-size: cover;
+  }
+
   .balloons::before {
+    background: url('~/public/images/hero/left-balloons.webp');
+    background-size: cover;
     width: 330px;
     height: 325px;
     top: 27%;
@@ -63,6 +98,8 @@
   }
 
   .balloons::after {
+    background: url('~/public/images/hero/right-balloons.webp');
+    background-size: cover;
     width: 320px;
     height: 320px;
     bottom: -13%;
@@ -94,7 +131,35 @@
   }
 }
 
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .heroBg {
+    background-image: url('~/public/images/hero/hero-bg-tb@2x.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .balloons::before {
+    background: url('~/public/images/hero/left-balloons@2x.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .balloons::after {
+    background: url('~/public/images/hero/right-balloons@2x.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
 @media screen and (min-width: 1280px) {
+  .heroBg {
+    background-image: url('~/public/images/hero/hero-bg.webp');
+  }
+
   .balloons::before {
     width: 620px;
     height: 640px;
@@ -121,5 +186,16 @@
     transform: rotate(180deg);
     right: 1%;
     top: 36%;
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px),
+  (min-resolution: 192dpi) and (min-width: 1280px),
+  (min-resolution: 2dppx) and (min-width: 1280px) {
+  .heroBg {
+    background-image: url('~/public/images/hero/hero-bg@2x.webp');
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }

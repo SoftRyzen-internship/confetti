@@ -53,8 +53,7 @@ export const ContactForm: React.FC<Props> = ({ className }) => {
     <>
       <Toaster />
       <form
-        className={`bg-color-bg-primary px-5 py-8 sm:w-[440px] 
-        md:relative md:w-[608px] md:rounded-[24px] md:px-[82px] md:py-[38px] xl:py-[48px] ${className}`}
+        className={`bg-color-bg-primary px-5 py-8 sm:w-[440px] md:relative md:w-[608px] md:rounded-[24px] md:px-[82px] md:py-[38px] xl:py-[48px] ${className}`}
         onSubmit={handleSubmit(onSubmit)}
       >
         <ContactFormInput
