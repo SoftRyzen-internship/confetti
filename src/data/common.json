@@ -134,7 +134,9 @@
 
     "contacts": {
       "title": "Kontakty",
-      "location": "Confetti - Studio Dekoracij Balonami Warszawa"
+      "location": "Confetti - Studio Dekoracij Balonami Warszawa",
+      "phone": "+48793351407",
+      "email": "confettibalony@gmail.com"
     },
 
     "services": {
