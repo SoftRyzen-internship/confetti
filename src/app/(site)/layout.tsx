@@ -56,6 +56,9 @@ export async function generateMetadata(): Promise<Metadata> {
     title,
     description,
     metadataBase: new URL(baseUrl),
+    alternates: {
+      canonical: baseUrl,
+    },
     manifest,
     keywords,
     twitter,
