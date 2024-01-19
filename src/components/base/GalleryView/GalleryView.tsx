@@ -62,9 +62,10 @@ export const GalleryView: React.FC<GalleryViewProps> = ({ className = '' }) => {
       >
         {images.map((img, index) => {
           return (
-            <li key={index}>
+            <li key={index} className="gallery-item flex">
               <GalleryCard
                 card={img}
+                grid
                 onClick={() => setIndex(index)}
                 className={`cursor-pointer ${
                   isHomePage ? '' : 'smOnly:pointer-events-none'

@@ -4,7 +4,7 @@
 
 ---
 
-![Site image](./public/meta/ogp-image.webp)
+![Site image](./public/meta/ogp-image.jpg)
 
 ## 📝 Project description
 
@@ -30,7 +30,27 @@ A website for the **Confetti** service company.
 
 ### Features
 
-> ... This block will be available soon... ...
+- **Optimization**: The website is optimized for fast loading, providing users
+  with quick access to information.
+- **Modularity and reusability**: The product is built using a component
+  approach, which makes the code modular and allows components to be used on
+  different pages and in different sections of the project. This simplifies the
+  maintenance of the site and the expansion of its functionality.
+- **Linters and formatting**: Using tools like Prettier and ESLint helps
+  maintain code standards, ensures a consistent style, and identifies potential
+  problems in the code.
+- **Adaptability**: The website is responsive, allowing you to create dynamic
+  and interactive user interfaces without reloading pages. This increases user
+  engagement and interaction.
+- **Convenient content management**: The content management system has an
+  intuitive interface that simplifies the process of updating and editing
+  content. You can easily make changes to texts, images and other content
+  without special knowledge in web development.
+- **Accessibility**:
+  - Intuitive design
+  - Semantic HTML
+  - Mobile-friendly interface
+  - Web resource available for any internet connection
 
 ### Supported Languages
 
@@ -113,9 +133,11 @@ is a list of more common components and their API.
 
 - #### Logo
 
-| Prop       | Default     | Description                                                                       |
-| ---------- | ----------- | --------------------------------------------------------------------------------- |
-| `location` | `undefined` | required, choose the position you'd need to define image size: `header`, `footer` |
+| Prop        | Default     | Description                                                                       |
+| ----------- | ----------- | --------------------------------------------------------------------------------- |
+| `location`  | `undefined` | required, choose the position you'd need to define image size: `header`, `footer` |
+| `className` | `''`        | add custom or additional css class you'd need                                     |
+| `onClick`   | `undefined` | optional, add `:void` function to add side effects you'd need on click            |
 
 - #### ContactLinks
 
@@ -126,63 +148,71 @@ is a list of more common components and their API.
 
 - #### SectionTitle
 
-| Prop          | Default     | Description                                     |
-| ------------- | ----------- | ----------------------------------------------- |
-| `children`    | `undefined` | required, ReactNode embedded components or text |
-| `accentColor` | `undefined` | applies the "accent" text color option          |
-| `center`      | `undefined` | centers text                                    |
-| `className`   | `undefined` | add string custom styles                        |
+| Prop          | Default     | Description                                         |
+| ------------- | ----------- | --------------------------------------------------- |
+| `children`    | `undefined` | required, `ReactNode` embedded components or `text` |
+| `accentColor` | `undefined` | applies the `accent` text color option              |
+| `center`      | `undefined` | centers text                                        |
+| `className`   | `undefined` | add string custom styles                            |
 
 - ### Slider Controls
 
 | Prop      | Default     | Description                            |
 | --------- | ----------- | -------------------------------------- |
-| `section` | `undefined` | required, only 'services' or 'reviews' |
+| `section` | `undefined` | required, only `services` or `reviews` |
 
 - #### Slider
 
 | Prop             | Default     | Description                                                 |
 | ---------------- | ----------- | ----------------------------------------------------------- |
-| `data`           | `undefined` | required, any array of data for mapping                     |
+| `data`           | `undefined` | required, any `array` of data for mapping                   |
 | `className`      | `''`        | add any custom styles of .swiper element                    |
 | `slideClassName` | `''`        | add any custom styles of .swiper-slide element              |
 | `component`      | `undefined` | required, the element that will be placed inside the slide' |
-| `section`        | `undefined` | required, 'about' 'services' 'gallery' 'reviews';           |
+| `section`        | `undefined` | required, `about`, `services`, `gallery`, `reviews`;        |
 
 - #### ContactFormInput
 
-| Prop                | Default     | Description                                                                 |
-| ------------------- | ----------- | --------------------------------------------------------------------------- |
-| `config`            | `undefined` | required, object with required string fields: required, name, label,        |
-|                     |             | placeholder, isRequaredField, errorMessage and validationOptions.           |
-|                     |             |                                                                             |
-| `name`              | `undefined` | required, string, input value name                                          |
-| `label`             | `undefined` | required, string, label value                                               |
-| `placeholder`       | `undefined` | required, string, input placeholder value                                   |
-| `isRequaredField`   | `undefined` | required, boolean, enables validation and marks the field                   |
-|                     |             | as required                                                                 |
-| `errorMessage`      | `undefined` | required, string validation error text                                      |
-| `validationOptions` | `undefined` | required, object with optional string fields: pattern, maxLength, minLength |
+| Prop                | Default     | Description                                                                       |
+| ------------------- | ----------- | --------------------------------------------------------------------------------- |
+| `config`            | `undefined` | required, object with required string fields: `required`, `name`, `label`,        |
+|                     |             | `placeholder`, `isRequaredField`, `errorMessage` and `validationOptions`.         |
+|                     |             |                                                                                   |
+| `name`              | `undefined` | required, `string`, input value name                                              |
+| `label`             | `undefined` | required, `string`, label value                                                   |
+| `placeholder`       | `undefined` | required, `string`, input placeholder value                                       |
+| `isRequaredField`   | `undefined` | required, `boolean`, enables validation and marks the field                       |
+|                     |             | as required                                                                       |
+| `errorMessage`      | `undefined` | required, `string` validation error text                                          |
+| `validationOptions` | `undefined` | required, object with optional string fields: `pattern`, `maxLength`, `minLength` |
 
 - #### ContactFormTextarea
 
-| Prop                | Default     | Description                                                          |
-| ------------------- | ----------- | -------------------------------------------------------------------- |
-| `config`            | `undefined` | required, object with required string fields: required, name, label, |
-|                     |             | placeholder and validationOptions.                                   |
-|                     |             |                                                                      |
-| `name`              | `undefined` | required, string, textarea value name                                |
-| `label`             | `undefined` | required, string, label value                                        |
-| `placeholder`       | `undefined` | required, string, textarea placeholder value                         |
-| `validationOptions` | `undefined` | required, object with optional string fields: maxLength              |
+| Prop                | Default     | Description                                                                |
+| ------------------- | ----------- | -------------------------------------------------------------------------- |
+| `config`            | `undefined` | required, object with required string fields: `required`, `name`, `label`, |
+|                     |             | `placeholder` and `validationOptions`.                                     |
+|                     |             |                                                                            |
+| `name`              | `undefined` | required, `string`, textarea value name                                    |
+| `label`             | `undefined` | required, `string`, label value                                            |
+| `placeholder`       | `undefined` | required, `string`, textarea placeholder value                             |
+| `validationOptions` | `undefined` | required, object with optional string fields: `maxLength`                  |
 
 - #### ReviewsCard
 
-| Prop        | Default     | Description                                               |
-| ----------- | ----------- | --------------------------------------------------------- |
-| `className` | `' '`       | add any custom string styles                              |
-| `card`      | `undefined` | required, item of array, should contain \_id,review, name |
-|             |             | as string field                                           |
+| Prop        | Default     | Description                                                                    |
+| ----------- | ----------- | ------------------------------------------------------------------------------ |
+| `className` | `' '`       | add any custom string styles                                                   |
+| `card`      | `undefined` | required, item of array, should contain `id`, `review`, `name` as string field |
+
+- #### GalleryCard
+
+| Prop        | Default     | Description                                                                                                |
+| ----------- | ----------- | ---------------------------------------------------------------------------------------------------------- |
+| `className` | `' '`       | add any custom string styles                                                                               |
+| `card`      | `undefined` | required, image props as object with fields: `alt`, `path` & `pathCrop` (optional) for small image version |
+| `grid`      | `false`     | optional, to add tabIndex and make element interactive on keyboard                                         |
+| `onClick`   | `undefined` | function to handle `click` event on element                                                                |
 
 ### Technology stack
 
@@ -197,6 +227,11 @@ is a list of more common components and their API.
 
   - Swiper
   - React Hook Form
+  - Nodemailer
+  - React Scroll
+  - Yet Another React Lightbox
+  - Framer Motion
+  - React Email
 
   ...full list of dependencies is available in `package.json` file.
 

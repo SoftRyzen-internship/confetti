@@ -35,6 +35,12 @@ export const ContactFormInput: React.FC<ContactFormInputProps> = ({
         {...register(name, {
           ...validationOptions,
           required: isRequiredField,
+          onChange: () => {
+            trigger(name);
+          },
+          onBlur: () => {
+            trigger(name);
+          },
           pattern: {
             value: validationOptions?.pattern
               ? new RegExp(validationOptions.pattern.value)
@@ -44,7 +50,6 @@ export const ContactFormInput: React.FC<ContactFormInputProps> = ({
               : '',
           },
         })}
-        onBlur={() => trigger(name)}
         type="text"
       />
 

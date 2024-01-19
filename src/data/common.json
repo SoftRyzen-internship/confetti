@@ -97,8 +97,9 @@
       "title": "Tworzymy unikalne i niepowtarzalne dekoracje balonowe na imprezy"
     },
 
-    "notFound": {
+    "error": {
       "title": "404",
+      "globalError": "Błąd",
       "subtitle": "Ups! Strona, której szukasz nie istnieje! Proszę wrócić do strony głównej.",
       "button": "Wróć do domu",
       "img": "balony"
@@ -133,7 +134,9 @@
 
     "contacts": {
       "title": "Kontakty",
-      "location": "Confetti - Studio Dekoracij Balonami Warszawa"
+      "location": "Confetti - Studio Dekoracij Balonami Warszawa",
+      "phone": "+48793351407",
+      "email": "confettibalony@gmail.com"
     },
 
     "services": {
@@ -149,13 +152,13 @@
         {
           "path": "/images/services-cards/baptism.webp",
           "caption": "Chrzciny",
-          "alt": "Przechodzić",
+          "alt": "Dłoń dziecka trzyma łańcuszek z krzyżem",
           "slug": "baptism"
         },
         {
           "path": "/images/services-cards/birthday.webp",
           "caption": "Urodziny",
-          "alt": "Urodziny",
+          "alt": "Dziewczyna z balonami i świątecznym tortem",
           "slug": "birthday"
         },
         {
@@ -167,19 +170,19 @@
         {
           "path": "/images/services-cards/valentines.webp",
           "caption": "Walentynki",
-          "alt": "Fotografia walentynkowa",
+          "alt": "Fotografia walentynkowa z balonami",
           "slug": "valentines"
         },
         {
           "path": "/images/services-cards/corporate.webp",
           "caption": "Impreza firmowa",
-          "alt": "Ukłon",
+          "alt": "Kolorowa wstążka wiązana w kokardkę na tle dekoracji z balonów",
           "slug": "corporate"
         },
         {
           "path": "/images/services-cards/wedding.webp",
           "caption": "Wesele",
-          "alt": "Wesele",
+          "alt": "Nowożeńcy kroją tort weselny na tle świątecznej dekoracji",
           "slug": "wedding"
         }
       ]
