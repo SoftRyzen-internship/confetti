@@ -1,7 +1,5 @@
 'use client';
 
-import { MouseEvent } from 'react';
-
 import common from '@/data/common.json';
 
 import NextIcon from '~/icons/arrow-right.svg';
@@ -20,11 +18,8 @@ export const SliderControls: React.FC<SliderControlsProps> = ({ section }) => {
     <div className="hidden gap-x-6 md:flex">
       <button
         aria-label={prevBtnArialabel}
-        className={`button-prev-${section} flex h-14 w-14 items-center justify-center rounded-full border border-solid border-color-ctrl-btn-border bg-color-secondary transition-all hover:border-transparent hover:bg-color-bg-primary focus:border-transparent focus:bg-color-bg-primary`}
+        className={`button-prev-${section} flex h-14 w-14 items-center justify-center rounded-full border border-solid border-color-ctrl-btn-border bg-color-secondary transition-all hover:border-transparent hover:bg-color-bg-primary focus-visible:border-transparent focus-visible:bg-color-bg-primary`}
         type="button"
-        onClick={(e: MouseEvent<HTMLButtonElement>) => {
-          e.currentTarget.blur();
-        }}
       >
         <NextIcon
           className="rotate-180"
@@ -36,11 +31,8 @@ export const SliderControls: React.FC<SliderControlsProps> = ({ section }) => {
 
       <button
         aria-label={nextBtnArialabel}
-        className={`button-next-${section} flex h-14 w-14 items-center justify-center rounded-full border border-solid border-color-ctrl-btn-border bg-color-secondary transition-all hover:border-transparent hover:bg-color-bg-primary focus:border-transparent focus:bg-color-bg-primary`}
+        className={`button-next-${section} flex h-14 w-14 items-center justify-center rounded-full border border-solid border-color-ctrl-btn-border bg-color-secondary transition-all hover:border-transparent hover:bg-color-bg-primary focus-visible:border-transparent focus-visible:bg-color-bg-primary`}
         type="button"
-        onClick={(e: MouseEvent<HTMLButtonElement>) => {
-          e.currentTarget.blur();
-        }}
       >
         <NextIcon aria-label={nextBtnArialabelIcon} width={24} height={24} />
       </button>
