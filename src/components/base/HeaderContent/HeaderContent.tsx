@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, MouseEvent } from 'react';
+import { useState } from 'react';
 
 import { NavMenu } from '@/components/base';
 
@@ -9,9 +9,8 @@ import { Logo, MenuBtn, ContactLinks } from '@/components/ui';
 export const HeaderContent: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = (e: MouseEvent<HTMLButtonElement>) => {
+  const toggleMenu = () => {
     setIsMenuOpen(prev => !prev);
-    e.currentTarget.blur();
   };
 
   const closeMenu = () => {
