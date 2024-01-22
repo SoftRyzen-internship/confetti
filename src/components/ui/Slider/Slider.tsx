@@ -28,6 +28,7 @@ export const Slider: React.FC<SliderProps> = ({
       modules={[Navigation, Pagination]}
       speed={800}
       spaceBetween={16}
+      lazyPreloadPrevNext={1}
       pagination={{ clickable: true }}
       navigation={{
         nextEl: `.button-next-${section}`,

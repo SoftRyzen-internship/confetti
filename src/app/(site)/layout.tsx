@@ -78,10 +78,10 @@ export default function RootLayout({
       <body
         className={`${manrope.variable} ${gilroy.className} flex min-h-screen flex-col`}
       >
-        <Toaster />
         <Header />
         <main className="flex grow flex-col">{children}</main>
         <Footer />
+        <Toaster />
       </body>
     </html>
   );
