@@ -20,6 +20,7 @@ export const ServiceCard: React.FC<Props> = ({ card }) => {
           blurDataURL={path}
           width="389"
           height="374"
+          priority
         />
       </div>
 
