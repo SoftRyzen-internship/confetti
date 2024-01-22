@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import useFormPersist from 'react-hook-form-persist';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 import {
   ContactFormInput,
@@ -41,6 +41,7 @@ export const ContactForm: React.FC<Props> = ({ className }) => {
       await sendEmail(data);
 
       reset();
+      window.sessionStorage.removeItem('contactForm');
       toast.success(success);
     } catch (e) {
       toast.error(error);
@@ -51,7 +52,6 @@ export const ContactForm: React.FC<Props> = ({ className }) => {
 
   return (
     <>
-      <Toaster />
       <form
         className={`bg-color-bg-primary px-5 py-8 sm:w-[440px] md:relative md:w-[608px] md:rounded-[24px] md:px-[82px] md:py-[38px] xl:py-[48px] ${className}`}
         onSubmit={handleSubmit(onSubmit)}
