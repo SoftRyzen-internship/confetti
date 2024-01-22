@@ -7,6 +7,7 @@ import { Footer, Header } from '@/layout';
 import meta from '@/data/meta.json';
 
 import '../globals.css';
+import { Toaster } from 'react-hot-toast';
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -80,6 +81,7 @@ export default function RootLayout({
         <Header />
         <main className="flex grow flex-col">{children}</main>
         <Footer />
+        <Toaster />
       </body>
     </html>
   );

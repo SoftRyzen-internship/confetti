@@ -1,5 +1,4 @@
 import { Logo } from '@/components/ui';
-import { FooterLink } from '@/components/ui';
 
 import data from '@/data/common.json';
 
@@ -7,7 +6,10 @@ export const Footer: React.FC = () => {
   const {
     layout: { footer },
   } = data;
-  const { rights, link } = footer;
+  const {
+    rights,
+    link: { label, href },
+  } = footer;
   return (
     <footer>
       <div className="container">
@@ -18,7 +20,14 @@ export const Footer: React.FC = () => {
             {rights}
           </p>
 
-          <FooterLink {...link} />
+          <a
+            className="font-manrope text-[16px] leading-[1.36] tracking-[-0.16px] text-color-primary transition-all hover:text-color-accent-primary focus-visible:text-color-accent-primary"
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            {label}
+          </a>
         </div>
       </div>
     </footer>
