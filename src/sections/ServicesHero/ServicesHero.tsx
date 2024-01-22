@@ -41,6 +41,7 @@ export const ServicesHero: React.FC<ServicesHeroProps> = ({
               className="object-cover md:h-[899px] xl:h-[726px]"
               placeholder="blur"
               blurDataURL={base64}
+              priority
             />
           </div>
         </div>
