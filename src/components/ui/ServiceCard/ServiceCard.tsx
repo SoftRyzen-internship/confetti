@@ -11,7 +11,7 @@ export const ServiceCard: React.FC<Props> = ({ card }) => {
       href={`/${slug}`}
       className="group flex w-full flex-col items-center gap-4 transition-all md:items-start xl:gap-6"
     >
-      <div className="h-full w-full overflow-hidden rounded-3xl md:h-[304px] md:w-[344px] xl:h-[374px] xl:w-[389px] smOnly:aspect-square">
+      <div className="h-full w-full overflow-hidden rounded-3xl md:h-[304px] md:w-[344px] xl:h-[374px] xl:w-auto smOnly:aspect-square">
         <Image
           className="h-full w-full object-cover object-center transition-all group-hover:scale-[1.1]"
           alt={alt}
