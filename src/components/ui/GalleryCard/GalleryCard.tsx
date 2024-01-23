@@ -15,7 +15,9 @@ export const GalleryCard: React.FC<GalleryCardProps> = ({
 
   return (
     <div
-      className={`aspect-square h-full w-full grow overflow-hidden rounded-lg md:h-[224px] md:w-[224px] md:rounded-3xl xl:h-full xl:w-[full] ${className}`}
+      className={`h-full w-full grow overflow-hidden rounded-lg md:h-[224px] md:w-[224px] md:rounded-3xl xl:h-[388px] xl:w-full ${className} ${
+        !grid ? 'aspect-square' : ''
+      }`}
       onClick={handleClick}
       tabIndex={grid ? 0 : -1}
       onKeyDown={e => {
